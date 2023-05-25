@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" initial-scale=1.0>
+  <title>메뉴 바</title>
+    <link rel="stylesheet" href={% static "css/menu_bar.css" %}>
+</head>
+
+<body>
+ 
+    <div id="navBar">
+      <div id="logo"></div>
+      <div id="menu">
+        <div class="link1" onclick="location.href='#'">
+          <span>회사 소개</span><img src="/static/images/Polygon1.png" alt="Polygon1" style="margin-left: 7px;">
+          <div class="link-menu">
+            <div style="margin-top: 10px;" onclick="location.href='#'">테헤란</div>
+            <div style="margin-top: 10px;" onclick="location.href='#'">주요현황</div>
+            <div style="margin-top: 10px;" onclick="location.href='#'">오시는 길</div>
+          </div>
+        </div>
+        <div class="link2" onclick="location.href='#'">
+          <span>사업 영역</span><img src="/static/images/Polygon1.png" alt="Polygon1" style="margin-left: 7px;">
+          <div class="link-menu">
+            <div style="margin-top: 10px;" onclick="location.href='#'">스마트팜 소개</div>
+            <div style="margin-top: 10px;" onclick="location.href='#'">작물유통</div>
+            <div style="margin-top: 10px;" onclick="location.href='#'">기타사업</div>
+          </div>
+        </div>
+        <div class="link3" onclick="location.href='#'">
+          <span>게시판</span><img src="/static/images/Polygon1.png" alt="Polygon1" style="margin-left: 7px;">
+          <div class="link-menu">
+            <div style="margin-top: 10px;" onclick="location.href='#'">공지사항</div>
+            <div style="margin-top: 10px;" onclick="location.href='#'">보도자료</div>
+            <div style="margin-top: 10px;" onclick="location.href='#'">고시자료</div>
+          </div>
+        </div>
+        <div class="link4" onclick="location.href='#'">
+          <span>제품 소개</span><img src="/static/images/Polygon1.png" alt="Polygon1" style="margin-left: 7px;">
+          <div class="link-menu">
+            <div style="margin-top: 10px;" onclick="location.href='#'">참송이버섯</div>
+            <div style="margin-top: 10px;" onclick="location.href='#'">푸드케어 제품</div>
+          </div>
+        </div>
+        <div class="link5" onclick="location.href='#'">
+          <span>고객 지원</span><img src="/static/images/Polygon1.png" alt="Polygon1" style="margin-left: 7px;">
+          <div class="link-menu">
+            <div style="margin-top: 10px;" onclick="location.href='#'">FAQ</div>
+            <div style="margin-top: 10px;" onclick="location.href='#'">Q&A</div>
+          </div>
+        </div>
+      </div>
+      <div id="signIn" alt="login" onclick="location.href='#'"></div>
+      <div id="langicon" alt="langicon"> </div>
+      <div class="language">한국어
+        <div class="language-menu">
+          <div>언어1</div>
+          <div>언어2</div>
+          <div>언어3</div>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
