@@ -211,6 +211,12 @@
 	margin-top: 8px;
 	cursor: pointer;
   }
+
+  .mobile-menu{
+	position: absolute;
+	display: none;
+	left: 92.8125%;
+  }
   
 
   @media screen and (max-width: 768px) {
@@ -235,4 +241,9 @@
 
 	  background: url(/static/images/Group2.png);
 	}
+
+	.mobile-menu{
+		display: block;
+	}
+	
   }
