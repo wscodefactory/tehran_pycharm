@@ -211,18 +211,28 @@
 	margin-top: 8px;
 	cursor: pointer;
   }
+  
 
   @media screen and (max-width: 768px) {
 	#navBar {
 	  justify-content: flex-end;
 	}
   
-	.language {
+	.link1,
+	.link2,
+	.link3,
+	.link4,
+	.link5,
+	.language,
+	#signIn {
 	  display: none;
 	}
+	
   
 	#langicon {
 	  display: block;
 	  margin-left: auto;
+
+	  background: url(/static/images/Group2.png);
 	}
   }

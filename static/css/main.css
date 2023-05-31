@@ -6,11 +6,6 @@ body{
 	user-select:none;
 }
 
-#title {
-	position: relative;
-	height: 200px;
-}
-
 #wrapper {
 	position: relative;
 	height: 712px;
@@ -104,5 +99,25 @@ color: #FFFFFF;
 	width: 30%;
 	position: relative;
 	bottom: 2px;
+}
+
+.Group2{
+	position: relative;
+	width: 21px;
+	height: 25px;
+	left: 49.42%;
+	margin-top: 400px;
+
+	background: url(/static/images/Group2.png);
+}
+
+.banner1{
+	position: absolute;
+	width: 100%;
+	height: 359px;
+	left: 0px;
+	top: 1369px;
+
+	background: url(/static/images/image2.png);
 }
 
