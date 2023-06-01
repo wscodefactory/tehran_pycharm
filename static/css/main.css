@@ -9,6 +9,8 @@ body{
 #wrapper {
 	position: relative;
 	height: 100vh;
+	width: 100%;
+	background: url(/static/images/background1.jpg);
 }
 
 #title {
@@ -16,18 +18,22 @@ body{
 }
 
 
-#wrapper {
-	width: 100%;
-	background: url(/static/images/background1.jpg);
-}
-
-#overlay {
+.overlay {
   position: absolute;
   top: 7.4%;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay2{
+	position: absolute;
+	top: 0%;
+	left: 0;
+	width: 100%;
+	height: 33.3vh;
+	background-color: rgba(255, 255, 255, 0.83);
 }
 
 #TEHRAN {
@@ -156,11 +162,79 @@ body{
 .banner1{
 	position: absolute;
 	width: 100%;
-	height: 35vh;
+	height: 33.3vh;
 	left: 0px;
 
 
 	background: url(/static/images/image2.png);
+}
+
+.banner1-content1{
+	display: flex;
+	position: absolute;
+	width: 22%;
+	height: 5.27%;
+	left: 41%;
+	top: 30%;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-size: 2.5vw;
+	line-height: 57px;
+	text-align: center;
+	color: #282828;
+}
+
+.banner1-content2{
+	position: absolute;
+	width: 31%;
+	height: 5.3%;
+	left: 36%;
+	top: 55%;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25vw;
+	line-height: 29px;
+	text-align: center;
+	color: #282828;
+}
+
+.font-color1{
+	color: #4E6234;
+	font-weight: 700;
+}
+
+.banner2{
+	position: absolute;
+	width: 100%;
+	height: 66.75%;
+	top: 185%;
+
+	background: url(/static/images/image5.png);
+	transform: matrix(1, 0, 0, 1, 0, 0);
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.875vw;
+	line-height: 53px;
+	text-align: right;
+
+	color: #313131;
+}
+
+.banner2-content1{
+	position: absolute;
+	width: 19%;
+	height: 14.7%;
+	left: 30%;
+	top: 19%;
+}
+
+.banner2-content1-flex{
+	display:flex
 }
 
 @media screen and (max-width: 412px) {
