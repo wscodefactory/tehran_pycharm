@@ -6,24 +6,25 @@ body{
 	user-select:none;
 }
 
-#wrapper {
+.wrapper {
+	top: 0;
 	position: relative;
-	height: 100vh;
-	width: 100%;
+	height: 1080px;
+	width: 1920px;
 	background: url(/static/images/background1.jpg);
 }
 
-#title {
+.title {
 	background: black;
 }
 
 
 .overlay {
   position: absolute;
-  top: 7.4%;
+  top: 0%;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  width: 1920px;
+  height: 1150px;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -32,13 +33,13 @@ body{
 	top: 0%;
 	left: 0;
 	width: 100%;
-	height: 33.3vh;
+	height: 360px;
 	background-color: rgba(255, 255, 255, 0.83);
 }
 
-#TEHRAN {
+.TEHRAN {
 	position: absolute;
-	width: 100%;
+	width: 1920px;
 	height: 568px;
 	left: -6px;
 	top: 148px;
@@ -46,18 +47,18 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 24.79vw;
+	font-size: 476px;
 	line-height: 568px;
 	/* identical to box height */
 
 	color: rgba(255, 255, 255, 0.05);
-
+ 
 }
 
-#ddd{
+.ddd{
 	/* SMART FARM CONTAINER */
 	position: absolute;
-	width: 100%;
+	width: 1920px;
 	height: 158px;
 	left: 19%;
 	top: 67vh;
@@ -74,7 +75,7 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 4.7vw;
+	font-size: 90px;
 	line-height: 88px;
 	text-align: center;
 	letter-spacing: 0.025em;
@@ -85,7 +86,7 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 4.7vw;
+	font-size: 90px;
 	line-height: 88px;
 	text-align: center;
 	letter-spacing: 0.13em;
@@ -96,7 +97,7 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 1.25vw;
+	font-size: 24px;
 	line-height: 29px;
 
 	color: #FFFFFF;
@@ -106,7 +107,7 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.04vw;
+	font-size: 20px;
 	line-height: 24px;
 
 	color: #FFFFFF;
@@ -146,7 +147,7 @@ body{
 
 .blank{
 	width: 100%;
-	height: 26.6vh;
+	height: 20vh;
 }
 
 .Group2{
@@ -162,7 +163,7 @@ body{
 .banner1{
 	position: absolute;
 	width: 100%;
-	height: 33.3vh;
+	height: 360px;
 	left: 0px;
 
 
@@ -172,14 +173,14 @@ body{
 .banner1-content1{
 	display: flex;
 	position: absolute;
-	width: 22%;
-	height: 5.27%;
-	left: 41%;
-	top: 30%;
+	width: 500px;
+	height: 57px;
+	margin-left: 41%;
+	margin-top: 109px;
 
 	font-family: 'Pretendard';
 	font-style: normal;
-	font-size: 2.5vw;
+	font-size: 48px;
 	line-height: 57px;
 	text-align: center;
 	color: #282828;
@@ -187,15 +188,15 @@ body{
 
 .banner1-content2{
 	position: absolute;
-	width: 31%;
-	height: 5.3%;
+	width: 600px;
+	height: 58px;
 	left: 36%;
-	top: 55%;
+	margin-top: 198px;
 
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.25vw;
+	font-size: 24px;
 	line-height: 29px;
 	text-align: center;
 	color: #282828;
@@ -203,14 +204,13 @@ body{
 
 .font-color1{
 	color: #4E6234;
-	font-weight: 700;
 }
 
 .banner2{
 	position: absolute;
 	width: 100%;
-	height: 66.75%;
-	top: 185%;
+	height: 721px;
+	margin-top: 360px;
 
 	background: url(/static/images/image5.png);
 	transform: matrix(1, 0, 0, 1, 0, 0);
@@ -218,7 +218,7 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.875vw;
+	font-size: 36px;
 	line-height: 53px;
 	text-align: right;
 
@@ -227,19 +227,109 @@ body{
 
 .banner2-content1{
 	position: absolute;
-	width: 19%;
-	height: 14.7%;
-	left: 30%;
-	top: 19%;
+	width: 400px;
+	height: 159px;
+	left: 25%;
+	top: 15%;
 }
 
-.banner2-content1-flex{
-	display:flex
+.banner2-content2{
+	position: absolute;
+	width: 500px;
+	height: 230px;
+	left: 20%;
+	top: 49%;
+
+	font-size: 28px;
+	line-height: 46px;
+	text-align: right;
 }
 
-@media screen and (max-width: 412px) {
-	#ddd{
+.banner2-image{
+	position: absolute;
+	width: 598px;
+	height: 721px;
+	left: 1000px;
+	top: 0%;
+
+	background: url(/static/images/image4.png);
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.banner3{
+	position: absolute;
+	width: 100%;
+	height: 524px;
+	left: 0px;
+	margin-top: 1241px;
+  
+	background: #2C2C2C;
+}
+
+.banner3-image{
+	position: absolute;
+	width: 561px;
+	height: 524px;
+	left: 20%;
+	top: 0;
+
+	background: url(/static/images/image6.png);
+}
+
+.banner3-content1{
+	position: absolute;
+	width: 440px;
+	height: 53px;
+	left: 991px;
+	top: 84px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 53px;
+	color: #FFFFFF;
+}
+
+.banner3-hr{
+	position: absolute;
+	width: 454px;
+	height: 0px;
+	left: 457px;
+	top: 27px;
+
+	border: 1px solid #A9A9A9;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+
+@media screen and (max-width: 800px) {
+	.ddd{
 		left:0%;
+	}
+
+	.font-color1{
+		color:#D8F5B4
+	}
+
+	.banner2{
+		font-size: 4vw;
+		color: #FFFFFF;
+		line-height: 20px;
+		background: url(/static/images/image4.png);
+	}
+
+	.banner2-image{
+		display:none;
+	}
+
+	.banner2-content1{
+		width: 60%;
+	}
+
+	.banner2-content2{
+		top:40%;
+
 	}
 	
 }
