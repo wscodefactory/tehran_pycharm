@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
 	margin: 0px;
 	-webkit-user-select:none;
@@ -10,8 +17,16 @@ body{
 	top: 0;
 	position: relative;
 	height: 1080px;
-	width: 1920px;
+	width: 100%;
 	background: url(/static/images/background1.jpg);
+}
+@media screen and (max-width: 800px) {
+	.wrapper{
+		position: absolute;
+		height: 806px;
+		left: 0px;
+		top: 37px;
+	}
 }
 
 .title {
@@ -23,25 +38,24 @@ body{
   position: absolute;
   top: 0%;
   left: 0;
-  width: 1920px;
+  width: 100%;
   height: 1150px;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-.overlay2{
-	position: absolute;
-	top: 0%;
-	left: 0;
-	width: 100%;
-	height: 360px;
-	background-color: rgba(255, 255, 255, 0.83);
+@media screen and (max-width: 800px) {
+	.overlay{
+		position: absolute;
+		height: 806px;
+		left: 0px;
+		top: 37px;
+	}
 }
 
 .TEHRAN {
 	position: absolute;
-	width: 1920px;
+	width: 100%;
 	height: 568px;
-	left: -6px;
+	left: 0;
 	top: 148px;
 
 	font-family: 'Pretendard';
@@ -54,21 +68,64 @@ body{
 	color: rgba(255, 255, 255, 0.05);
  
 }
+.TEH,
+.RAN{
+	display: none;
+}
+@media screen and (max-width: 800px) {
+	.TEHRAN {
+		display: none;
+	 
+	}
+	.TEH{
+		display:inline;
+		position: absolute;
+		width: 100%;
+		height: 478px;
+		left: 0px;
+		top: 37px;
 
-.ddd{
-	/* SMART FARM CONTAINER */
+		font-weight: 700;
+		font-size: 51.28vw;
+		line-height: 239px;
+
+		color: rgba(255, 255, 255, 0.05);
+
+	}
+
+	.RAN{
+		display:inline;
+		position: absolute;
+		width: 100%;
+		height: 478px;
+		left:-15px;
+		top: 200px;
+
+		font-weight: 700;
+		font-size: 51.28vw;
+		line-height: 239px;
+
+		color: rgba(255, 255, 255, 0.05);
+	}
+}
+
+.flex-container {
+	display: flex;
+	align-items: center; /* 요소들을 수직으로 가운데 정렬 */
 	position: absolute;
-	width: 1920px;
+	width:1237px;
 	height: 158px;
 	left: 19%;
 	top: 67vh;
 	text-align: left;
 }
-
-
-.flex-container {
-	display: flex;
-	align-items: center; /* 요소들을 수직으로 가운데 정렬 */
+@media screen and (max-width: 800px) {
+	.flex-container{
+		width:100%;
+		height: 806px;
+		top: 37px;
+		left:0px;
+	}
 }
 
 .content1{
@@ -91,6 +148,25 @@ body{
 	text-align: center;
 	letter-spacing: 0.13em;
 	color: #95C05D;
+}
+@media screen and (max-width: 800px) {
+	.mobile-smart-farm{
+		display:inline;
+		top: 0px;
+		left:55px;
+		width:auto;
+		height: 86px;
+	}
+
+	.content1{
+		line-height: 0px;
+		font-size: 11.2vw;
+	}
+
+	.content2{
+		line-height: 50px;
+		font-size: 11.2vw;
+	}
 }
 
 .content3{
@@ -119,7 +195,15 @@ body{
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 15px;
-
+}
+@media screen and (max-width: 800px) {
+	.flex-container{
+		width:100%;
+		height: 806px;
+		top: 37px;
+		left:0px;
+		text-align: center;
+	}
 }
 
 .sectionName {
@@ -150,9 +234,9 @@ body{
 	height: 20vh;
 }
 
-.Group2{
+.arrow1{
 	position: relative;
-	width: 21px;
+	width: 23px;
 	height: 25px;
 	left: 49.42%;
 	margin-top: 200px;
@@ -168,6 +252,15 @@ body{
 
 
 	background: url(/static/images/image2.png);
+}
+
+.banner1-overlay{
+	position: absolute;
+	top: 0%;
+	left: 0;
+	width: 100%;
+	height: 360px;
+	background-color: rgba(255, 255, 255, 0.83);
 }
 
 .banner1-content1{
@@ -200,10 +293,6 @@ body{
 	line-height: 29px;
 	text-align: center;
 	color: #282828;
-}
-
-.font-color1{
-	color: #4E6234;
 }
 
 .banner2{
@@ -270,7 +359,7 @@ body{
 	position: absolute;
 	width: 561px;
 	height: 524px;
-	left: 20%;
+	left: 384px;
 	top: 0;
 
 	background: url(/static/images/image6.png);
@@ -291,29 +380,1054 @@ body{
 	color: #FFFFFF;
 }
 
-.banner3-hr{
+.banner3-hr1{
 	position: absolute;
 	width: 454px;
 	height: 0px;
 	left: 457px;
-	top: 27px;
+	top: 10px;
 
 	border: 1px solid #A9A9A9;
 	transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
+.banner3-hr2{
+	position: absolute;
+	width: 101px;
+	height: 0px;
+	left: 457px;
+	top: 10px;
+
+	border: 1px solid #FFFFFF;
+	transform: rotate(180deg);
+}
+
+.banner3-content2{
+	position: absolute;
+	width: 600px;
+	height: 156px;
+	left: 991px;
+	top: 221px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 163.84%;
+
+color: #FFFFFF;
+}
+
+.banner3-button1{
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 218px;
+	height: 52px;
+	left: 991px;
+	top: 402px;
+
+	background-color: transparent;
+	border: 3px solid #95C05D;
+	border-radius: 12px;
+}
+
+.banner3-content3{
+	position: absolute;
+	width: 200px;
+	height: 20px;
+	left: 8px;
+	top: 14px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 100.84%;
+	/* identical to box height, or 30px */
+
+	text-align: center;
+
+	color: #95C05D;
+}
+
+.banner4{
+	position: absolute;
+	width: 100%;
+	height: 1080px;
+	left: 0px;
+	top: 3400px;
+
+	background: url(/static/images/image8.png);
+}
+
+.banner4-overlay{
+	position: absolute;
+	width: 100%;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.banner4-hr1{
+	position: absolute;
+	width: 0px;
+	height: 616px;
+	left: 0px;
+	top: 170px;
+
+	border: 1px solid #797979;
+	transform: rotate(-90deg);
+}
+
+.banner4-hr2{
+	position: absolute;
+	width: 0px;
+	height: 241.88px;
+	left: 429px;
+	top: 357px;
+	
+	border: 1.5px solid #ffffff;
+	transform: rotate(-90deg);
+}
+
+.banner4-hr3{
+	position: absolute;
+	width: 0px;
+	height: 309px;
+	right: 154px;
+	top: 323.35px;
+
+	border: 1px solid #797979;
+	transform: rotate(-90deg);
+}
+
+.banner4-hr4{
+	position: absolute;
+	width: 0px;
+	height: 241.88px;
+	right: 429px;
+	top: 357px;
+	
+	border: 1.5px solid #FFFFFF;
+	transform: rotate(-90deg);
+}
+
+.banner4-content1{
+	position: absolute;
+	width: 688px;
+	height: 158px;
+	left: 615px;
+	top: 434px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 163.84%;
+	/* or 79px */
+
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.banner4-image1{
+	position: absolute;
+	width: 106px;
+	height: 60px;
+	left: 638px;
+	top: 611px;
+
+	background: url(/static/images/c1.png);
+}
+
+.banner4-image2{
+	position: absolute;
+	width: 107px;
+	height: 59px;
+	left: 824px;
+	top: 611px;
+	
+	background: url(/static/images/c2.png);
+}
+
+.banner4-image3{
+	position: absolute;
+	width: 107px;
+	height: 60px;
+	left: 1011px;
+	top: 611px;	
+	
+	background: url(/static/images/c3.png);
+}
+
+.banner4-image4{
+	position: absolute;
+	width: 106px;
+	height: 60px;
+	left: 1198px;
+	top: 611px;	
+	
+	background: url(/static/images/c4.png);
+}
+
+.banner4-image1-content1{
+	position: absolute;
+	width: 95px;
+	height: 26px;
+	left: 650px;
+	top: 678px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 163.84%;
+	/* or 26px */
+
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.banner4-image1-content2{
+	position: absolute;
+	width: 90px;
+	height: 52px;
+	left: 645px;
+	top: 704px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 163.84%;
+	/* or 52px */
+	
+	text-align: center;
+	
+	color: #FFFFFF;	
+}
+
+.banner4-image2-content1{
+	position: absolute;
+	width: 170px;
+	height: 26px;
+	left: 790px;
+	top: 678px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 163.84%;
+	/* or 26px */
+	
+	text-align: center;
+	
+	color: #FFFFFF;
+	
+}
+
+.banner4-image2-content2{
+	position: absolute;
+	width: 130px;
+	height: 52px;
+	left: 817px;
+	top: 704px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 163.84%;
+	/* or 52px */
+	
+	text-align: center;
+	
+	color: #FFFFFF;
+}
+
+.banner4-image3-content1{
+	position: absolute;
+	width: 170px;
+	height: 26px;
+	left: 1001px;
+	top: 678px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 163.84%;
+	/* or 26px */
+	
+	text-align: center;
+	
+	color: #FFFFFF;
+}
+
+.banner4-image3-content2{
+	position: absolute;
+	width: 130px;
+	height: 52px;
+	left: 1015px;
+	top: 704px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 163.84%;
+	/* or 52px */
+	
+	text-align: center;
+	
+	color: #FFFFFF;
+}
+
+.banner4-image4-content1{
+	position: absolute;
+	width: 140px;
+	height: 26px;
+	left: 1197px;
+	top: 678px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 163.84%;
+	/* or 26px */
+	
+	text-align: center;
+	
+	color: #FFFFFF;
+}
+
+.banner4-image4-content2{
+	position: absolute;
+	width: 150px;
+	height: 52px;
+	left: 1200px;
+	top: 704px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 163.84%;
+	/* or 52px */
+	
+	text-align: center;
+	
+	color: #FFFFFF;
+}
+
+.banner5{
+	position: absolute;
+	width: 100%;
+	height: 888px;
+	left: 0px;
+	top: 4470px;
+
+	background: url(/static/images/Rectangle8.png);
+}
+
+.banner5-overlay{
+	position: absolute;
+	width: 100%;
+	height: 888px;
+	left: 0px;
+	top: 0px;
+	
+	background: linear-gradient(90deg, #FFFFFF 38.44%, rgba(255, 255, 255, 0) 94.87%);
+}
+
+.banner5-content1{
+	position: absolute;
+	width: 370px;
+	height: 79px;
+	left: 250px;
+	top: 302px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 163.84%;
+	/* identical to box height, or 79px */
+
+
+	color: #839171;
+}
+
+.banner5-content2{
+	position: absolute;
+	width: 766px;
+	height: 92px;
+	left: 250px;
+	top: 411px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 163.84%;
+	/* or 46px */
+	
+	
+	color: #434343;
+}
+
+.banner5-button1{
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 194px;
+	height: 54px;
+	left: 637px;
+	top: 596px;
+	
+	background-color: transparent;
+	border: 2px solid #484848;
+}
+
+.banner5-button1-content{
+	position: absolute;
+	width: 130px;
+	height: 39px;
+	left: 31px;
+	top: 5px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 163.84%;
+	/* or 39px */
+	
+	
+	color: #434343;
+}
+
+.banner5-bar{
+	position: absolute;
+	width: 100%;
+	height: 66px;
+	left: 0px;
+	top: 822px;
+
+	background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.banner5-bar-line1,
+.banner5-bar-line2,
+.banner5-bar-line3,
+.banner5-bar-line4,
+.banner5-bar-line5,
+.banner5-bar-line6{
+	position:absolute;
+	top:5px;
+	width: 158px;
+	height: 0px;
+	
+	border: 2px solid rgba(255, 255, 255, 0.39);
+}
+
+.banner5-bar-line1{
+	left: 480px;
+}
+
+.banner5-bar-line2{
+	left: 648px;
+}
+
+.banner5-bar-line3{
+	left: 814px;
+}
+
+.banner5-bar-line4{
+	left: 981px;
+}
+
+.banner5-bar-line5{
+	left: 1149px;
+}
+
+.banner5-bar-line6{
+	left: 1315px;
+}
+
+.banner5-bar-menu1,
+.banner5-bar-menu2,
+.banner5-bar-menu3,
+.banner5-bar-menu4,
+.banner5-bar-menu5,
+.banner5-bar-menu6{
+	position: absolute;
+	height: 25px;
+	top: 30px;
+	border-width: 0;
+	background-color: transparent;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 163.84%;
+	/* identical to box height, or 25px */
+	
+	text-align: right;
+	
+	color: #FFFFFF;
+}
+
+.banner5-bar-menu1{
+	width: 101px;
+	left: 508px;
+}
+
+.banner5-bar-menu2{
+	width: 96px;
+	left: 680px;
+}
+
+.banner5-bar-menu3{
+	width: 81px;
+	left: 850px;
+}
+
+.banner5-bar-menu4{
+	width: 119px;
+	left: 1000px;
+}
+
+.banner5-bar-menu5{
+	width: 116px;
+	left: 1170px;
+}
+
+.banner5-bar-menu6{
+	width: 70px;
+	left: 1360px;
+}
+
+.arrow2{
+	position: absolute;
+	width: 23px;
+	height: 25px;
+	left: 970px;
+	top: 5450px;
+	
+	background: url(/static/images/Group2.png);
+}
+
+.contact{
+	position: absolute;
+	width: 307px;
+	height: 105px;
+	left: 832px;
+	top: 5500px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 163.84%;
+	/* identical to box height, or 105px */
+
+	text-align: right;
+
+	color: rgba(78, 98, 52, 0.7);
+}
+
+.contact2{
+	position: absolute;
+	width: 641px;
+	height: 39px;
+	left: 707px;
+	top: 5610px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 163.84%;
+	/* or 39px */
+	
+	text-align: center;
+	
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.banner6{
+	position: absolute;
+	width: 81%;
+	height: 495px;
+	left: 19%;
+	top: 5800px;
+
+	background: #F4F4F4;
+}
+
+.banner6-image1{
+	position: absolute;
+	width: 460px;
+	height: 495px;
+	left: 0px;
+	top: 0px;
+	
+	background: url(/static/images/image10.png);
+}
+
+.banner6-content1{
+	position: absolute;
+	width: 793px;
+	height: 43px;
+	left: 484px;
+	top: 138px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 133.84%;
+	/* identical to box height, or 43px */
+
+
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.banner6-content2{
+	position: absolute;
+	width: 303px;
+	height: 32px;
+	left: 504px;
+	top: 192px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 133.84%;
+	/* or 32px */
+	
+	
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.banner6-icon1{
+	position: absolute;
+	width: 60px;
+	height: 49px;
+	left: 484px;
+	top: 374px;
+	border-width:0;
+	
+	background: url(/static/images/naver_icon.png);
+}
+
+.banner6-icon2{
+	position: absolute;
+	width: 60px;
+	height: 49px;
+	left: 585px;
+	top: 374px;
+	border-width:0;
+	
+	background: url(/static/images/instagram_icon.png);
+}
+
+.banner6-icon3{
+	position: absolute;
+	width: 60px;
+	height: 49px;
+	left: 687px;
+	top: 374px;
+	border-width:0;
+	
+	background: url(/static/images/facebook_icon.png);
+}
+
+.banner6-icon4{
+	position: absolute;
+	width: 60px;
+	height: 49px;
+	left: 787px;
+	top: 374px;
+	border-width:0;
+	
+	background: url(/static/images/kakao_icon.png);
+}
+
+.banner7{
+	position: absolute;
+	width: 100%;
+	height: 256px;
+	left: 0px;
+	top: 6350px;
+
+	background: #fffef5;
+}
+
+.banner7-qrFrame{
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 167px;
+	height: 167px;
+	left: 519px;
+	top: 57px;
+	
+	border: 6px solid #FFEB3B;
+	background: url(/static/images/sampleQRcode.png);
+}
+
+.banner7-icon1{
+	position: absolute;
+	width: 65px;
+	height: 50px;
+	left: 704px;
+	top: 42px;
+	
+	background: url(/static/images/kakao_icon2.png);
+}
+
+.banner7-icon2{
+	position: absolute;
+	width: 49px;
+	height: 95px;
+	left: 814px;
+	top: 73px;
+	
+	background: url(/static/images/qr2.png);
+}
+
+.banner7-content1{
+	position: absolute;
+	width: 622px;
+	height: 37px;
+	left: 884px;
+	top: 73px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 133.84%;
+	/* or 37px */
+
+
+	color: #839171;
+}
+
+.banner7-content2{
+	position: absolute;
+	width: 512px;
+	height: 62px;
+	left: 884px;
+	top: 130px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 155.84%;
+	/* or 31px */
+	
+	
+	color: rgba(0, 0, 0, 0.75);
+}
+
+.blank-vertical1{
+	position: absolute;
+	width: 0px;
+	height: 175px;
+	left: 981px;
+	top: 6700px;
+	
+	border: 1px solid #C4C4C4;
+}
+
+.blank-vertical2{
+	position: absolute;
+	width: 0px;
+	height: 77px;
+	left: 981px;
+	top: 6870px;
+	
+	border: 1px solid #000000;
+}
+
+.banner8{
+	position: absolute;
+	width: 100%;
+	height: 1080px;
+	left: 0px;
+	top: 6948px;
+	
+	background: #FFFFFF;
+}
+
+.banner8-bar1{
+	position: absolute;
+	width: 960px;
+	height: 66px;
+	left: 0px;
+	top: 0px;
+	
+	background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.banner8-bar2{
+	position: absolute;
+	width: 960px;
+	height: 66px;
+	left: 960px;
+	top: 0px;
+	
+	background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+	transform: rotate(-180deg);
+}
+
+.banner8-bar-content{
+	position: absolute;
+	width: 279px;
+	height: 52px;
+	left: 840px;
+	top: 7px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 163.84%;
+	/* or 52px */
+	
+	text-align: center;
+	
+	color: #FFFFFF;
+}
+
+.banner8-form-name{
+	position: absolute;
+	width: 48px;
+	height: 37px;
+	left: 375px;
+	top: 166px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 155.84%;
+	/* or 37px */
+	color: #839171;
+}
+
+.banner8-form-email{
+	position: absolute;
+	width: 72px;
+	height: 37px;
+	left: 375px;
+	top: 307px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 155.84%;
+	/* or 37px */
+	
+	
+	color: #839171;
+}
+
+.banner8-form-phone{
+	position: absolute;
+	width: 120px;
+	height: 37px;
+	left: 375px;
+	top: 448px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 155.84%;
+	/* or 37px */
+	
+	
+	color: #839171;
+}
+
+.banner8-form-content{
+	position: absolute;
+	width: 48px;
+	height: 37px;
+	left: 375px;
+	top: 589px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 155.84%;
+	/* or 37px */
+	
+	
+	color: #839171;
+}
+
+.banner8-input-name,
+.banner8-input-email,
+.banner8-input-phone{
+	height:37px;
+	width: 1031px;
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 155.84%;
+	/* or 37px */
+	border-width: 0;
+
+
+	color: rgba(150, 150, 150, 0.75);
+}
+
+.banner8-input-name{
+	position: absolute;
+	left: 515px;
+	top: 166px;
+}
+
+.banner8-input-email{
+	position: absolute;
+	left: 515px;
+	top: 307px;
+}
+
+.banner8-input-phone{
+	position: absolute;
+	left: 515px;
+	top: 448px;
+}
+
+.banner8-input-content{
+	height:272px;
+	width: 1031px;
+	position: absolute;
+	left: 515px;
+	top: 589px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 155.84%;
+	/* or 37px */
+	border-width: 0;
+}
+
+.banner8-input-checkbox{
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	left: 372px;
+	top: 927px;
+	
+	border: 1px solid #B0B0B0;
+}
+
+.banner8-hr1,
+.banner8-hr2,
+.banner8-hr3{
+	width: 1174px;
+	height: 0px;
+
+	border: 0.5px solid #000000;
+}
+
+.banner8-hr1{
+	position: absolute;
+	left: 372px;
+	top: 203px;
+}
+
+.banner8-hr2{
+	position: absolute;
+	left: 372px;
+	top: 344px;
+}
+
+.banner8-hr3{
+	position: absolute;
+	left: 372px;
+	top: 485px;
+}
+
+.banner8-hr4{
+	position: absolute;
+	width: 1174px;
+	height: 0px;
+	left: 372px;
+	top: 898px;
+	
+	border: 0.5px solid #000000;
+}
+
+.banner8-checkbox-content{
+	position: absolute;
+	width: 275px;
+	height: 25px;
+	left: 396px;
+	top: 922px;
+	
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 155.84%;
+	/* identical to box height, or 25px */
+	
+	
+	color: rgba(150, 150, 150, 0.75);
+}
+
+.banner8-submit-btn{
+	position: absolute;
+	width: 224px;
+	height: 62px;
+	left: 1328px;
+	top: 925px;
+	
+	background: #839171;
+	border-radius: 15px;
+}
+
+.banner8-btn-icon{
+	position: absolute;
+	width: 84px;
+	height: 48px;
+	left: 70px;
+	top: 7px;
+	
+	background: url(/static/images/send_icon.png);
+}
+
+
+
+
 
 @media screen and (max-width: 800px) {
-	.ddd{
-		left:0%;
-	}
-
-	.font-color1{
-		color:#D8F5B4
-	}
-
 	.banner2{
-		font-size: 4vw;
 		color: #FFFFFF;
 		line-height: 20px;
 		background: url(/static/images/image4.png);
@@ -331,5 +1445,5 @@ body{
 		top:40%;
 
 	}
-	
+
 }
