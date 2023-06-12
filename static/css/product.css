@@ -1,0 +1,604 @@
+:root {
+  --vw: 1;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Pretendard';
+}
+
+.vector23 {
+    position: absolute;
+    width: 0px;
+    height: 230px;
+    left: 50%;
+    top: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.vector24 {
+    position: absolute;
+    width: 0px;
+    height: 56px;
+    left: 50%;
+    top: 244px;
+    border: 1px solid #000000;
+}
+
+.vector25 {
+    position: absolute;
+    width: 0px;
+    height: 230px;
+    left: 50%;
+    top: 1150px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    /*transform: rotate(-180deg);*/
+}
+
+.vector26 {
+    position: absolute;
+    width: 0px;
+    height: 56px;
+    left: 50%;
+    top: 1150px;
+    border: 1px solid #000000;
+    /*transform: rotate(-180deg);*/
+}
+
+.product_img1 {
+    position: absolute;
+    width: 100%;
+    height: 733px;
+    left: 0px;
+    top: 394px;
+    background: url(/static/images/image21.png) no-repeat;
+    background-size: cover;
+
+}
+
+.product_content1 {
+    position: absolute;
+    width: auto;
+    height: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 347px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.945em;
+
+    color: #000000;
+}
+
+.product_content2 {
+    position: absolute;
+    width: auto;
+    height: 182px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 290px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.product_content3 {
+    position: absolute;
+    width: auto;
+    height: 182px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 380px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 2.12em;
+
+}
+
+.product_content4 {
+    position: absolute;
+    width: auto;
+    height: 86px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1380px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 173.84%;
+    /* or 70px */
+
+    text-align: center;
+    letter-spacing: 0.015em;
+
+    color: #4E6234;
+}
+
+.product_content5 {
+    position: absolute;
+    width: auto;
+    height: 86px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1440px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 173.84%;
+    /* or 70px */
+
+    text-align: center;
+    letter-spacing: 1.015em;
+
+    color: #4E6234;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.rectangle20 {
+    position: absolute;
+    width: 50%;
+    height: 66px;
+    right: 50%;
+    top: 1490px;
+    background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.rectangle21 {
+    position: absolute;
+    width: 50%;
+    height: 66px;
+    left: 50%;
+    top: 1490px;
+
+    background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(-180deg);
+}
+
+.product_content6 {
+    position: absolute;
+    width: 56px;
+    height: 25px;
+    /*left: 50%;*/
+    transform: translateX(-50%);
+    top: 1110px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 163.84%;
+    /* identical to box height, or 25px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.vector11 {
+    position: absolute;
+    width: 158px;
+    height: 0px;
+    transform: translateX(-50%);
+    top: 1106px;
+    border: 2px solid #FFFFFF;
+}
+
+
+.product_img2 {
+    position: absolute;
+    width: 100%;
+    height: 986px;
+    left: 0px;
+    top: 1553px;
+    background: url(/static/images/image23.png) no-repeat;
+    background-size: cover;
+}
+.product_content7 {
+    position: absolute;
+    width: 1061px;
+    height: 79px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 163.84%;
+    /* identical to box height, or 79px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.product_img3 {
+    position: absolute;
+    width: 236px;
+    height: 211px;
+    left: 23.80%;
+    top: 345px;
+    background: url(/static/images/컨테이너타입.png);
+}
+.product_img4 {
+    position: absolute;
+    width: 237px;
+    height: 211px;
+    left: 37.14%;
+    top: 345px;
+    background: url(/static/images/주거복합형.png);
+}
+.product_img5 {
+    position: absolute;
+    width: 237px;
+    height: 211px;
+    left: 50.52%;
+    top: 345px;
+
+    background: url(/static/images/컨설팅.png);
+}
+.product_img6 {
+    position: absolute;
+    width: 236px;
+    height: 211px;
+    left: 63.91%;
+    top: 345px;
+
+    background: url(/static/images/운영.png);
+}
+
+.product_content8 {
+    position: absolute;
+    width: auto;
+    height: 39px;
+    top: 583px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 163.84%;
+    /* or 39px */
+    text-align: center;
+    color: #95C05D;
+}
+
+.product_content9 {
+    position: absolute;
+    width: auto;
+    height: 78px;
+    top: 636px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 163.84%;
+    /* or 39px */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.product_img7 {
+    position: absolute;
+    width: 100%;
+    height: 1039px;
+    left: 0px;
+    top: 2903px;
+
+    background: url(/static/images/image24.png);
+}
+
+.product_content10 {
+    position: absolute;
+    width: 537px;
+    height: 260px;
+    left: calc(50% - 537px / 2 - 319.5px);
+    top: 661px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 163.84%;
+    /* or 52px */
+    color: #FFFFFF;
+}
+
+.product_img8 {
+    position: absolute;
+    width: 338px;
+    height: 301px;
+    left: 17.03%;
+    top: 4349px;
+    background: url(/static/images/시스템2.png);
+}
+
+.product_img9 {
+    position: absolute;
+    width: 338px;
+    height: 301px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4349px;
+    background: url(/static/images/가공식품2.png);
+}
+
+.product_img10 {
+    position: absolute;
+    width: 338px;
+    height: 301px;
+    left: 65.47%;
+    top: 4349px;
+    background: url(/static/images/검토1.png);
+}
+
+.vector44 {
+    position: absolute;
+    width: 95px;
+    height: 175px;
+    top: 4408.5px;
+    background: url(/static/images/Vector44.png) no-repeat;
+}
+
+.product_content11 {
+    position: absolute;
+    width: 398px;
+    height: 39px;
+    top: 4695px;
+    /*transform: translateX(-50%);*/
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 163.84%;
+    text-align: center;
+
+    color: #000000;
+}
+
+.product_content12 {
+    position: absolute;
+    width: 398px;
+    height: 117px;
+    left: 347px;
+    top: 4750px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 163.84%;
+    /* or 39px */
+
+    color: #000000;
+}
+
+.product_img11 {
+    position: absolute;
+    width: 398px;
+    height: 311px;
+    left: 18.96%;
+    top: 5310px;
+
+    background: url(/static/images/image25.png) no-repeat;
+}
+
+.product_img12 {
+    position: absolute;
+    width: 398px;
+    height: 311px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5310px;
+     background: url(/static/images/image26.png) no-repeat;
+}
+
+.product_img13 {
+    position: absolute;
+    width: 398px;
+    height: 311px;
+    right: 18.96%;
+    top: 5310px;
+    background: url(/static/images/image27.png) no-repeat;
+}
+
+.product_img14 {
+    position: absolute;
+    width: 398px;
+    height: 311px;
+    left: 18.96%;
+    top: 5799px;
+    background: url(/static/images/image28.png) no-repeat;
+}
+
+.product_img15 {
+    position: absolute;
+    width: 398px;
+    height: 311px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5799px;
+    background: url(/static/images/image29.png) no-repeat;
+}
+
+.product_img16 {
+    position: absolute;
+    width: 398px;
+    height: 311px;
+    right: 18.96%;
+    top: 5799px;
+    background: url(/static/images/image30.png) no-repeat;
+}
+
+.product_content13 {
+    position: absolute;
+    width: auto;
+    height: 28px;
+    top: 5637px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /*text-align: center;*/
+
+    color: #4E6234;
+}
+
+.product_content14 {
+    position: absolute;
+    width: auto;
+    height: 19px;
+    top: 5674px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    color: #363636;
+}
+
+.product_button1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 218px;
+    height: 52px;
+    top: 5707px;
+    border: 3px solid #4E6234;
+    border-radius: 12px;
+
+}
+
+.product_button2 {
+    position: absolute;
+    width: auto;
+    height: 30px;
+    left: 35px;
+    top: 11px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 147.84%;
+    /* identical to box height, or 30px */
+    text-align: center;
+    color: #4E6234;
+}
+
+
+
+
+
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 271px;
+    left: 0px;
+    top: 6494px;
+    background: #4E6234;
+}
+
+.footer-content1 {
+    position: absolute;
+    width: 60px;
+    height: 150px;
+    left: 19.5%;
+    top: 85px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    /* or 25px */
+    color: #FFFFFF;
+}
+
+.footer-content2 {
+    position: absolute;
+    width: 488px;
+    height: 150px;
+    left: 30%;
+    top: 85px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    /* or 25px */
+
+    color: #FFFFFF;
+}
+
+.footer-content3 {
+    position: absolute;
+    width: auto;
+    height: 25px;
+    left: 70%;
+    top: 214px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    /* identical to box height, or 25px */
+
+    color: #FFFFFF;
+}
+
+.direction1 {
+    position: absolute;
+    width: 46px;
+    height: 52px;
+    left: 80%;
+    top: 84px;
+
+    background: url(/static/images/direction1.png) no-repeat;
+}
+
