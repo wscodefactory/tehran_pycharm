@@ -6,158 +6,11 @@ body{
 	user-select:none;
 }
 
-#navBar {
-/* Rectangle 16 */
-position: relative;
-width: 1920px;
-height: 70px;
-left: 0px;
-top: 0px;
-
-background: #4E6234;
-}
-
-#title {
-	position: relative;
-	height: 200px;
-}
-
 #wrapper {
 	position: relative;
-	height: 712px;
-}
-
-#footerSections {
-	position: relative;
-	height: 184px;
-}
-
-#bottomBar {
-	position: relative;
-	height: 48px;
-}
-
-#layout {
-	position: absolute;
-	width: 1920px;
-	height: 1080px;
-	left: 0px;
-	top: 0px;
-}
-
-#logo {
-	position: absolute;
-	width: 109px;
-	height: 38px;
-	left: 72px;
-	top: 16px;
-
-	font-family: 'Pretendard';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 27px;
-	line-height: 32px;
-	color: #FFFFFF;
-	background: url(/static/images/TEHRANlogo.png) no-repeat;
-}
-
-.link1 {
-	position: absolute;
-	width: 75px;
-	height: 24px;
-	left: 604px;
-	top: 23px;
-
-	font-family: 'Pretendard';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 17px;
-	line-height: 24px;
-	/* identical to box height */
-
-
-	color: #FFFFFF;
-}
-
-.link2 {
-	position: absolute;
-	width: 75px;
-	height: 24px;
-	left: 769px;
-	top: 23px;
-
-	font-family: 'Pretendard';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 17px;
-	line-height: 24px;
-	/* identical to box height */
-
-
-	color: #FFFFFF;
-}
-
-.link3 {
-	position: absolute;
-	width: 52px;
-	height: 24px;
-	left: 934px;
-	top: 23px;
-
-	font-family: 'Pretendard';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 17px;
-	line-height: 24px;
-	/* identical to box height */
-
-
-	color: #FFFFFF;
-}
-
-.link4 {
-	position: absolute;
-	width: 75px;
-	height: 24px;
-	left: 1076px;
-	top: 23px;
-
-	font-family: 'Pretendard';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 17px;
-	line-height: 24px;
-	/* identical to box height */
-
-
-	color: #FFFFFF;
-}
-
-.link5 {
-	position: absolute;
-	width: 75px;
-	height: 24px;
-	left: 1241px;
-	top: 23px;
-
-	font-family: 'Pretendard';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 17px;
-	line-height: 24px;
-	/* identical to box height */
-
-
-	color: #FFFFFF;
-}
-#signIn {
-	position: absolute;
-	width: 27px;
-	height: 27px;
-	left: 1734px;
-	top: 24px;
-
-	background: url(/static/images/login1.png);
+	height: 100vh;
+	width: 100%;
+	background: url(/static/images/background1.jpg);
 }
 
 #title {
@@ -165,22 +18,27 @@ background: #4E6234;
 }
 
 
-#wrapper {
-	background: url(/static/images/background1.jpg);
-}
-
-#overlay {
+.overlay {
   position: absolute;
-  top: 70px;
+  top: 7.4%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay2{
+	position: absolute;
+	top: 0%;
+	left: 0;
+	width: 100%;
+	height: 33.3vh;
+	background-color: rgba(255, 255, 255, 0.83);
 }
 
 #TEHRAN {
 	position: absolute;
-	width: 1909px;
+	width: 100%;
 	height: 568px;
 	left: -6px;
 	top: 148px;
@@ -188,7 +46,7 @@ background: #4E6234;
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 476px;
+	font-size: 24.79vw;
 	line-height: 568px;
 	/* identical to box height */
 
@@ -198,23 +56,69 @@ background: #4E6234;
 
 #ddd{
 	/* SMART FARM CONTAINER */
+	position: absolute;
+	width: 100%;
+	height: 158px;
+	left: 19%;
+	top: 67vh;
+	text-align: left;
+}
 
 
-position: absolute;
-width: 1000px;
-height: 176px;
-left: 372px;
-top: 601px;
+.flex-container {
+	display: flex;
+	align-items: center; /* 요소들을 수직으로 가운데 정렬 */
+}
 
-font-family: 'Pretendard';
-font-style: normal;
-font-weight: 700;
-font-size: 90px;
-line-height: 88px;
-text-align: center;
-letter-spacing: 0.025em;
+.content1{
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 4.7vw;
+	line-height: 88px;
+	text-align: center;
+	letter-spacing: 0.025em;
+	color: #FFFFFF;
+}
 
-color: #FFFFFF;
+.content2{
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 4.7vw;
+	line-height: 88px;
+	text-align: center;
+	letter-spacing: 0.13em;
+	color: #95C05D;
+}
+
+.content3{
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.25vw;
+	line-height: 29px;
+
+	color: #FFFFFF;
+}
+
+.content4{
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.04vw;
+	line-height: 24px;
+
+	color: #FFFFFF;
+}
+
+.vertical-line {
+	border-left: 4px solid white;
+	height: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 15px;
+
 }
 
 .sectionName {
@@ -240,3 +144,102 @@ color: #FFFFFF;
 	bottom: 2px;
 }
 
+.blank{
+	width: 100%;
+	height: 26.6vh;
+}
+
+.Group2{
+	position: relative;
+	width: 21px;
+	height: 25px;
+	left: 49.42%;
+	margin-top: 200px;
+
+	background: url(/static/images/Group2.png);
+}
+
+.banner1{
+	position: absolute;
+	width: 100%;
+	height: 33.3vh;
+	left: 0px;
+
+
+	background: url(/static/images/image2.png);
+}
+
+.banner1-content1{
+	display: flex;
+	position: absolute;
+	width: 22%;
+	height: 5.27%;
+	left: 41%;
+	top: 30%;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-size: 2.5vw;
+	line-height: 57px;
+	text-align: center;
+	color: #282828;
+}
+
+.banner1-content2{
+	position: absolute;
+	width: 31%;
+	height: 5.3%;
+	left: 36%;
+	top: 55%;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25vw;
+	line-height: 29px;
+	text-align: center;
+	color: #282828;
+}
+
+.font-color1{
+	color: #4E6234;
+	font-weight: 700;
+}
+
+.banner2{
+	position: absolute;
+	width: 100%;
+	height: 66.75%;
+	top: 185%;
+
+	background: url(/static/images/image5.png);
+	transform: matrix(1, 0, 0, 1, 0, 0);
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.875vw;
+	line-height: 53px;
+	text-align: right;
+
+	color: #313131;
+}
+
+.banner2-content1{
+	position: absolute;
+	width: 19%;
+	height: 14.7%;
+	left: 30%;
+	top: 19%;
+}
+
+.banner2-content1-flex{
+	display:flex
+}
+
+@media screen and (max-width: 412px) {
+	#ddd{
+		left:0%;
+	}
+	
+}

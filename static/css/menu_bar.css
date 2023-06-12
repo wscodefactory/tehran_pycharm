@@ -1,0 +1,249 @@
+#navBar {
+    /* Rectangle 16 */
+    position: relative;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    
+    background: #4E6234;
+	z-index: 1;
+}
+
+#title {
+	background: black;
+    position: relative;
+	height: 200px;
+}
+
+#logo {
+	position: absolute;
+	width: 109px;
+	height: 38px;
+	left: 3.75%;
+	top: 16px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 27px;
+	line-height: 32px;
+	color: #FFFFFF;
+	background: url(/static/images/TEHRANlogo.png) no-repeat;
+}
+
+.link1 {
+	position: absolute;
+	width: 97px;
+	height: 24px;
+	left: 31.458%;
+	top: 23px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+}
+
+.link2 {
+	position: absolute;
+	width: 97px;
+	height: 24px;
+	left: 40.05%;
+	top: 23px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+}
+
+.link3 {
+	position: absolute;
+	width: 97px;
+	height: 24px;
+	left: 48.64%;
+	top: 23px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+}
+
+.link4 {
+	position: absolute;
+	width: 97px;
+	height: 24px;
+	left: 56.54%;
+	top: 23px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+}
+
+.link5 {
+	position: absolute;
+	width: 97px;
+	height: 24px;
+	left: 64.63%;
+	top: 23px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+}
+
+.link1:hover .link-menu,
+.link2:hover .link-menu,
+.link3:hover .link-menu,
+.link4:hover .link-menu,
+.link5:hover .link-menu {
+	display: block;
+}
+
+.link-menu {
+	position: absolute;
+	width: 130px;
+	top: 100%;
+	left: -20%;
+	margin-top:0px;
+	display: none;
+	background-color: #4E6234;
+	padding: 2px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#signIn {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 90.3125%;
+	top: 24px;
+
+	background: url(/static/images/login1.png);
+}
+
+#langicon {
+
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	left: 92.8125%;
+	top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: url(/static/images/langicon.png);
+  }
+
+  .language{
+	position: absolute;
+	width: 50px;
+	height: 19px;
+	left: 94.0625%;
+	top: 20px;
+
+	font-family: 'Pretendard';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 19px;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+  }
+
+  .language:hover .language-menu {
+	display: block;
+  }
+  
+  .language-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 70px;
+	display: none;
+	background-color: #4E6234;
+	padding: 2px;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 8px;
+  }
+  
+  .language-menu div {
+	margin-top: 8px;
+	cursor: pointer;
+  }
+
+  .mobile-menu{
+	position: absolute;
+	display: none;
+	left: 92.8125%;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+	#navBar {
+	  justify-content: flex-end;
+	}
+  
+	.link1,
+	.link2,
+	.link3,
+	.link4,
+	.link5,
+	.language,
+	#signIn {
+	  display: none;
+	}
+	
+  
+	#langicon {
+	  display: block;
+	  margin-left: auto;
+
+	  background: url(/static/images/Group2.png);
+	}
+
+	.mobile-menu{
+		display: block;
+	}
+	
+  }
