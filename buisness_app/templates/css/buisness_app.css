@@ -1,0 +1,287 @@
+#FristLine {
+    text-align: center;
+    color: #4E6234;
+    font-size: 24px;
+    letter-spacing: 20px;
+}
+
+#BusinessArea h1 {
+    display: inline;
+    font-size: 30px;
+}
+
+#BusinessArea p {
+    letter-spacing: 40px;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+#Gradation {
+    text-align: center;
+    padding-left: 0%;
+}
+
+#SmartfarmContainel {
+    letter-spacing: 12px;
+    color: #95C05D;
+}
+
+#AdvantageImg{
+    height: 100%;
+    max-height: 600px;
+}
+
+#AdvantageItem h1 {
+    color: #95C05D;
+    display: inline;
+}
+
+#SeriesItem {
+    text-align: center;
+}
+
+#SeriesItem h1 {
+    display: inline;
+}
+
+#SeriesItem p {
+    padding-top: 3%;
+    font-size: 18px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.img-item {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 35%;
+    margin: auto;
+    z-index: 1;
+}
+
+.scroll-menu {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+}
+
+.scroll-menu img {
+    float: left;
+    width: 50%;
+    height: 66px;
+}
+
+.scroll-part {
+    color: #4E6234;
+    width: 100%;
+}
+
+.float-left_container {
+    width: 70%;
+}
+
+.float-left_img {
+    float: left;
+    padding-right: 5%;
+}
+
+.float-left_div p {
+    padding-top: 5%;
+    display: inline;
+}
+
+.advantage-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.advantage-container div {
+    float: left;
+    width: 16%;
+    text-align: center;
+}
+
+.advantage-container img {
+    width: 150px;
+    height: 150px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.advantage-container p {
+    color: #95C05D;
+    font-weight: bold;
+}
+
+/* Scroll Animation (sa, 스크롤 애니메이션) */
+.sa {
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+/* 아래에서 위로 페이드 인 */
+.sa-up {
+    transform: translate(0, 100px);
+}
+
+.sa.show {
+    opacity: 1;
+    transform: none;
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+    #HeadDiv{
+        padding-top: 50%;
+    }
+    #FristLine {
+        font-size: 15px;
+        letter-spacing: 10px;
+    }
+
+    #BusinessArea p {
+        letter-spacing: 50px;
+        font-size: 15px;
+        margin-left: 50px;
+    }
+
+    #Gradation {
+        font-size: 2px;
+    }
+
+    #Gradation li {
+        margin: 0px 7px;
+    }
+
+    #SmartfarmContainel {
+        letter-spacing: 6px;
+    }
+
+    #AdvantageImg {
+        content: url(../images/buisness_app\ 4\ col.jpg);
+        height: 100%;
+    }
+
+    #AdvantageItem {
+        top: 5%;
+    }
+
+    #AdvantageItem h1 {
+        display: block;
+        font-size: 25px;
+    }
+
+    #SeriesImg {
+        content: url(../images/buisness_app\ 5\ col.jpg);
+        height: 100%;
+    }
+
+    #SeriesItem {
+        top: 5%;
+        text-align: start;
+        padding: 10%;
+    }
+
+    #SeriesItem h1 {
+        display: block;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    #SeriesItem p {
+        margin-top: 10%;
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 10%;
+    }
+
+    #SeriesItem br {
+        display: none !important;
+    }
+
+    .img-container img {
+        height: 220px;
+    }
+
+    .scroll-part h1 {
+        font-size: 25px;
+    }
+
+    .scroll-part p {
+        font-size: 10px;
+    }
+
+    .scroll-menu img {
+        height: 37px;
+    }
+
+    .img-item h2 {
+        font-size: 12px;
+    }
+
+    .float-left_container {
+        width: 100%;
+    }
+
+    .float-left_img {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .float-left_div {
+        height: 1000px;
+        max-height: 1200px;
+        padding: 15%;
+        background-color: #2C2C2C;
+        text-align: center;
+    }
+
+    .float-left_div h3 {
+        color: #95C05D;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 10%;
+    }
+
+    .float-left_div p {
+        color: white;
+        display: block;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .float-left_div #L1 {
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
+
+    .float-left_div br {
+        display: none !important;
+    }
+
+    .advantage-container div {
+        width: 33%;
+    }
+
+    .advantage-container img {
+        width: 86px;
+        height: 68px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+}

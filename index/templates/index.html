@@ -10,26 +10,159 @@
 </head>
 
 <body>
-  <div id="layout">
-    <div id="navBar">
-      <div id="logo"></div>
-      <div id="menu">
-        <a class="link1">회사 소개</a>
-        <a class="link2">사업 영역</a>
-        <a class="link3">게시판</a>
-        <a class="link4">제품 소개</a>
-        <a class="link5">고객 지원</a>
+  {% include "menu_bar.html" %}
+  <div class="wrapper">
+    <div class="overlay">
+      <div class="TEHRAN">TEHRAN</div>
+      <div class="TEH">TEH</div>
+      <div class="RAN">RAN</div>
+      <div class="flex-container">
+        <div class="mobile-smart-farm">
+          <span class="content1">SMART FARM</span> <br>
+          <span class="content2">CONTAINER</span>
+        </div>
+        <div class="vertical-line"></div>
+        <div>
+          <div class="content3">미래 혁신을 위한 스마트팜의 선두주자<br>주식회사 테헤란</div><br>
+          <div class="content4">테헤란의 스마트팜 컨테이너로 <br> 편하고 안정된 농사환경과 건강하고 바른 먹거리를 만들어 갑니다.</div>
+        </div> 
       </div>
-      <input type="button" id="signIn" alt="login">
     </div>
-
-    <div id="wrapper"></div>
-    <div id="overlay"></div>
-    <div id="TEHRAN">TEHRAN</div>
-    <div id="ddd">SMART FARM</div>
-
   </div>
+    <div class="blank">
+      <div class="arrow1"></div>
+    </div>
+    <div class="banner1">
+      <div class="banner1-overlay">
+        <div class="banner1-content1"><B  style="color:#4E6234">주식회사 테헤란</B>은</div>
+        <div class="banner1-content2">농업 연구를 통해 더 좋은 작물을 소비자에게 제공하고 <br> 큰 부가가치 창출로 농업의 미래에 기여합니다.</div>
+      </div>
+    </div>
+    <div class="banner2">
+      <div class="banner2-content1">농업의 미래가
+        <div>
+          <div><B  style="color: #839171">우리 먹거리의 미래</B>를</div>
+          만들어 갑니다.
+        </div>
+      </div>
+      <div class="banner2-content2"> 
+        바른 농업 생태계를 만들려는 노력이<br>
+        소비자의 식탁에 긍정적인 영향을 주었습니다.<br>
+        품질 좋은 작물의 연중 일정한 재배량은<br>
+        <B style="color: #839171">소비자에게 깨끗하고 좋은 먹거리를</B><br>
+        <B style="color: #839171">안정적이고 합리적인 가격</B>으로 선사합니다.
+      </div>
+      <div class="banner2-image"></div>
+    </div>
+    <div class="banner3">
+      <div class="banner3-image"></div>
+      <div class="banner3-content1">
+        <B style="color: #95C05D">스마트팜</B>이란 무엇인가요?
+      </div>
+      <hr class="banner3-hr1">
+      <hr class="banner3-hr2">
+      <div class="banner3-content2">
+        스마트팜이란 농업에 정보통신기술(ICT)을 접목하여<br>
+        원격ㆍ자동으로 작물과 가축의 생육환경을<br>
+        적정하게 유지하고 관리할 수 있는<br>
+        지능화된 <span style="color: #95C05D">미래 농업 시스템</span>을 말합니다.
+      </div>
+      <button class="banner3-button1">
+        <span class="banner3-content3">더 자세히 알아보기</span>
+      </button>
+    </div>
+    <div class="banner4">
+      <div class="banner4-overlay">
+        <div class="banner4-content1">주식회사 테헤란은<br>
+          끊임 없이 <span style="color: #95C05D">도전</span>하고 <span style="color: #95C05D">성장</span>합니다.
+        </div>
+        <hr class="banner4-hr1">
+        <hr class="banner4-hr2">
+        <hr class="banner4-hr3">
+        <hr class="banner4-hr4">
+        <div class="banner4-image1"></div>    
+        <div class="banner4-image1-content1">since 2023~</div>
+        <div class="banner4-image1-content2">1주년</div>
+        <div class="banner4-image2"></div>
+        <div class="banner4-image2-content1">2023년 대비 성장 매출</div>
+        <div class="banner4-image2-content2">300억 +</div>
+        <div class="banner4-image3"></div>      
+        <div class="banner4-image3-content1">2023년 누적 투자유치</div>
+        <div class="banner4-image3-content2">250억 +</div>
+        <div class="banner4-image4"></div>
+        <div class="banner4-image4-content1">전국 스마트팜 큐브</div>
+        <div class="banner4-image4-content2">1000동 +</div>
+      </div>
+    </div>
+    <div class="banner5">
+      <div class="banner5-overlay">
+        <div class="banner5-content1">농작물 재배 연구</div>
+        <div class="banner5-content2">스마트팜 컨테이너를 통해 앞서나가는 농법을 연구, 개발하여<br> 우리 농업의 미래 발전에 기여합니다.</div>
+        <button class="banner5-button1"><span class="banner5-button1-content">자세히 보기</span></button>
+      </div>
+      <div class="banner5-bar">
+        <hr class="banner5-bar-line1">
+        <button class="banner5-bar-menu1">사업 분야 소개</button>
+        <hr class="banner5-bar-line2">
+        <button class="banner5-bar-menu2">스마트팜 개발</button>
+        <hr class="banner5-bar-line3">
+        <button class="banner5-bar-menu3">농작물 유통</button>
+        <hr class="banner5-bar-line4">
+        <button class="banner5-bar-menu4">상품 가공 & 개발</button>
+        <hr class="banner5-bar-line5">
+        <button class="banner5-bar-menu5">농작물 재배 연구</button>
+        <hr class="banner5-bar-line6">
+        <button class="banner5-bar-menu6">해외 수출</button>
+      </div>
+    </div>
+    <div class="arrow2"></div>
+    <div class="contact">CONTACT</div>
+    <div class="contact2">문의 사항을 남겨주시면 빠른 시일 내에 답변 드리겠습니다.</div>
+    <div class="banner6">
+      <div class="banner6-image1"></div>
+      <div class="banner6-content1">"SNS를 통해 테헤란과 더 가깝고 친근하게 소통하세요"</div>
+      <div class="banner6-content2">테헤란 인스타그램 <span style="color: rgba(104, 104, 104, 0.7)">@tehran</span></div>
+      <button class="banner6-icon1"></button>
+      <button class="banner6-icon2"></button>
+      <button class="banner6-icon3"></button>
+      <button class="banner6-icon4"></button>
+    </div>
+    <div class="banner7">
+      <div class="banner7-qrFrame"></div>
+      <div class="banner7-icon1"></div>
+      <div class="banner7-icon2"></div>
+      <div class="banner7-content1">QR코드를 통해 테헤란 카카오톡 채널로 연결하기</div>
+      <div class="banner7-content2">휴대폰 카메라로 좌측의 QR코드를 스캔하시면<br>
+        (주)테헤란과 카카오톡 상담이 가능한 채널로 연결됩니다. </div>
+    </div>
+    <div class="blank-vertical1"></div>
+    <div class="blank-vertical2"></div>
+    <div class="banner8">
+      <div class="banner8-bar1"></div>
+      <div class="banner8-bar2"></div>
+      <div class="banner8-bar-content">문의 메세지 남기기</div>
+      <form method="post" action="">
+        <div class="banner8-form-name">이름</div>
+        <input type="text" class="banner8-input-name" name="name" placeholder="홍길동">
+        <hr class="banner8-hr1">
 
+        <div class="banner8-form-email">이메일</div>
+        <input type="text" class="banner8-input-email" name="email" placeholder="tehran@tehran.com">
+        <hr class="banner8-hr2">
+
+        <div class="banner8-form-phone">휴대폰번호</div>
+        <input type="text" class="banner8-input-phone" name="phone" placeholder="010-1234-5678">
+        <hr class="banner8-hr3">
+
+        <div class="banner8-form-content">내용</div>
+        <textarea type="text" class="banner8-input-content" name="content" placeholder="내용을 작성하여 주세요."></textarea>
+        <hr class="banner8-hr4">
+
+        <input type="checkbox" class="banner8-input-checkbox" name="checkbox"> 
+        <div class="banner8-checkbox-content">개인정보 수집 및 이용 동의/약관 보기</div>
+        <button class="banner8-submit-btn"><span class="banner8-btn-icon"></span></button>
+      </form>
+    </div>
 </body>
 
 </html>
