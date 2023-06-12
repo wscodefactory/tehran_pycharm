@@ -1,1 +1,923 @@
 
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Pretendard';
+}
+
+.vector23 {
+    position: absolute;
+    width: 0px;
+    height: 230px;
+    left: 50%;
+    top: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.vector24 {
+    position: absolute;
+    width: 0px;
+    height: 56px;
+    left: 50%;
+    top: 244px;
+    border: 1px solid #000000;
+}
+
+.vector25 {
+    position: absolute;
+    width: 0px;
+    height: 230px;
+    left: 50%;
+    top: 1203px;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transform: rotate(-180deg);
+}
+
+.vector26 {
+    position: absolute;
+    width: 0px;
+    height: 56px;
+    left: 50%;
+    top: 1203px;
+
+    border: 1px solid #000000;
+    transform: rotate(-180deg);
+}
+
+.image12 {
+    position: absolute;
+    width: 100%;
+    height: 733px;
+    left: 0px;
+    top: 394px;
+    background: url(/static/images/image12.png) no-repeat;
+    background-size: cover;
+
+}
+
+.company_content1 {
+    position: absolute;
+    width: auto;
+    height: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 347px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.945em;
+
+    color: #000000;
+}
+
+.company_content2 {
+    display: inline-block;
+    position: absolute;
+    width: auto;
+    height: 182px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 276px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.company_content2-1 {
+    position: absolute;
+    width: auto;
+    height: 76px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 119px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: 0.96em;
+    color: #95C05D;
+}
+
+.company_content3 {
+    position: absolute;
+    width: auto;
+    height: 182px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 380px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.company_content4 {
+    position: absolute;
+    width: auto;
+    height: 86px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1477px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 173.84%;
+    /* or 70px */
+
+    text-align: center;
+    letter-spacing: 0.015em;
+
+    color: #4E6234;
+}
+
+.company_content5 {
+    position: absolute;
+    width: auto;
+    height: 86px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1530px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 173.84%;
+    /* or 70px */
+
+    text-align: center;
+    letter-spacing: 1.015em;
+
+    color: #4E6234;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.rectangle20 {
+    position: absolute;
+    width: 50%;
+    height: 66px;
+    right: 50%;
+    top: 1580px;
+    background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.rectangle21 {
+    position: absolute;
+    width: 50%;
+    height: 66px;
+    left: 50%;
+    top: 1580px;
+
+    background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(-180deg);
+}
+
+.company_content6 {
+    position: absolute;
+    width: auto;
+    height: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1590px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 147.34%;
+    /* or 47px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+
+.image13 {
+    position: absolute;
+    width: 530px;
+    height: 299px;
+    left: 35%;
+    transform: translateX(-50%);
+    top: 1700px;
+
+    background: url(/static/images/image13.png) no-repeat;
+}
+.company_content7 {
+    position: absolute;
+    width: 613px;
+    height: 62px;
+    left: 65%;
+    transform: translateX(-50%);
+    top: 1690px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 230.84%;
+    /* or 46px */
+
+    letter-spacing: -0.07em;
+    color: #000000;
+
+}
+
+.vector28 {
+    position: absolute;
+    width: 61.5px;
+    height: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2110px;
+
+    border: 2px solid #000000;
+
+}
+
+.company_content8 {
+    position: absolute;
+    width: auto;
+    height: 86px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2140px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 173.84%;
+    /* or 70px */
+
+    text-align: center;
+    letter-spacing: 0.015em;
+
+    color: #4E6234;
+}
+
+.company_content9 {
+    position: absolute;
+    width: auto;
+    height: 86px;
+    left: 50%;
+    transform: translateX(-43%);
+    top: 2200px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 173.84%;
+    /* or 70px */
+
+    text-align: center;
+    letter-spacing: 0.9em;
+
+    color: #4E6234;
+}
+
+.image14 {
+    position: absolute;
+    width: 100%;
+    height: 742px;
+    left: -2px;
+    top: 2246px;
+    background: url(/static/images/image14.png) no-repeat;
+    background-size:cover ;
+
+}
+
+.value {
+    position: absolute;
+    width: 338px;
+    height: 301px;
+    left: 30%;
+    transform: translateX(-50%);
+    top: 223px;
+
+    background-image: url(/static/images/value.png);
+    /*z-index: 1;*/
+}
+
+.mission {
+    position: absolute;
+    width: 338px;
+    height: 301px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 223px;
+
+    background: url(/static/images/mission.png) no-repeat;
+    z-index: 1;
+}
+
+.vision {
+    position: absolute;
+    width: 338px;
+    height: 301px;
+    left: 70%;
+    transform: translateX(-50%);
+    top: 223px;
+
+    background: url(/static/images/vision.png) no-repeat;
+    z-index: 1;
+}
+
+.company_content10 {
+    position: relative;
+    width: 100%;
+    height: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 533px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #95C05D;
+}
+
+.company_content11 {
+    position: absolute;
+    width: auto;
+    height: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 598px;
+    white-space: nowrap;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.rectangle44 {
+    position: absolute;
+    width: 322px;
+    height: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3552px;
+
+    background: #4E6234;
+    border-radius: 10px;
+}
+
+.company_content12 {
+    position: absolute;
+    width: auto;
+    height: 241px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3620px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+
+    letter-spacing: -0.07em;
+    color: #000000;
+}
+
+.company_content13 {
+    position: absolute;
+    width: auto;
+    height: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4315px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 271px;
+    left: 0px;
+    top: 4825px;
+
+    background: #4E6234;
+}
+
+.footer-content1 {
+    position: absolute;
+    width: 60px;
+    height: 150px;
+    left: 19.5%;
+    top: 85px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    /* or 25px */
+    color: #FFFFFF;
+}
+
+.footer-content2 {
+    position: absolute;
+    width: 488px;
+    height: 150px;
+    left: 30%;
+    top: 85px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    /* or 25px */
+
+    color: #FFFFFF;
+}
+
+.footer-content3 {
+    position: absolute;
+    width: auto;
+    height: 25px;
+    left: 70%;
+    top: 214px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    /* identical to box height, or 25px */
+
+    color: #FFFFFF;
+}
+
+.direction1 {
+    position: absolute;
+    width: 46px;
+    height: 52px;
+    left: 80%;
+    top: 84px;
+
+    background: url(/static/images/direction1.png) no-repeat;
+
+}
+
+
+ @media screen and (max-width: 400px) {
+
+     .rectangle20,
+     .rectangle21,
+     .direction1{
+         display: none;
+     }
+
+    .company_content1 {
+        position: absolute;
+        width: 100%;
+        height: 19px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 159px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.945em;
+
+        color: #000000;
+    }
+     .vector23 {
+         position: absolute;
+         width: 0px;
+         height: 230px;
+         left: 195px;
+         top: -137px;
+         border: 1px solid rgba(0, 0, 0, 0.5);
+     }
+
+    .vector24 {
+        position: absolute;
+        width: 0px;
+        height: 56px;
+        left: 195px;
+        top: 82px;
+        border: 1px solid #000000;
+    }
+
+    .image12 {
+        position: absolute;
+        width: 100%;
+        height: 225px;
+        left: -4px;
+        top: 201px;
+        background: url(/static/images/image12.png) no-repeat;
+        background-size: cover;
+    }
+
+    .company_content2 {
+        position: absolute;
+        width: 100%;
+        height: 94px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 71px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .company_content3 {
+        position: absolute;
+        width: auto;
+        height: 182px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 101px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 76px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .vector25 {
+        position: absolute;
+        width: 0px;
+        height: 230px;
+        left: 50%;
+        top: 450px;
+
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        transform: rotate(-180deg);
+
+    }
+    .vector26 {
+        position: absolute;
+        width: 0px;
+        height: 56px;
+        left: 50%;
+        top: 450px;
+
+        border: 1px solid #000000;
+        transform: rotate(-180deg);
+
+    }
+
+    .company_content4 {
+        position: absolute;
+        width: 135px;
+        height: 53px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 700px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 173.84%;
+        /* or 43px */
+        text-align: center;
+        letter-spacing: 0.015em;
+        color: #4E6234;
+    }
+    .company_content5 {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 730px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 15px;
+        line-height: 173.84%;
+        /* or 70px */
+
+        text-align: center;
+        letter-spacing: 1.015em;
+
+        color: #4E6234;
+    }
+
+    .image13 {
+        position: absolute;
+        width: 390px;
+        height: 221px;
+        left: 50%;
+        top: 778px;
+    }
+
+    .company_content6 {
+        position: absolute;
+        width: 280px;
+        height: 69px;
+        left: 50%;
+        top: 843px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 147.34%;
+        /* or 32px */
+
+        text-align: center;
+
+        color: #4E6234;
+        z-index: 1;
+    }
+
+    .rectangle4 {
+        position: absolute;
+        width: 396px;
+        height: 424px;
+        left: -3px;
+        top: 999px;
+        background: #2C2C2C;
+    }
+
+    .company_content7 {
+        position: absolute;
+        width: 365px;
+        height: 308px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1071px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 30px;
+        /* or 200% */
+
+        text-align: center;
+        letter-spacing: -0.07em;
+
+        color: #FFFFFF;
+
+    }
+
+    .vector28 {
+        position: absolute;
+        width: 61.5px;
+        height: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1491px;
+        border: 2px solid #000000;
+    }
+
+    .company_content8{
+        position: absolute;
+        width: 135px;
+        height: 53px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1530px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 173.84%;
+        /* or 43px */
+        text-align: center;
+        letter-spacing: 0.015em;
+        color: #4E6234;
+    }
+    .company_content9 {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1560px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 15px;
+        line-height: 173.84%;
+        /* or 70px */
+        text-align: center;
+        letter-spacing: 1.015em;
+        color: #4E6234;
+
+    }
+
+    .image14 {
+        position: absolute;
+        width: 390px;
+        height: 531px;
+        left: 0px;
+        top: 1616px;
+    }
+
+    .company_content2-1 {
+        position: absolute;
+        width: 277px;
+        height: 24px;
+        top: 35px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.96em;
+        color: #95C05D;
+    }
+
+    .value {
+        position: absolute;
+        width: 119px;
+        height: 106px;
+        left: 25%;
+        top: 98px;
+        background-size: contain;
+    }
+    .mission {
+        position: absolute;
+        width: 119px;
+        height: 106px;
+        left: 25%;
+        top: 230px;
+        background-size: contain;
+    }
+    .vision {
+        position: absolute;
+        width: 119px;
+        height: 106px;
+        left: 25%;
+        top: 362px;
+        background-size: contain;
+    }
+
+    .company_content10 {
+        position: absolute;
+        width: 111px;
+        height: 38px;
+        left: 528px;
+        top: 113px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: #95C05D;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer {
+        position: absolute;
+        width: 100%;
+        height: 321px;
+        left: 0px;
+        top: 3873px;
+        background: #4E6234;
+    }
+
+    .footer-content1 {
+        position: absolute;
+        width: 36px;
+        height: 84px;
+        left: 25px;
+        top: 3966.5px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 155%;
+        /* or 14px */
+        color: #FFFFFF;
+    }
+
+    .footer-content2 {
+        position: absolute;
+        width: 277px;
+        height: 84px;
+        left: 84px;
+        top: 3966.5px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 155%;
+        /* or 14px */
+        color: #FFFFFF;
+    }
+
+    .footer-content3 {
+        position: absolute;
+        width: 84px;
+        height: 11px;
+        left: 84px;
+        top: 4073.5px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7px;
+        line-height: 155%;
+        /* identical to box height, or 11px */
+        color: #FFFFFF;
+    }
+
+    .direction1 {
+        position: absolute;
+        width: 46px;
+        height: 52px;
+        left: 80%;
+        top: 84px;
+        background: url(/static/images/direction1.png) no-repeat;
+
+    }
+
+
+
+ }
