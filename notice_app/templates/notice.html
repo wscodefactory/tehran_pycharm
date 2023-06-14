@@ -1,10 +1,157 @@
+<!-- {% load static %} -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <link rel="stylesheet" href="/static/css/notice_app.css">
+    <link rel="stylesheet" href="/static/css/basic.css">
+    <!-- <link rel="stylesheet" href={% static '/css/notice_app.css' %}> -->
+    <!-- <link rel="stylesheet" href={% static '/css/basic.css' %}> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>공지사항</title>
 </head>
+
 <body>
-게시판
+    <nav class="nav-top">
+        <ul class="text-center">
+            <li><a href="#">테헤란(로고)</a></li>
+            <li>회사 소개</li>
+            <li>사업 영역 소개</li>
+            <li>제품 소개</li>
+            <li>게시판</li>
+            <li>고객 지원</li>
+        </ul>
+    </nav>
+
+    <div class="pt-20p" id="HeadDiv">
+        <!-- NOTICE -->
+        <div class="sa sa-up">
+            <div class="scroll-part text-center pt-10p">
+                <p class="ls-5">NOTICE</p>
+                <h1>공지사항</h1>
+            </div>
+
+            <p class="text-center pt-10p pb-5p ws-5 font-gray" id="TehranNotice">(주) 테헤란의 주요 공지사항 게시판입니다.</p>
+        </div>
+
+        <!-- 공지사항 -->
+        <div class="sa sa-up">
+            <div class="notice-container display-center">
+                <form class="notice-form">
+                    <div class="notice-search pb-3p">
+                        <select>
+                            <option>전체</option>
+                        </select>
+
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div style="clear: both; float: none;"></div>
+                    </div>
+
+                    <div>
+                        <table class="notice-list text-center">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+
+                            <thead>
+                                <tr>
+                                    <th>NO.</th>
+                                    <th>제목</th>
+                                    <th>조회수</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="important-notice">
+                                    <td><i class="fa-solid fa-bullhorn"></i></td>
+                                    <td class="text-left pl-3p">2023.06.05 테헤란 공지사항</td>
+                                    <td>1000</td>
+                                </tr>
+
+                                <tr class="important-notice">
+                                    <td><i class="fa-solid fa-bullhorn"></i></td>
+                                    <td class="text-left pl-3p">2023.06.04 테헤란 공지사항</td>
+                                    <td>900</td>
+                                </tr>
+
+                                <tr class="important-notice">
+                                    <td><i class="fa-solid fa-bullhorn"></i></td>
+                                    <td class="text-left pl-3p">2023.06.03 테헤란 공지사항</td>
+                                    <td>800</td>
+                                </tr>
+
+                                <tr class="important-notice">
+                                    <td><i class="fa-solid fa-bullhorn"></i></td>
+                                    <td class="text-left pl-3p">2023.06.02 테헤란 공지사항</td>
+                                    <td>700</td>
+                                </tr>
+
+                                <tr class="important-notice">
+                                    <td><i class="fa-solid fa-bullhorn"></i></td>
+                                    <td class="text-left pl-3p">2023.06.01 테헤란 공지사항</td>
+                                    <td>600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>5</td>
+                                    <td class="text-left pl-3p">2023.05.31 테헤란 공지사항</td>
+                                    <td>500</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td class="text-left pl-3p">2023.05.30 테헤란 공지사항</td>
+                                    <td>400</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td class="text-left pl-3p">2023.05.29 테헤란 공지사항</td>
+                                    <td>300</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td class="text-left pl-3p">2023.05.28 테헤란 공지사항</td>
+                                    <td>200</td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td class="text-left pl-3p">2023.05.27 테헤란 공지사항</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+
+            <!-- PagiNation -->
+            <nav class="pagination">
+                <ul class="text-center pl-0">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">&lt;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&gt;</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="/static/js/Scroll Fade in Animation.js"></script>
+    <script src="/static/js/FAQ Toggle.js"></script>
 </body>
+
 </html>

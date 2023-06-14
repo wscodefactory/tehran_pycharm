@@ -1,0 +1,440 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+div,
+input,
+textarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+
+    /* 모바일 롱 터치 금지 */
+    -webkit-touch-callout: none;
+
+    /* PC 드래그 금지 */
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+
+    font-family: pretendard;
+}
+
+span {
+    vertical-align: middle;
+}
+
+.display-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.my-10p {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+.mt-1p {
+    margin-top: 1%;
+}
+
+.mt-2p {
+    margin-top: 2%;
+}
+
+.mt-3p {
+    margin-top: 3%;
+}
+
+.mt-4p {
+    margin-top: 4%;
+}
+
+.mt-5p {
+    margin-top: 5%;
+}
+
+.mt-5_3p {
+    margin-top: 5.3%;
+}
+
+.mt-10p {
+    margin-top: 10%;
+}
+
+.mt-15p {
+    margin-top: 15%;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.py-1p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.py-10p {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.pt-0 {
+    padding-top: 0px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pt-1p {
+    padding-top: 1%;
+}
+
+.pt-2p {
+    padding-top: 2%;
+}
+
+.pt-3p {
+    padding-top: 3%;
+}
+
+.pt-4p {
+    padding-top: 4%;
+}
+
+.pt-5p {
+    padding-top: 5%;
+}
+
+.pt-5_3p {
+    padding-top: 5.3%;
+}
+
+.pt-5_5p {
+    padding-top: 5.5%;
+}
+
+.pt-6p {
+    padding-top: 6%;
+}
+
+.pt-7p {
+    padding-top: 7%;
+}
+
+.pt-10p {
+    padding-top: 10%;
+}
+
+.pt-20p {
+    padding-top: 20%;
+}
+
+.pb-0 {
+    padding-bottom: 0px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-1p {
+    padding-bottom: 1%;
+}
+
+.pb-2p {
+    padding-bottom: 2%;
+}
+
+.pb-3p {
+    padding-bottom: 3%;
+}
+
+.pb-4p {
+    padding-bottom: 4%;
+}
+
+.pb-5p {
+    padding-bottom: 5%;
+}
+
+.pb-10p {
+    padding-bottom: 10%;
+}
+
+.pl-0 {
+    padding-left: 0px;
+}
+
+.pl-4 {
+    padding-left: 4px;
+}
+
+.pl-1p {
+    padding-left: 1%;
+}
+
+.pl-2p {
+    padding-left: 2%;
+}
+
+.pl-3p {
+    padding-left: 3%;
+}
+
+.pl-3_3p {
+    padding-left: 3.3%;
+}
+
+.pl-4p {
+    padding-left: 4%;
+}
+
+.pl-5p {
+    padding-left: 5%;
+}
+
+.pr-0 {
+    padding-right: 0px;
+}
+
+.pr-1p {
+    padding-right: 1%;
+}
+
+.pr-2p {
+    padding-right: 2%;
+}
+
+.pr-3p {
+    padding-right: 3%;
+}
+
+.pr-4p {
+    padding-right: 4%;
+}
+
+.pr-5p {
+    padding-right: 5%;
+}
+
+.ls-3 {
+    letter-spacing: 3px;
+}
+
+.ls-4 {
+    letter-spacing: 4px;
+}
+
+.ls-5 {
+    letter-spacing: 5px;
+}
+
+.ls-6 {
+    letter-spacing: 6px;
+}
+
+.ls-7 {
+    letter-spacing: 7px;
+}
+
+.ls-7_5 {
+    letter-spacing: 7.5px;
+}
+
+.ls-8 {
+    letter-spacing: 8px;
+}
+
+.ls-9 {
+    letter-spacing: 9px;
+}
+
+.ls-10 {
+    letter-spacing: 10px;
+}
+
+.ls-12 {
+    letter-spacing: 12px;
+}
+
+.ls-20 {
+    letter-spacing: 20px;
+}
+
+.ws-5 {
+    word-spacing: 5px;
+}
+
+.ws-20 {
+    word-spacing: 20px;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-gray {
+    color: gray;
+}
+
+.font-blue {
+    color: blue;
+}
+
+.font-red {
+    color: red;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fz-25 {
+    font-size: 25px;
+}
+
+.nav-top {
+    position: fixed;
+    top: 0px;
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: #4E6234;
+    color: white;
+    z-index: 2;
+}
+
+.nav-top li {
+    list-style: none;
+    display: inline;
+    margin: 0px 80px;
+}
+
+.nav-top a {
+    text-decoration: none;
+}
+
+.nav-top a:any-link {
+    color: white;
+}
+
+.nav-top a:active {
+    color: orange;
+}
+
+/* 페이지네이션 */
+.pagination {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    color: black;
+    font-size: 15px;
+}
+
+.pagination li {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+.pagination a:any-link {
+    color: black;
+}
+
+.pagination a:active {
+    color: orange;
+}
+
+/* Scroll Animation (sa, 스크롤 애니메이션) */
+.sa {
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+/* 아래에서 위로 페이드 인 */
+.sa-up {
+    transform: translate(0, 100px);
+}
+
+.sa.show {
+    opacity: 1;
+    transform: none;
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+    .pagination {
+        font-size: 10px;
+    }
+
+    .pagination li {
+        margin: 0px 10px;
+    }
+}
