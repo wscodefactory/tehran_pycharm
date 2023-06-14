@@ -1,0 +1,228 @@
+#TehranHelp {
+    font-size: 18px;
+}
+
+#Gradation {
+    text-align: center;
+    padding-left: 0%;
+}
+
+.img-item {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 35%;
+    margin: auto;
+    z-index: 1;
+}
+
+.img-item li {
+    list-style: none;
+    display: inline;
+    margin: 0px 80px;
+}
+
+.img-item a {
+    text-decoration: none;
+}
+
+.img-item a:any-link {
+    color: white;
+}
+
+.img-item a:active {
+    color: orange;
+}
+
+.scroll-menu {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+}
+
+.scroll-menu img {
+    float: left;
+    width: 50%;
+    height: 66px;
+}
+
+.scroll-part {
+    color: rgb(204, 153, 153);
+    width: 100%;
+}
+
+.FQ-container {
+    width: 75%;
+}
+
+.FQ-form p {
+    padding-top: 5%;
+    display: inline;
+}
+
+.FQ-search select {
+    width: 10%;
+    height: 27px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.FQ-search input {
+    width: 88.5%;
+    height: 27px;
+    font-size: 15px;
+    float: right;
+    border-radius: 5px;
+    border: 0.5px solid rgb(0, 0, 0.3);
+    background-image: url("/static/images/customer_app_img/magnifying-glass-solid.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20px;
+}
+
+.FAQ-list i {
+    padding-left: 3px;
+}
+
+.FAQ-list h3 {
+    color: red;
+    display: inline;
+}
+
+.FAQ-list p {
+    display: inline;
+    align-items: center;
+}
+
+.FAQ-list img {
+    float: right;
+    padding-right: 3px;
+}
+
+.FAQ-answer {
+    display: none;
+}
+
+.QA-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.QA-list col:nth-child(1) {
+    width: 5%;
+}
+
+.QA-list col:nth-child(2) {
+    width: 10%;
+}
+
+.QA-list col:nth-child(3) {
+    width: 40%;
+}
+
+.QA-list col:nth-child(4) {
+    width: 10%;
+}
+
+.QA-list col:nth-child(5) {
+    width: 10%;
+}
+
+.QA-list tr {
+    border-bottom: 1px solid #7B7B7B;
+    height: 80px;
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+    #HeadDiv {
+        padding-top: 50%;
+    }
+
+    #TehranHelp {
+        font-size: 10px;
+    }
+
+    #Gradation {
+        font-size: 2px;
+    }
+
+    #Gradation li {
+        margin: 0px 10px;
+    }
+
+    .FQ-container {
+        width: 85%;
+    }
+
+    .FQ-search select {
+        width: 24%;
+        font-size: 10px;
+    }
+
+    .FQ-search input {
+        width: 74%;
+        font-size: 10px;
+    }
+
+    .FAQ-list i {
+        font-size: 13px;
+        padding-left: 0px;
+    }
+
+    .FAQ-list h3 {
+        font-size: 10px;
+    }
+
+    .FAQ-list p {
+        font-size: 10px;
+        padding-left: 3.5%;
+    }
+
+    .FAQ-list img {
+        width: 3%;
+        padding-top: 2%;
+        padding-right: 3px;
+    }
+
+    .QA-list col:nth-child(1) {
+        width: 5%;
+    }
+
+    .QA-list col:nth-child(2) {
+        width: 10%;
+    }
+
+    .QA-list col:nth-child(3) {
+        width: 40%;
+    }
+
+    .QA-list col:nth-child(4) {
+        width: 15%;
+    }
+
+    .QA-list col:nth-child(5) {
+        width: 15%;
+    }
+
+    .QA-list tr {
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .scroll-part h1 {
+        font-size: 25px;
+    }
+
+    .scroll-part h2 {
+        font-size: 18px;
+    }
+
+    .scroll-part p {
+        font-size: 10px;
+    }
+
+    .scroll-menu img {
+        height: 37px;
+    }
+}

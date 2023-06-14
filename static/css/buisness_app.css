@@ -26,7 +26,7 @@
     color: #95C05D;
 }
 
-#AdvantageImg{
+#AdvantageImg {
     height: 100%;
     max-height: 600px;
 }
@@ -67,6 +67,24 @@
     z-index: 1;
 }
 
+.img-item li {
+    list-style: none;
+    display: inline;
+    margin: 0px 80px;
+}
+
+.img-item a {
+    text-decoration: none;
+}
+
+.img-item a:any-link {
+    color: white;
+}
+
+.img-item a:active {
+    color: orange;
+}
+
 .scroll-menu {
     position: relative;
     width: 100%;
@@ -91,6 +109,11 @@
 .float-left_img {
     float: left;
     padding-right: 5%;
+}
+
+.float-left_div {
+    padding-top: 5%;
+    display: inline;
 }
 
 .float-left_div p {
@@ -126,27 +149,12 @@
     font-weight: bold;
 }
 
-/* Scroll Animation (sa, 스크롤 애니메이션) */
-.sa {
-    opacity: 0;
-    transition: all .5s ease;
-}
-
-/* 아래에서 위로 페이드 인 */
-.sa-up {
-    transform: translate(0, 100px);
-}
-
-.sa.show {
-    opacity: 1;
-    transform: none;
-}
-
 /* 모바일 */
 @media screen and (max-width: 768px) {
-    #HeadDiv{
+    #HeadDiv {
         padding-top: 50%;
     }
+
     #FristLine {
         font-size: 15px;
         letter-spacing: 10px;
@@ -171,7 +179,7 @@
     }
 
     #AdvantageImg {
-        content: url(../images/buisness_app\ 4\ col.jpg);
+        content: url(../images/buisness_app_img/buisness_app\ 4\ col.jpg);
         height: 100%;
     }
 
@@ -185,7 +193,7 @@
     }
 
     #SeriesImg {
-        content: url(../images/buisness_app\ 5\ col.jpg);
+        content: url(../images/buisness_app_img/buisness_app\ 5\ col.jpg);
         height: 100%;
     }
 

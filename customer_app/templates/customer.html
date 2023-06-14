@@ -1,10 +1,356 @@
+<!-- {% load static %} -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <link rel="stylesheet" href="/static/css/customer_app.css">
+    <link rel="stylesheet" href="/static/css/basic.css">
+    <!-- <link rel="stylesheet" href={% static '/css/customer_app.css' %}> -->
+    <!-- <link rel="stylesheet" href={% static '/css/basic.css' %}> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>고객 지원</title>
 </head>
+
 <body>
-고객지원
+    <nav class="nav-top">
+        <ul class="text-center">
+            <li><a href="#">테헤란(로고)</a></li>
+            <li>회사 소개</li>
+            <li>사업 영역 소개</li>
+            <li>제품 소개</li>
+            <li>게시판</li>
+            <li>고객 지원</li>
+        </ul>
+    </nav>
+
+    <div class="pt-20p" id="HeadDiv">
+        <!-- 고객 지원 -->
+        <div class="sa sa-up">
+            <div class="scroll-part text-center pt-10p">
+                <p class="ls-10">F&Q</p>
+                <h1>고객 지원</h1>
+            </div>
+
+            <p class="text-center pt-10p pb-5p ws-5 font-gray" id="TehranHelp">(주) 테헤란에 관하여 궁금하신 점이 있으시다면 도와드리겠습니다.</p>
+
+            <section class="scroll-menu font-white">
+                <img src="/static/images/buisness_app_img/Rectangle 1.jpg">
+                <img src="/static/images/buisness_app_img/Rectangle 2.jpg">
+
+                <ul class="img-item" id="Gradation">
+                    <li><a href="#scroll-part_1">자주 묻는 질문(FAQ)</a></li>
+                    <li><a href="#scroll-part_2">1:1 문의(Q&A)</a></li>
+                </ul>
+                <div style="clear: both; float: none;"></div>
+            </section>
+        </div>
+
+        <!-- 자주 묻는 질문(FAQ) -->
+        <div class="sa sa-up">
+            <div class="scroll-part text-center pt-10p pb-5p" id="scroll-part_1">
+                <h2>자주 묻는 질문(FAQ)</h2>
+            </div>
+
+            <div class="FQ-container display-center">
+                <form class="FQ-form">
+                    <div class="FQ-search pb-5p">
+                        <select>
+                            <option>전체</option>
+                        </select>
+
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div style="clear: both; float: none;"></div>
+                    </div>
+
+                    <article>
+                        <!-- 1 -->
+                        <section class="FAQ-list">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">농사를 짓는 동안 컨테이너에 몇일에 한번 방문해야 하나요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+
+                        <!-- 2 -->
+                        <section class="FAQ-list pt-3p">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">버섯을 얼마동안 키워야 납품이 가능한가요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+
+                        <!-- 3 -->
+                        <section class="FAQ-list pt-3p">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">1년 중 몇 월에 버섯을 수확하나요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+
+                        <!-- 4 -->
+                        <section class="FAQ-list pt-3p">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">버섯의 휴식기는 언제인가요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+
+                        <!-- 5 -->
+                        <section class="FAQ-list pt-3p">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">1년에 버섯을 12번 심을 수 있나요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+
+                        <!-- 6 -->
+                        <section class="FAQ-list pt-3p">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">스마트팜 컨테이너의 크기는 어떻게 되나요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+
+                        <!-- 7 -->
+                        <section class="FAQ-list pt-3p">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">스마트팜 컨테이너로 대출이 가능한가요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+
+                        <!-- 8 -->
+                        <section class="FAQ-list pt-3p">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">스마트팜 컨테이너는 별도로 허가를 받아야 하나요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+
+                        <!-- 9 -->
+                        <section class="FAQ-list pt-3p">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">스마트팜 솔루션 및 유통 경로 확보는 어떤 것인가요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+
+                        <!-- 10 -->
+                        <section class="FAQ-list pt-3p">
+                            <!-- Q -->
+                            <div class="FAQ-question">
+                                <i class="fa-solid fa-q pb-1p">:</i>
+                                <h3 class="pl-3p">스마트팜 컨테이너에서 수익은 어떻게 발생하나요?</h3>
+                                <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
+                            </div>
+
+                            <!-- A -->
+                            <div class="FAQ-answer pb-1p">
+                                <i class="fa-solid fa-a pt-3p">:</i>
+                                <p class="pl-3_3p" onclick="toggleAnswer(this)">안녕하세요 테헤란입니다.</p>
+                            </div>
+                            <hr />
+                        </section>
+                    </article>
+                </form>
+            </div>
+        </div>
+
+        <!-- 1:1 문의(Q&A) -->
+        <div class="sa sa-up">
+            <div class="scroll-part text-center pt-10p pb-5p" id="scroll-part_2">
+                <h2>1:1 문의(Q&A)</h2>
+            </div>
+
+            <div class="FQ-container display-center">
+                <form class="FQ-form">
+                    <div class="FQ-search pb-3p">
+                        <select>
+                            <option>전체</option>
+                        </select>
+
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div style="clear: both; float: none;"></div>
+                    </div>
+
+                    <div>
+                        <table class="QA-list text-center">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+
+                            <thead>
+                                <tr>
+                                    <th>NO.</th>
+                                    <th>상태</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>작성일</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>6</td>
+                                    <td style="color: #FF4040;">답변대기</td>
+                                    <td class="text-left pl-3p">질문있습니다.</td>
+                                    <td>스마트팜</td>
+                                    <td>1일 전</td>
+                                </tr>
+
+                                <tr>
+                                    <td>5</td>
+                                    <td style="color: #7C91FF;">답변대기</td>
+                                    <td class="text-left pl-3p">질문있습니다.</td>
+                                    <td>스마트팜</td>
+                                    <td>2일 전</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td style="color: #7C91FF;">답변대기</td>
+                                    <td class="text-left pl-3p">질문있습니다.</td>
+                                    <td>스마트팜</td>
+                                    <td>3일 전</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td style="color: #7C91FF;">답변대기</td>
+                                    <td class="text-left pl-3p">질문있습니다.</td>
+                                    <td>스마트팜</td>
+                                    <td>4일 전</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td style="color: #7C91FF;">답변대기</td>
+                                    <td class="text-left pl-3p">질문있습니다.</td>
+                                    <td>스마트팜</td>
+                                    <td>5일 전</td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td style="color: #0038FF;">답변완료</td>
+                                    <td class="text-left pl-3p">질문있습니다.</td>
+                                    <td>스마트팜</td>
+                                    <td>6일 전</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+
+            <!-- PagiNation -->
+            <nav class="pagination">
+                <ul class="text-center pl-0">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">&lt;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&gt;</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="/static/js/Scroll Fade in Animation.js"></script>
+    <script src="/static/js/FAQ Toggle.js"></script>
 </body>
+
 </html>

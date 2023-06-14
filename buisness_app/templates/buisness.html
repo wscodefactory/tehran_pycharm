@@ -1,16 +1,19 @@
+<!-- {% load static %} -->
 <!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/buisness_app.css">
-    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="/static/css/buisness_app.css">
+    <link rel="stylesheet" href="/static/css/basic.css">
+    <!-- <link rel="stylesheet" href={% static '/css/buisness_app.css' %}>
+    <link rel="stylesheet" href={% static '/css/basic.css' %}> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>사업 영역 소개</title>
 </head>
 
 <body>
-    <nav>
+    <nav class="nav-top">
         <ul class="text-center">
             <li><a href="#">테헤란(로고)</a></li>
             <li>회사 소개</li>
@@ -22,7 +25,6 @@
     </nav>
 
     <div class="pt-20p" id="HeadDiv">
-
         <!-- BUISNESS AREA -->
         <div class="sa sa-up">
             <div id="FristLine">
@@ -30,7 +32,7 @@
             </div>
 
             <div class="img-container">
-                <img src="images/buisness_app 1.jpg">
+                <img src="/static/images/buisness_app_img/buisness_app 1.jpg">
 
                 <div class="img-item text-center font-white ws-20" id="BusinessArea">
                     <h1>주식회사</h1>
@@ -43,15 +45,15 @@
         <!-- 사업영역 소개 -->
         <div class="sa sa-up">
             <div class="scroll-part text-center pt-10p">
-                <img src="images/Vector 28.jpg">
+                <img src="/static/images/buisness_app_img/Vector 28.jpg">
 
                 <h1>사업 영역 소개</h1>
                 <p class="ls-3">SMARTFARM</p>
             </div>
 
             <section class="scroll-menu font-white">
-                <img src="images/Rectangle 1.jpg">
-                <img src="images/Rectangle 2.jpg">
+                <img src="/static/images/buisness_app_img/Rectangle 1.jpg">
+                <img src="/static/images/buisness_app_img/Rectangle 2.jpg">
 
                 <ul class="img-item" id="Gradation">
                     <li><a href="#scroll-part_1">스마트팜</a></li>
@@ -68,20 +70,20 @@
                     <h2 id="SmartfarmContainel">"SMARTFARM CONTAINEL"</h2>
                 </div>
 
-                <img src="images/buisness_app 2.jpg">
+                <img src="/static/images/buisness_app_img/buisness_app 2.jpg">
             </div>
         </div>
 
         <!-- 스마트팜 이란? -->
         <div class="sa sa-up">
             <div class="scroll-part text-center pt-10p pb-5p" id="scroll-part_1">
-                <img src="images/Vector 28.jpg">
+                <img src="/static/images/buisness_app_img/Vector 28.jpg">
                 <h1>스마트팜 이란?</h1>
                 <p class="ls-10">EXPLAN</p>
             </div>
 
             <div class="float-left_container display-center">
-                <img src="images/buisness_app 3.jpg" class="float-left_img">
+                <img class="float-left_img" src="/static/images/buisness_app_img/buisness_app 3.jpg">
 
                 <div class="float-left_div">
                     <h3>
@@ -110,13 +112,13 @@
         <!-- 스마트팜 장점 -->
         <div class="sa sa-up">
             <div class="scroll-part text-center pt-10p pb-5p" id="scroll-part_2">
-                <img src="images/Vector 28.jpg">
+                <img src="/static/images/buisness_app_img/Vector 28.jpg">
                 <h1>스마트팜 장점</h1>
                 <p class="ls-5">ADVANTAGES</p>
             </div>
 
             <div class="img-container">
-                <img src="images/buisness_app 4.jpg" id="AdvantageImg">
+                <img src="/static/images/buisness_app_img/buisness_app 4.jpg" id="AdvantageImg">
 
                 <div class="img-item text-center font-white" id="AdvantageItem">
                     <h1>(주)테헤란</h1>
@@ -125,32 +127,32 @@
 
                     <div class="advantage-container">
                         <div>
-                            <img src="images/buisness_app 6.png">
+                            <img src="/static/images/buisness_app_img/buisness_app 6.png">
                             <p>자연 재해 예방</p>
                         </div>
 
                         <div>
-                            <img src="images/buisness_app 7.png">
+                            <img src="/static/images/buisness_app_img/buisness_app 7.png">
                             <p>수획량 증가</p>
                         </div>
 
                         <div>
-                            <img src="images/buisness_app 8.png">
+                            <img src="/static/images/buisness_app_img/buisness_app 8.png">
                             <p>농약 미사용</p>
                         </div>
 
                         <div>
-                            <img src="images/buisness_app 9.png">
+                            <img src="/static/images/buisness_app_img/buisness_app 9.png">
                             <p>지리적 미점</p>
                         </div>
 
                         <div>
-                            <img src="images/buisness_app 10.png">
+                            <img src="/static/images/buisness_app_img/buisness_app 10.png">
                             <p>노동력 절감</p>
                         </div>
 
                         <div>
-                            <img src="images/buisness_app 11.png">
+                            <img src="/static/images/buisness_app_img/buisness_app 11.png">
                             <p>사계절 일정한 수확</p>
                         </div>
                         <div style="clear: both; float: none;"></div>
@@ -162,13 +164,13 @@
         <!-- 스마트팜 종류 -->
         <div class="sa sa-up">
             <div class="scroll-part text-center pt-10p pb-5p" id="scroll-part_4">
-                <img src="images/Vector 28.jpg">
+                <img src="/static/images/buisness_app_img/Vector 28.jpg">
                 <h1>스마트팜 종류</h1>
                 <p class="ls-5">SERIES</p>
             </div>
 
             <div class="img-container">
-                <img src="images/buisness_app 5.jpg" id="SeriesImg">
+                <img src="/static/images/buisness_app_img/buisness_app 5.jpg" id="SeriesImg">
 
                 <div class="img-item font-white" id="SeriesItem">
                     <h1>"테헤란의 원격제어 어플리케이션으로</h1>
@@ -189,7 +191,7 @@
         </div>
     </div>
 
-    <script src="js/Scroll Fade in Animation.js"></script>
+    <script src="/static/js/Scroll Fade in Animation.js"></script>
 </body>
 
 </html>
