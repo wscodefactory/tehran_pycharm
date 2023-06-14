@@ -6,365 +6,324 @@
     font-style: normal;
 }
 
-body{
-    font-family: 'Pretendard';
-}
-
-.vector23 {
-    position: absolute;
-    width: 0px;
-    height: 230px;
-    left: 50%;
-    top: 70px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.vector24 {
-    position: absolute;
-    width: 0px;
-    height: 56px;
-    left: 50%;
-    top: 244px;
-    border: 1px solid #000000;
-}
-
-.vector25 {
-    position: absolute;
-    width: 0px;
-    height: 230px;
-    left: 50%;
-    top: 1203px;
-
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    transform: rotate(-180deg);
-}
-
-.vector26 {
-    position: absolute;
-    width: 0px;
-    height: 56px;
-    left: 50%;
-    top: 1203px;
-
-    border: 1px solid #000000;
-    transform: rotate(-180deg);
-}
-
-.image12 {
-    position: absolute;
-    width: 100%;
-    height: 733px;
-    left: 0px;
-    top: 394px;
-    background: url(/static/images/image12.png) no-repeat;
-    background-size: cover;
-
-}
-
-.company_content1 {
-    position: absolute;
-    width: auto;
-    height: 29px;
+.img-center {
     left: 50%;
     transform: translateX(-50%);
-    top: 347px;
-
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
-    text-align: center;
-    letter-spacing: 0.945em;
-
-    color: #000000;
 }
-
-.company_content2 {
-    display: inline-block;
-    position: absolute;
-    width: auto;
-    height: 182px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 276px;
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 76px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.company_content2-1 {
-    position: absolute;
-    width: auto;
-    height: 76px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 119px;
-
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 76px;
-    text-align: center;
-    letter-spacing: 0.96em;
-    color: #95C05D;
-}
-
-.company_content3 {
-    position: absolute;
-    width: auto;
-    height: 182px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 380px;
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 40px;
-    line-height: 76px;
-    text-align: center;
-    color: #FFFFFF;
-
-}
-
-.company_content4 {
-    position: absolute;
-    width: auto;
-    height: 86px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 1477px;
-
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 173.84%;
-    /* or 70px */
-
-    text-align: center;
-    letter-spacing: 0.015em;
-
-    color: #4E6234;
-}
-
-.company_content5 {
-    position: absolute;
-    width: auto;
-    height: 86px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 1530px;
-
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 15px;
-    line-height: 173.84%;
-    /* or 70px */
-
-    text-align: center;
-    letter-spacing: 1.015em;
-
-    color: #4E6234;
-}
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.rectangle20 {
-    position: absolute;
-    width: 50%;
-    height: 66px;
+.img-left{
     right: 50%;
-    top: 1580px;
-    background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+}.img-right{
+    left: 50%;
 }
 
-.rectangle21 {
+body {
+    font-family: 'Pretendard';
+    font-style: normal;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+.inner {
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    position: relative;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
+.company_con1 {
+    position: absolute;
+    width: 276px;
+    top: 0px;
+}
+.about_us {
+    margin-top: 324px;
+    height: 770px;
+}
+.about_us .inner {
+    height: 770px;
+    width: 100%;
+}
+.about_us .company_img0 {
+    position: relative;
+    top: 40px;
+    height: 744px;
+    background-image: url("/static/images/company_app_img/image12.png");
+    background-position: center;
+    background-size: cover;
+}
+.about_us .company_img1 {
+    position: absolute;
+    top: 276px;
+}
+
+.introduce {
+    margin-top: 250px;
+    height: 535px;
+}
+
+.introduce .inner {
+    height: 535px;
+    width: 100%;
+}
+.introduce .company_img1 {
+    position: absolute;
+}
+.introduce .gradation1 {
     position: absolute;
     width: 50%;
     height: 66px;
-    left: 50%;
-    top: 1580px;
-
-    background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
-    transform: rotate(-180deg);
+    top: 100px;
+    left: 0;
+}
+.introduce .gradation2 {
+    position: absolute;
+    width: 50%;
+    height: 66px;
+    top: 100px;
+    right: 0;
+}
+.introduce .company_con1 {
+    position: absolute;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.introduce .company_img2 {
+    position: absolute;
+    top: 237px;
+    margin-right: 31px;
+}
+.introduce .company_con2 {
+    position: absolute;
+    top: 237px;
 }
 
-.company_content6 {
+.mission {
+    margin-top: 177px;
+    height: 898px;
+}
+.mission .inner{
+    height: 898px;
+    width: 100%;
+}
+.mission .vector {
     position: absolute;
-    width: auto;
-    height: 62px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 1590px;
+    width: 61.5px;
+    height: 0px;
 
+    top: 0px;
+    border: 2px solid #000000;
+}
+.mission .company_con1 {
+    position: absolute;
+    width: 309px;
+    height: 86px;
+
+    top: 39px;
+}
+.mission .company_img1 {
+    position: relative;
+    top: 154px;
+    width: 100%;
+    height: 744px;
+    background-image: url("/static/images/company_app_img/image14.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.mission .dreamplan {
+    position: absolute;
+    top: 119px;
+    width: 885px;
+    height: 76px;
+}
+.mission .img {
+    position: absolute;
+    width: 338px;
+    height: 301px;
+}
+
+.mission .text {
+    position: absolute;
+    width: 56px;
+    height: 38px;
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 147.34%;
-    /* or 47px */
+    line-height: 38px;
+    text-align: center;
+    color: #95C05D;
+}
 
+.mission .content {
+    position: absolute;
+    width: 250px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.mission .value.img {
+    top: 223px;
+    left: 20%;
+}
+
+.mission .vision.img {
+    top: 223px;
+    right: 20%;
+}
+
+.mission .mission_c.img {
+    top: 223px;
+}
+
+.mission .mission_c.text {
+    top: 533px;
+    width: 338px;
+}
+
+.mission .mission_c.content {
+    top: 598px;
+    width: 338px;
+}
+
+.mission .value.text {
+    left: 20%;
+    top: 533px;
+    width: 338px;
+}
+
+.mission .value.content {
+    right: 20%;
+    top: 598px;
+    width: 338px;
+}
+
+.mission .vision.text {
+    right: 20%;
+    top: 533px;
+    width: 338px;
+}
+
+.mission .vision.content {
+    left: 20%;
+    top: 598px;
+    width: 338px;
+}
+
+.goal{
+    margin-top: 359px;
+    height: 472px;
+}
+.goal .inner{
+    height: 472px;
+    width: 100%;
+}
+.goal .company_con1 {
+    position: absolute;
+    width: 89px;
+    height: 86px;
+    top: 0px;
+}
+.goal .rectangle {
+    position: absolute;
+    width: 322px;
+    height: 48px;
+    background: #4E6234;
+    border-radius: 10px;
+}
+.goal .rectangle.rec1 {
+    top: 145px;
+    left: 20%;
+}
+.goal .rectangle.rec2 {
+    top: 145px;
+}
+.goal .rectangle.rec3 {
+    right: 20%;
+    top: 145px;
+}
+
+.goal .rectangle .text1 {
+    position: absolute;
+    width: 270px;
+    height: 172px;
+    left: 23px;
+    top: 9px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
     text-align: center;
 
     color: #FFFFFF;
-
 }
-
-
-.image13 {
+.goal .rectangle .text2 {
     position: absolute;
-    width: 530px;
-    height: 299px;
-    left: 35%;
-    transform: translateX(-50%);
-    top: 1700px;
-
-    background: url(/static/images/image13.png) no-repeat;
-}
-.company_content7 {
-    position: absolute;
-    width: 613px;
-    height: 62px;
-    left: 65%;
-    transform: translateX(-50%);
-    top: 1690px;
+    width: 309px;
+    height: 172px;
+    left: 4px;
+    top: 100px;
 
     font-family: 'Pretendard';
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 230.84%;
-    /* or 46px */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
 
-    letter-spacing: -0.07em;
     color: #000000;
-
 }
 
-.vector28 {
-    position: absolute;
-    width: 61.5px;
-    height: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 2110px;
-
-    border: 2px solid #000000;
-
+.history{
+    margin-top: 267px;
+    height: 545px;
 }
-
-.company_content8 {
-    position: absolute;
-    width: auto;
-    height: 86px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 2140px;
-
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 173.84%;
-    /* or 70px */
-
-    text-align: center;
-    letter-spacing: 0.015em;
-
-    color: #4E6234;
-}
-
-.company_content9 {
-    position: absolute;
-    width: auto;
-    height: 86px;
-    left: 50%;
-    transform: translateX(-43%);
-    top: 2200px;
-
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 15px;
-    line-height: 173.84%;
-    /* or 70px */
-
-    text-align: center;
-    letter-spacing: 0.9em;
-
-    color: #4E6234;
-}
-
-.image14 {
-    position: absolute;
+.history .inner{
+    height: 545px;
     width: 100%;
-    height: 742px;
-    left: -2px;
-    top: 2246px;
-    background: url(/static/images/image14.png) no-repeat;
-    background-size:cover ;
-
 }
-
-.value {
+.history .company_con1 {
     position: absolute;
-    width: 338px;
-    height: 301px;
-    left: 30%;
-    transform: translateX(-50%);
-    top: 223px;
-
-    background-image: url(/static/images/value.png);
-    /*z-index: 1;*/
+    width: 160px;
+    height: 86px;
+    top: 0px;
 }
-
-.mission {
+.history .gradation1 {
     position: absolute;
-    width: 338px;
-    height: 301px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 223px;
-
-    background: url(/static/images/mission.png) no-repeat;
-    z-index: 1;
+    width: 50%;
+    height: 66px;
+    top: 107px;
+    left: 0;
 }
-
-.vision {
+.history .gradation2 {
     position: absolute;
-    width: 338px;
-    height: 301px;
-    left: 70%;
-    transform: translateX(-50%);
-    top: 223px;
-
-    background: url(/static/images/vision.png) no-repeat;
-    z-index: 1;
+    width: 50%;
+    height: 66px;
+    top: 107px;
+    right: 0;
 }
-
-.company_content10 {
-    position: relative;
-    width: 100%;
+.history .company_con2 {
+    position: absolute;
+    width: 400px;
     height: 38px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 533px;
+    top: 122px;
 
     font-family: 'Pretendard';
     font-style: normal;
@@ -372,68 +331,14 @@ body{
     font-size: 32px;
     line-height: 38px;
     text-align: center;
-
-    color: #95C05D;
-}
-
-.company_content11 {
-    position: absolute;
-    width: auto;
-    height: 48px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 598px;
-    white-space: nowrap;
-
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-
+    letter-spacing: 0.615em;
     color: #FFFFFF;
 }
 
-.rectangle44 {
+.history .company_con3 {
     position: absolute;
-    width: 322px;
-    height: 48px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 3552px;
-
-    background: #4E6234;
-    border-radius: 10px;
-}
-
-.company_content12 {
-    position: absolute;
-    width: auto;
-    height: 241px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 3620px;
-
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 20px;
-    line-height: 29px;
-    text-align: center;
-
-    letter-spacing: -0.07em;
-    color: #000000;
-}
-
-.company_content13 {
-    position: absolute;
-    width: auto;
+    width: 459px;
     height: 58px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 4315px;
-
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 400;
@@ -443,22 +348,45 @@ body{
 
     color: #000000;
 }
+.history .company_con3.text1 {
+    top: 230px;
+
+}
+.history .company_con3.text2 {
+    top: 333px;
+    width: 170px;
+}
+
+.history .company_con3.text3 {
+    top: 333px;
+    width: 170px;
+}
+
 
 .footer {
-    position: absolute;
+    margin-top: 183px;
     width: 100%;
     height: 271px;
     left: 0px;
-    top: 4825px;
 
     background: #4E6234;
 }
-
+.footer .inner{
+    width: 100%;
+     height: 271px;
+}
+.footer_logo {
+    position: absolute;
+    width: 109px;
+    height: 38px;
+    left: 372px;
+    top: 24px;
+}
 .footer-content1 {
     position: absolute;
-    width: 60px;
+    width: 64px;
     height: 150px;
-    left: 19.5%;
+    left: 372px;
     top: 85px;
 
     font-family: 'Pretendard';
@@ -472,10 +400,10 @@ body{
 
 .footer-content2 {
     position: absolute;
-    width: 488px;
+    width: 492px;
     height: 150px;
-    left: 30%;
-    top: 85px;
+    left: 529px;
+    top: 84px;
 
     font-family: 'Pretendard';
     font-style: normal;
@@ -483,15 +411,14 @@ body{
     font-size: 16px;
     line-height: 155%;
     /* or 25px */
-
     color: #FFFFFF;
 }
 
 .footer-content3 {
     position: absolute;
-    width: auto;
+    width: 192px;
     height: 25px;
-    left: 70%;
+    left: 1353px;
     top: 214px;
 
     font-family: 'Pretendard';
@@ -500,7 +427,6 @@ body{
     font-size: 16px;
     line-height: 155%;
     /* identical to box height, or 25px */
-
     color: #FFFFFF;
 }
 
@@ -508,416 +434,490 @@ body{
     position: absolute;
     width: 46px;
     height: 52px;
-    left: 80%;
+    left: 1501px;
     top: 84px;
 
-    background: url(/static/images/direction1.png) no-repeat;
+    background: url(/static/images/main_img/direction1.png) no-repeat;
 
 }
 
 
- @media screen and (max-width: 400px) {
-
-     .rectangle20,
-     .rectangle21,
-     .direction1{
-         display: none;
-     }
-
-    .company_content1 {
-        position: absolute;
-        width: 100%;
-        height: 19px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 159px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        /* identical to box height */
-        text-align: center;
-        letter-spacing: 0.945em;
-
-        color: #000000;
-    }
-     .vector23 {
-         position: absolute;
-         width: 0px;
-         height: 230px;
-         left: 195px;
-         top: -137px;
-         border: 1px solid rgba(0, 0, 0, 0.5);
-     }
-
-    .vector24 {
-        position: absolute;
-        width: 0px;
-        height: 56px;
-        left: 195px;
-        top: 82px;
-        border: 1px solid #000000;
-    }
-
-    .image12 {
-        position: absolute;
-        width: 100%;
-        height: 225px;
-        left: -4px;
-        top: 201px;
-        background: url(/static/images/image12.png) no-repeat;
-        background-size: cover;
-    }
-
-    .company_content2 {
-        position: absolute;
-        width: 100%;
-        height: 94px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 71px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 35px;
-        line-height: 42px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-    .company_content3 {
-        position: absolute;
-        width: auto;
-        height: 182px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 101px;
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: lighter;
-        font-size: 20px;
-        line-height: 76px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
-    .vector25 {
-        position: absolute;
-        width: 0px;
-        height: 230px;
-        left: 50%;
-        top: 450px;
-
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        transform: rotate(-180deg);
-
-    }
-    .vector26 {
-        position: absolute;
-        width: 0px;
-        height: 56px;
-        left: 50%;
-        top: 450px;
-
-        border: 1px solid #000000;
-        transform: rotate(-180deg);
-
-    }
-
-    .company_content4 {
-        position: absolute;
-        width: 135px;
-        height: 53px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 700px;
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 173.84%;
-        /* or 43px */
-        text-align: center;
-        letter-spacing: 0.015em;
-        color: #4E6234;
-    }
-    .company_content5 {
-        position: absolute;
-        width: 100%;
-        height: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 730px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: lighter;
-        font-size: 15px;
-        line-height: 173.84%;
-        /* or 70px */
-
-        text-align: center;
-        letter-spacing: 1.015em;
-
-        color: #4E6234;
-    }
-
-    .image13 {
-        position: absolute;
-        width: 390px;
-        height: 221px;
-        left: 50%;
-        top: 778px;
-    }
-
-    .company_content6 {
-        position: absolute;
-        width: 280px;
-        height: 69px;
-        left: 50%;
-        top: 843px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 147.34%;
-        /* or 32px */
-
-        text-align: center;
-
-        color: #4E6234;
-        z-index: 1;
-    }
-
-    .rectangle4 {
-        position: absolute;
-        width: 396px;
-        height: 424px;
-        left: -3px;
-        top: 999px;
-        background: #2C2C2C;
-    }
-
-    .company_content7 {
-        position: absolute;
-        width: 365px;
-        height: 308px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 1071px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 30px;
-        /* or 200% */
-
-        text-align: center;
-        letter-spacing: -0.07em;
-
-        color: #FFFFFF;
-
-    }
-
-    .vector28 {
-        position: absolute;
-        width: 61.5px;
-        height: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 1491px;
-        border: 2px solid #000000;
-    }
-
-    .company_content8{
-        position: absolute;
-        width: 135px;
-        height: 53px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 1530px;
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 173.84%;
-        /* or 43px */
-        text-align: center;
-        letter-spacing: 0.015em;
-        color: #4E6234;
-    }
-    .company_content9 {
-        position: absolute;
-        width: 100%;
-        height: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 1560px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: lighter;
-        font-size: 15px;
-        line-height: 173.84%;
-        /* or 70px */
-        text-align: center;
-        letter-spacing: 1.015em;
-        color: #4E6234;
-
-    }
-
-    .image14 {
-        position: absolute;
-        width: 390px;
-        height: 531px;
-        left: 0px;
-        top: 1616px;
-    }
-
-    .company_content2-1 {
-        position: absolute;
-        width: 277px;
-        height: 24px;
-        top: 35px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        /* identical to box height */
-        text-align: center;
-        letter-spacing: 0.96em;
-        color: #95C05D;
-    }
-
-    .value {
-        position: absolute;
-        width: 119px;
-        height: 106px;
-        left: 25%;
-        top: 98px;
-        background-size: contain;
-    }
-    .mission {
-        position: absolute;
-        width: 119px;
-        height: 106px;
-        left: 25%;
-        top: 230px;
-        background-size: contain;
-    }
-    .vision {
-        position: absolute;
-        width: 119px;
-        height: 106px;
-        left: 25%;
-        top: 362px;
-        background-size: contain;
-    }
-
-    .company_content10 {
-        position: absolute;
-        width: 111px;
-        height: 38px;
-        left: 528px;
-        top: 113px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 38px;
-        text-align: center;
-        color: #95C05D;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .footer {
-        position: absolute;
-        width: 100%;
-        height: 321px;
-        left: 0px;
-        top: 3873px;
-        background: #4E6234;
-    }
-
-    .footer-content1 {
-        position: absolute;
-        width: 36px;
-        height: 84px;
-        left: 25px;
-        top: 3966.5px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 9px;
-        line-height: 155%;
-        /* or 14px */
-        color: #FFFFFF;
-    }
-
-    .footer-content2 {
-        position: absolute;
-        width: 277px;
-        height: 84px;
-        left: 84px;
-        top: 3966.5px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 9px;
-        line-height: 155%;
-        /* or 14px */
-        color: #FFFFFF;
-    }
-
-    .footer-content3 {
-        position: absolute;
-        width: 84px;
-        height: 11px;
-        left: 84px;
-        top: 4073.5px;
-
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 7px;
-        line-height: 155%;
-        /* identical to box height, or 11px */
-        color: #FFFFFF;
-    }
-
-    .direction1 {
-        position: absolute;
-        width: 46px;
-        height: 52px;
-        left: 80%;
-        top: 84px;
-        background: url(/static/images/direction1.png) no-repeat;
-
-    }
-
-
+ @media screen and (max-width: 415px) {
+
+ .introduce .gradation1,
+ .introduce .gradation2,
+ .introduce .company_con2 img{
+     display: none;
+ }
+
+ .company_con1 img{
+     position: absolute;
+     width: 184px;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+.about_us {
+    margin-top: 164px;
+    height: 249px;
+}
+.about_us .inner {
+    height: 249px;
+    width: 100%;
+    /*background-color: tomato;*/
+}
+.about_us .company_img0 {
+    position: relative;
+    top: 23px;
+    height: 225px;
+}
+.about_us .company_img1 {
+    position: absolute;
+    width: 220px;
+    top: 71px;
+}
+
+.introduce {
+    margin-top: 267px;
+    height: 809px;
+    /*background-color: #006BE8;*/
+}
+.introduce .inner {
+    height: 809px;
+    width: 100%;
+}
+.introduce .company_img1 img{
+    position: absolute;
+    width: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.introduce .company_img2 {
+    position: absolute;
+    top: 85px;
+}
+.introduce .company_img2 img {
+    position: absolute;
+    width: 530px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.introduce .company_con1 {
+    position: absolute;
+    width: 367px;
+    height: 69px;
+    top: 170px;
+    background-image: url("/static/images/company_app_img/company_m_img1.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-position: center;
+
+}
+.introduce .company_con2 {
+    position: absolute;
+    top: 384px;
+    position: absolute;
+    width: 100%;
+    height: 424px;
+    left: 0;
+    background: #2C2C2C url("/static/images/company_app_img/company_m_img2.png") no-repeat center;
+}
+.mission {
+    position: relative;
+    margin-top: 68px;
+    height: 656px;
+}
+.mission .inner{
+    height: 656px;
+    width: 100%;
+    /*background-color: #95C05D;*/
+}
+.mission .vector {
+    position: absolute;
+    width: 61.5px;
+    height: 0px;
+    top: 0px;
+    border: 2px solid #000000;
+}
+
+.mission .company_con1 {
+    position: absolute;
+    width: 193px;
+    top: 39px;
+}
+.mission .company_img1 {
+    position: relative;
+    top: 123px;
+    width: 1372px;
+    height: 533px;
+    left: -492px;
+    background-image: url("/static/images/company_app_img/image14.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.mission .dreamplan {
+    position: absolute;
+    top: 35px;
+    width: 277px;
+
+}
+.mission .dreamplan img{
+    position: absolute;
+    width: 277px;
+}
+
+.mission .img {
+    position: absolute;
+    width: 119px;
+    height: 106px;
+}
+
+.mission .text {
+    position: absolute;
+    width: 77px;
+    height: 26px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #95C05D;
+}
+
+.mission .content {
+    position: absolute;
+    height: 36px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.mission .value.img {
+    left: 38%;
+    top: 98px;
+}
+
+.mission .vision.img {
+    left: 38%;
+    top: 362px;
+}
+
+.mission .mission_c.img {
+    top: 230px;
+    left: 38%;
+}
+
+.mission .mission_c.text {
+    top: 230px;
+    width: 338px;
+    left: 43%;
+}
+.mission .value.text {
+    left: 43%;
+    top: 113px;
+    width: 338px;
+}
+.mission .vision.text {
+    left: 43%;
+    top: 371px;
+    width: 338px;
+}
+
+
+.mission .mission_c.content {
+    top: 270px;
+    right: 38%;
+    width: 179px;
+}
+.mission .value.content {
+    right: 38.5%;
+    top: 411px;
+    width: 170px;
+}
+.mission .vision.content {
+    /*right: 38.5%;*/
+    left: 12.7%;
+    top: 153px;
+    width: 170px;
+}
+
+.goal{
+    margin-top: 204px;
+    height: 923px;
+}
+.goal .inner{
+    height: 923px;
+    width: 100%;
+
+}
+.goal .company_con1 {
+    position: absolute;
+    top: 0px;
+}
+.goal .company_con1 img{
+    position: absolute;
+    width: 56px;
+}
+.goal .rectangle {
+    position: absolute;
+    width: 322px;
+    height: 48px;
+    background: #4E6234;
+    border-radius: 10px;
+}
+.goal .rectangle.rec1 {
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.goal .rectangle.rec2 {
+    top: 399px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.goal .rectangle.rec3 {
+    top: 708px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.goal .rectangle .text1 {
+    position: absolute;
+    width: 270px;
+    height: 172px;
+    left: 23px;
+    top: 9px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.goal .rectangle .text2 {
+    position: absolute;
+    width: 309px;
+    height: 172px;
+    left: 4px;
+    top: 60px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.goal .rectangle .bg1 {
+    background: rgba(78, 98, 52, 0.1);
+    border-radius: 10px;
+    width: 322px;
+    height: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.goal .rectangle .bg2 {
+    background: rgba(78, 98, 52, 0.1);
+    border-radius: 10px;
+    width: 322px;
+    height: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.goal .rectangle .bg3 {
+    background: rgba(78, 98, 52, 0.1);
+    border-radius: 10px;
+    width: 322px;
+    height: 205px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.history{
+    margin-top: 90px;
+    height: 545px;
+}
+.history .inner{
+    height: 545px;
+    width: 100%;
+    /*background-color: gold;*/
+}
+.history .company_con1 {
+    position: absolute;
+    top: 0px;
+}
+.history .company_con1 img {
+    position: absolute;
+    width: 105px;
+}
+.history .gradation1 {
+    position: absolute;
+    top: 58px;
+    right: 50%;
+    transform: translateX(-50%);
+}
+.history .gradation1 img{
+    position: absolute;
+    width: 310px;
+    height: 37px;
+}
+.history .gradation2 {
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.history .gradation2 img {
+    position: absolute;
+    width: 310px;
+    height: 37px;
+}
+.history .company_con2 {
+    position: absolute;
+    width: 253px;
+    height: 141px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 68px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.615em;
+
+    color: #FFFFFF;
+}
+
+.history .company_con3 {
+    position: absolute;
+    width: 390px;
+    height: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+.history .company_con3.text1 {
+    top: 130px;
+
+}
+.history .company_con3.text2 {
+    top: 233px;
+    width: 150px;
+    left: 35%;
+}
+
+.history .company_con3.text3 {
+    top: 233px;
+    width: 150px;
+    left: 60%;
+}
 
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    .footer {*/
+/*        position: absolute;*/
+/*        width: 100%;*/
+/*        height: 321px;*/
+/*        left: 0px;*/
+/*        top: 3873px;*/
+/*        background: #4E6234;*/
+/*    }*/
+
+/*    .footer-content1 {*/
+/*        position: absolute;*/
+/*        width: 36px;*/
+/*        height: 84px;*/
+/*        left: 25px;*/
+/*        top: 3966.5px;*/
+
+/*        font-family: 'Pretendard';*/
+/*        font-style: normal;*/
+/*        font-weight: 700;*/
+/*        font-size: 9px;*/
+/*        line-height: 155%;*/
+/*        !* or 14px *!*/
+/*        color: #FFFFFF;*/
+/*    }*/
+
+/*    .footer-content2 {*/
+/*        position: absolute;*/
+/*        width: 277px;*/
+/*        height: 84px;*/
+/*        left: 84px;*/
+/*        top: 3966.5px;*/
+
+/*        font-family: 'Pretendard';*/
+/*        font-style: normal;*/
+/*        font-weight: 400;*/
+/*        font-size: 9px;*/
+/*        line-height: 155%;*/
+/*        !* or 14px *!*/
+/*        color: #FFFFFF;*/
+/*    }*/
+
+/*    .footer-content3 {*/
+/*        position: absolute;*/
+/*        width: 84px;*/
+/*        height: 11px;*/
+/*        left: 84px;*/
+/*        top: 4073.5px;*/
+
+/*        font-family: 'Pretendard';*/
+/*        font-style: normal;*/
+/*        font-weight: 700;*/
+/*        font-size: 7px;*/
+/*        line-height: 155%;*/
+/*        !* identical to box height, or 11px *!*/
+/*        color: #FFFFFF;*/
+/*    }*/
+
+/*    .direction1 {*/
+/*        position: absolute;*/
+/*        width: 46px;*/
+/*        height: 52px;*/
+/*        left: 80%;*/
+/*        top: 84px;*/
+/*        background: url(/static/images/direction1.png) no-repeat;*/
+
+/*    }*/
+
+
+
+/* }*/

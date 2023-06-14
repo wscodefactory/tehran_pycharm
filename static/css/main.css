@@ -18,7 +18,7 @@ body{
 	position: relative;
 	height: 1080px;
 	width: 100%;
-	background: url(/static/images/background1.jpg);
+	background: url(/static/images/main_img/background1.jpg);
 	background-size: cover;
 }
 @media screen and (max-width: 800px) {
@@ -231,7 +231,7 @@ body{
 	left: 49.42%;
 	margin-top: 144px;
 
-	background: url(/static/images/Group2.png) no-repeat; 
+	background: url(/static/images/main_img/Group2.png) no-repeat;
 	background-size: cover;
 }
 
@@ -242,7 +242,7 @@ body{
 	left: 0px;
 
 
-	background: url(/static/images/image2.png);
+	background: url(/static/images/main_img/image2.png);
 }
 
 .banner1-overlay{
@@ -292,7 +292,7 @@ body{
 	height: 721px;
 	margin-top: 360px;
 
-	background: url(/static/images/image5.png) no-repeat;
+	background: url(/static/images/main_img/image5.png) no-repeat;
 	background-size: cover;
 	transform: matrix(1, 0, 0, 1, 0, 0);
 
@@ -333,7 +333,7 @@ body{
 	left: 52%;
 	top: 0%;
 
-	background: url(/static/images/image4.png) no-repeat;
+	background: url(/static/images/main_img/image4.png) no-repeat;
 	background-size: cover;
 	transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -360,7 +360,7 @@ body{
 	left: 20%;
 	top: 0;
 
-	background: url(/static/images/image6.png) no-repeat;
+	background: url(/static/images/main_img/image6.png) no-repeat;
 	background-size: cover;
 }
 
@@ -469,7 +469,7 @@ body{
 	left: 0px;
 	top: 3400px;
 
-	background: url(/static/images/image8.png) no-repeat;
+	background: url(/static/images/main_img/image8.png) no-repeat;
 	background-size: cover;
 }
 
@@ -549,7 +549,7 @@ body{
 	left: 33.22%;
 	top: 700px;
 
-	background: url(/static/images/c1.png) no-repeat;
+	background: url(/static/images/main_img/c1.png) no-repeat;
 	background-size: cover;
 }
 
@@ -560,7 +560,7 @@ body{
 	left: 42.9%;
 	top: 700px;
 	
-	background: url(/static/images/c2.png) no-repeat;
+	background: url(/static/images/main_img/c2.png) no-repeat;
 	background-size: cover;
 }
 
@@ -571,7 +571,7 @@ body{
 	left: 52.6%;
 	top: 700px;	
 	
-	background: url(/static/images/c3.png) no-repeat;
+	background: url(/static/images/main_img/c3.png) no-repeat;
 	background-size: cover;
 }
 
@@ -582,7 +582,7 @@ body{
 	left: 62.39%;
 	top: 700px;	
 	
-	background: url(/static/images/c4.png) no-repeat;
+	background: url(/static/images/main_img/c4.png) no-repeat;
 	background-size: cover;
 }
 
@@ -804,7 +804,7 @@ body{
 	left: 0px;
 	top: 4470px;
 
-	background: url(/static/images/Rectangle8.png) no-repeat;
+	background: url(/static/images/main_img/Rectangle8.png) no-repeat;
 	background-size: cover;
 }
 
@@ -994,7 +994,7 @@ body{
 	left: 49.42%;
 	top: 5450px;
 	
-	background: url(/static/images/Group2.png) no-repeat;
+	background: url(/static/images/main_img/Group2.png) no-repeat;
 	background-size: cover;
 }
 
@@ -1053,7 +1053,7 @@ body{
 	left: 0px;
 	top: 0px;
 	
-	background: url(/static/images/image10.png) no-repeat;
+	background: url(/static/images/main_img/image10.png) no-repeat;
 	background-size: cover;
 }
 
@@ -1101,7 +1101,7 @@ body{
 	top: 374px;
 	border-width:0;
 	
-	background: url(/static/images/naver_icon.png) no-repeat;
+	background: url(/static/images/main_img/naver_icon.png) no-repeat;
 	background-size: cover;
 }
 
@@ -1113,7 +1113,7 @@ body{
 	top: 374px;
 	border-width:0;
 	
-	background: url(/static/images/instagram_icon.png)no-repeat;
+	background: url(/static/images/main_img/instagram_icon.png)no-repeat;
 	background-size: cover;
 }
 
@@ -1125,7 +1125,7 @@ body{
 	top: 374px;
 	border-width:0;
 	
-	background: url(/static/images/facebook_icon.png)no-repeat;
+	background: url(/static/images/main_img/facebook_icon.png)no-repeat;
 	background-size: cover;
 }
 
@@ -1137,7 +1137,7 @@ body{
 	top: 374px;
 	border-width:0;
 	
-	background: url(/static/images/kakao_icon.png)no-repeat;
+	background: url(/static/images/main_img/kakao_icon.png)no-repeat;
 	background-size: cover;
 }
 
@@ -1161,7 +1161,7 @@ body{
 	top: 57px;
 	
 	border: 6px solid #FFEB3B;
-	background: url(/static/images/sampleQRcode.png)no-repeat;
+	background: url(/static/images/main_img/sampleQRcode.png)no-repeat;
 	background-size: cover;
 }
 
@@ -1172,7 +1172,7 @@ body{
 	left: calc(27% + 167px);
 	top: 42px;
 	
-	background: url(/static/images/kakao_icon2.png)no-repeat;
+	background: url(/static/images/main_img/kakao_icon2.png)no-repeat;
 	background-size: cover;
 }
 
@@ -1183,7 +1183,7 @@ body{
 	left: 42.4%;
 	top: 73px;
 	
-	background: url(/static/images/qr2.png)no-repeat;
+	background: url(/static/images/main_img/qr2.png)no-repeat;
 	background-size: cover;
 }
 
@@ -1499,7 +1499,7 @@ body{
 	left: 35%;
 	top: 7px;
 	
-	background: url(/static/images/send_icon.png) no-repeat;
+	background: url(/static/images/main_img/send_icon.png) no-repeat;
 	background-size: cover;
 }
 
@@ -1511,7 +1511,7 @@ body{
 	.banner2{
 		color: #FFFFFF;
 		line-height: 20px;
-		background: url(/static/images/image4.png);
+		background: url(/static/images/main_img/image4.png);
 	}
 
 	.banner2-image{
