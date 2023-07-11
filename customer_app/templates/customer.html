@@ -16,16 +16,7 @@
 </head>
 
 <body>
-    <nav class="nav-top">
-        <ul class="text-center">
-            <li><a href="#">테헤란(로고)</a></li>
-            <li>회사 소개</li>
-            <li>사업 영역 소개</li>
-            <li>제품 소개</li>
-            <li>게시판</li>
-            <li>고객 지원</li>
-        </ul>
-    </nav>
+    {% include "menu_bar.html" %}
 
     <div class="pt-20p" id="HeadDiv">
         <!-- 고객 지원 -->
@@ -72,7 +63,7 @@
                             <!-- Q -->
                             <div class="FAQ-question">
                                 <i class="fa-solid fa-q pb-1p">:</i>
-                                <h3 class="pl-3p">농사를 짓는 동안 컨테이너에 몇일에 한번 방문해야 하나요?</h3>
+                                <h3 class="pl-3p">농사를 짓는 동안 컨테이너에 며칠에 한 번 방문해야 하나요?</h3>
                                 <img src="/static/images/customer_app_img/FAQ-list_check.jpg">
                             </div>
 
@@ -330,6 +321,7 @@
                         </table>
                     </div>
                 </form>
+                <div class="add-btn">글쓰기</div>
             </div>
 
             <!-- PagiNation -->
@@ -347,6 +339,10 @@
                 </ul>
             </nav>
         </div>
+    </div>
+
+    <div class="footer-container">
+        {% include "footer.html" %}
     </div>
 
     <script src="/static/js/Scroll Fade in Animation.js"></script>
