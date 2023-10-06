@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static '/css/create_notice.css' %}">
+    <link rel="stylesheet" href="{% static '/css/basic.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>공지사항 글쓰기</title>
+</head>
+
+<body>
+    {% include "menu_bar.html" %}
+
+    <div class="title1 text-center">
+        <p class="ls-5">NOTICE</p>
+        <h1>글쓰기</h1>
+    </div>
+
+    <div class="notice-form-container">
+        <form action="/notice/create_notice/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input class="title-input" type="text" name="title" placeholder="제목">
+            <input class="file-input" type="file" name="file">
+            <textarea class="content-input" name="content" placeholder="내용"></textarea>
+            <input class="submit-btn" type="submit" value="작성">
+        </form>
+    </div>
+
+</body>
+
+</html>

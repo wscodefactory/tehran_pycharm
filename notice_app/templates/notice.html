@@ -3,8 +3,6 @@
 <html>
 
 <head>
-    <!-- <link rel="stylesheet" href="/static/css/notice_app.css">
-    <link rel="stylesheet" href="/static/css/basic.css"> -->
     <link rel="stylesheet" href={% static '/css/notice_app.css' %}>
     <link rel="stylesheet" href={% static '/css/basic.css' %}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -32,19 +30,22 @@
         <!-- 공지사항 -->
         <div class="sa sa-up">
             <div class="notice-container display-center">
-                <form class="notice-form">
+                <form class="notice-form" method="GET" id="search-form">
                     <div class="notice-search pb-3p">
-                        <select>
-                            <option>전체</option>
+                        <select name="category">
+                            <option value="">전체</option>
                         </select>
 
-                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <input type="text" name="query" id="search-input" placeholder="검색어를 입력하세요." value="{{ request.GET.query }}">
+                        <input type="image" src="/static/images/customer_app_img/magnifying-glass-solid.svg" alt="검색 아이콘" id="search-icon">
+
                         <div style="clear: both; float: none;"></div>
                     </div>
-
                     <div>
                         <table class="notice-list text-center">
                             <colgroup>
+                                <col>
+                                <col>
                                 <col>
                                 <col>
                                 <col>
@@ -54,91 +55,33 @@
                                 <tr>
                                     <th>NO.</th>
                                     <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>작성일</th>
                                     <th>조회수</th>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                <tr class="important-notice">
-                                    <td><i class="fa-solid fa-bullhorn"></i></td>
-                                    <td class="text-left pl-3p">2023.06.05 테헤란 공지사항</td>
-                                    <td>1000</td>
+                                {% for notice in page_obj %}
+                                <tr onclick="location.href='/notice/notice_detail/{{ notice.id }}'">
+                                    <td>{{ notice.id }}</td>
+                                    <td class="text-center pl-3p">{{ notice.title }}</td>
+                                    <td>{{ notice.author.name }}</td>
+                                    <td>{{ notice.created_at }}</td>
+                                    <td>{{ notice.viewcnt }}</td>
                                 </tr>
-
-                                <tr class="important-notice">
-                                    <td><i class="fa-solid fa-bullhorn"></i></td>
-                                    <td class="text-left pl-3p">2023.06.04 테헤란 공지사항</td>
-                                    <td>900</td>
-                                </tr>
-
-                                <tr class="important-notice">
-                                    <td><i class="fa-solid fa-bullhorn"></i></td>
-                                    <td class="text-left pl-3p">2023.06.03 테헤란 공지사항</td>
-                                    <td>800</td>
-                                </tr>
-
-                                <tr class="important-notice">
-                                    <td><i class="fa-solid fa-bullhorn"></i></td>
-                                    <td class="text-left pl-3p">2023.06.02 테헤란 공지사항</td>
-                                    <td>700</td>
-                                </tr>
-
-                                <tr class="important-notice">
-                                    <td><i class="fa-solid fa-bullhorn"></i></td>
-                                    <td class="text-left pl-3p">2023.06.01 테헤란 공지사항</td>
-                                    <td>600</td>
-                                </tr>
-
-                                <tr>
-                                    <td>5</td>
-                                    <td class="text-left pl-3p">2023.05.31 테헤란 공지사항</td>
-                                    <td>500</td>
-                                </tr>
-
-                                <tr>
-                                    <td>4</td>
-                                    <td class="text-left pl-3p">2023.05.30 테헤란 공지사항</td>
-                                    <td>400</td>
-                                </tr>
-
-                                <tr>
-                                    <td>3</td>
-                                    <td class="text-left pl-3p">2023.05.29 테헤란 공지사항</td>
-                                    <td>300</td>
-                                </tr>
-
-                                <tr>
-                                    <td>2</td>
-                                    <td class="text-left pl-3p">2023.05.28 테헤란 공지사항</td>
-                                    <td>200</td>
-                                </tr>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td class="text-left pl-3p">2023.05.27 테헤란 공지사항</td>
-                                    <td>100</td>
-                                </tr>
+                                {% endfor %}
                             </tbody>
                         </table>
                     </div>
                 </form>
-                <div class="add-btn">글쓰기</div>
+                {% if request.user.is_superuser %}
+                    <div class="add-btn" onclick="location.href='/notice/create_notice_page'">글쓰기</div>
+                {% endif %}
             </div>
 
-            <!-- PagiNation -->
-            <nav class="pagination">
-                <ul class="text-center pl-0">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">&lt;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&gt;</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
-            </nav>
+            {% include "pagination.html" %}
+
         </div>
     </div>
 
@@ -148,6 +91,25 @@
 
     <script src="/static/js/Scroll Fade in Animation.js"></script>
     <script src="/static/js/FAQ Toggle.js"></script>
+
+    <script>
+        function submitSearchForm() {
+            document.getElementById('search-form').submit();
+        }
+    
+        document.getElementById('search-icon').addEventListener('click', function (event) {
+            event.preventDefault();
+            submitSearchForm();
+        });
+    
+        document.getElementById('search-input').addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                submitSearchForm();
+            }
+        });
+    </script>
+    
 </body>
 
 </html>

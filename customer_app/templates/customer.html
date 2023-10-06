@@ -47,15 +47,6 @@
             </div>
 
             <div class="FQ-container display-center">
-                <form class="FQ-form">
-                    <div class="FQ-search pb-5p">
-                        <select>
-                            <option>전체</option>
-                        </select>
-
-                        <input type="text" placeholder="검색어를 입력하세요.">
-                        <div style="clear: both; float: none;"></div>
-                    </div>
 
                     <article>
                         <!-- 1 -->
@@ -228,7 +219,6 @@
                             <hr />
                         </section>
                     </article>
-                </form>
             </div>
         </div>
 
@@ -239,13 +229,13 @@
             </div>
 
             <div class="FQ-container display-center">
-                <form class="FQ-form">
+                <form class="FQ-form" action="{% url 'search_qna' %}" method="get">
                     <div class="FQ-search pb-3p">
                         <select>
                             <option>전체</option>
                         </select>
-
-                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <input type="text" name="query" id="search-input" placeholder="검색어를 입력하세요." value="{{ request.GET.query }}">
+                        <input type="image" src="/static/images/customer_app_img/magnifying-glass-solid.svg" alt="검색 아이콘" id="search-icon">
                         <div style="clear: both; float: none;"></div>
                     </div>
 
@@ -258,7 +248,7 @@
                                 <col>
                                 <col>
                             </colgroup>
-
+        
                             <thead>
                                 <tr>
                                     <th>NO.</th>
@@ -268,76 +258,28 @@
                                     <th>작성일</th>
                                 </tr>
                             </thead>
-
+        
                             <tbody>
-                                <tr>
-                                    <td>6</td>
-                                    <td style="color: #FF4040;">답변대기</td>
-                                    <td class="text-left pl-3p">질문있습니다.</td>
-                                    <td>스마트팜</td>
-                                    <td>1일 전</td>
+                                <!-- 1:1 문의 데이터 반복문으로 표시 -->
+                                {% for qna in page_obj %}
+                                <tr onclick="location.href='/customer/qna_detail/{{ qna.id }}'">
+                                    <td>{{ qna.id }}</td>
+                                    <td style="color: {% if qna.is_answered %}#0038FF;{% else %}#FF4040;{% endif %}">
+                                        {% if qna.is_answered %}답변완료{% else %}답변대기{% endif %}
+                                    </td>
+                                    <td class="text-left pl-3p">{{ qna.title }}</td>
+                                    <td>{{ qna.author.name }}</td>
+                                    <td>{{ qna.created_at }}</td>
                                 </tr>
-
-                                <tr>
-                                    <td>5</td>
-                                    <td style="color: #7C91FF;">답변대기</td>
-                                    <td class="text-left pl-3p">질문있습니다.</td>
-                                    <td>스마트팜</td>
-                                    <td>2일 전</td>
-                                </tr>
-
-                                <tr>
-                                    <td>4</td>
-                                    <td style="color: #7C91FF;">답변대기</td>
-                                    <td class="text-left pl-3p">질문있습니다.</td>
-                                    <td>스마트팜</td>
-                                    <td>3일 전</td>
-                                </tr>
-
-                                <tr>
-                                    <td>3</td>
-                                    <td style="color: #7C91FF;">답변대기</td>
-                                    <td class="text-left pl-3p">질문있습니다.</td>
-                                    <td>스마트팜</td>
-                                    <td>4일 전</td>
-                                </tr>
-
-                                <tr>
-                                    <td>2</td>
-                                    <td style="color: #7C91FF;">답변대기</td>
-                                    <td class="text-left pl-3p">질문있습니다.</td>
-                                    <td>스마트팜</td>
-                                    <td>5일 전</td>
-                                </tr>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td style="color: #0038FF;">답변완료</td>
-                                    <td class="text-left pl-3p">질문있습니다.</td>
-                                    <td>스마트팜</td>
-                                    <td>6일 전</td>
-                                </tr>
+                                {% endfor %}
                             </tbody>
                         </table>
                     </div>
                 </form>
-                <div class="add-btn">글쓰기</div>
+                <div class="add-btn" onclick="location.href='/customer/create_qna_page'">문의하기</div>
             </div>
 
-            <!-- PagiNation -->
-            <nav class="pagination">
-                <ul class="text-center pl-0">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">&lt;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&gt;</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
-            </nav>
+            {% include "pagination.html" %}
         </div>
     </div>
 

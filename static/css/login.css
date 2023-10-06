@@ -1,0 +1,66 @@
+.login-title {
+    width: 100%;
+    position: absolute;
+    top: 250px;
+
+    font-family: Pretendard;
+    font-style: normal;
+}
+
+.login-title h1{
+    color: #4E6234;
+    font-weight: 700;
+}
+
+#ID{
+    position:absolute;
+    top: 370px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#password{
+    position:absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-box{
+    width: 450px;
+    height: 50px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #FFF;
+
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 173.836%;
+}
+
+.login-btn{
+    position:absolute;
+    top: 510px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4E6234;
+    color: #FFF;
+}
+
+.regist-btn{
+    position:absolute;
+    top: 570px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #717171;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+.input-box{
+    width: 300px;
+    height: 50px;
+}
+}

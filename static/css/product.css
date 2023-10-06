@@ -56,7 +56,7 @@ body{
 }
 
 .product_con2 img {
-    width: 402px;
+    width: 350px;
 }
 
 
@@ -203,6 +203,13 @@ body{
     }
 }
 
+@media screen and (max-width: 450px){
+    .product_cont5 {
+        width: 360px;
+        font-size: 20px;
+    }
+}
+
 /*.product_cont5 img {*/
 /*    position: absolute;*/
 /*    left: 20px;*/
@@ -258,7 +265,8 @@ body{
     left: 15%;
     transform: translateX(-50%);
     top: 345px;
-    background: url(/static/images/product_app_img/컨테이너타입.png);
+    background: url(/static/images/product_app_img/컨테이너타입.png) no-repeat;
+	background-size: cover;
 }
 .product_img4 {
     position: absolute;
@@ -267,7 +275,8 @@ body{
     left: 38%;
     transform: translateX(-50%);
     top: 345px;
-    background: url(/static/images/product_app_img/주거복합형.png);
+    background: url(/static/images/product_app_img/주거복합형.png) no-repeat;
+	background-size: cover;
 }
 .product_img5 {
     position: absolute;
@@ -277,7 +286,8 @@ body{
     transform: translateX(-50%);
     top: 345px;
 
-    background: url(/static/images/product_app_img/컨설팅.png);
+    background: url(/static/images/product_app_img/컨설팅.png) no-repeat;
+	background-size: cover;
 }
 .product_img6 {
     position: absolute;
@@ -287,7 +297,8 @@ body{
     transform: translateX(-50%);
     top: 345px;
 
-    background: url(/static/images/product_app_img/운영.png);
+    background: url(/static/images/product_app_img/운영.png) no-repeat;
+	background-size: cover;
 }
 
 .product_cont7 {
@@ -406,6 +417,31 @@ body{
         left: 80%;
         font-size: 20px;
         top: 810px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .product_img3,
+    .product_img4,
+    .product_img5,
+    .product_img6 {
+        width:130px;
+    }
+
+    .product_cont6 .item1,
+    .product_cont6 .item2,
+    .product_cont6 .item3,
+    .product_cont6 .item4 {
+        width: 150px;
+        font-size:15px;
+    }
+
+    .product_cont7 .item1,
+    .product_cont7 .item2,
+    .product_cont7 .item3,
+    .product_cont7 .item4 {
+        width:150px;
+        font-size:15px;
     }
 }
 

@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="{% static 'css/register.css' %}">
+  <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body>
+  {% include "menu_bar.html" %}
+  <div class="regist-title text-center">
+    <p class="ls-5">Regist</p>
+    <h1>회원가입</h1>
+  </div>
+  <form action="/regist/" method="POST">
+    {% csrf_token %}
+    <input class="id-input-box" type="text" id="ID" name="id" 
+       pattern="^(?=.*[a-zA-Z\d@$!%*#?&])[a-zA-Z\d@$!%*#?&]{6,20}$" 
+       title="영문, 숫자, 특수문자를 혼합하여 6-20자로 사용 가능합니다. 공백은 사용할 수 없습니다." 
+       placeholder="아이디" required><br>
+    <input id="checkDuplicateBtn" class="check-duplicate-btn" type="button" value="중복 확인">
+    <div id="idValidationMessage-OK" class="id-validation-message"></div>
+    <div id="idValidationMessage-NO" class="id-validation-message"></div>
+    <div class="id-rule">-영문, 숫자, 특수문자를 혼합하여 6-20자로 사용 가능합니다.<br>
+      -공백은 사용할 수 없습니다.</div>
+    <input class="input-box" type="password" id="password" name="password" placeholder="비밀번호" required><br>
+    <input class="input-box" type="password" id="password_check" name="password_check" placeholder="비밀번호 확인" required><br>
+    <div id="passwordMatchMessage-OK" class="pw-validation-message"></div>
+    <div id="passwordMatchMessage-NO" class="pw-validation-message"></div>
+    <input class="input-box" type="email" id="email" name="email" placeholder="이메일" required><br>
+    <input class="input-box" type="text" id="name" name="name" placeholder="이름" required><br>
+    <input id="registerBtn" class="input-box regist-btn" type="submit" value="동의하고 가입하기">
+    <div class="content1">가입하기 버튼을 클릭하면, 이용약관과 개인정보 수집 및 이용동의에 동의한 것으로 간주합니다.</div>
+    <div class="content2">아이디가 있으신가요? <a href="/login_page">로그인</a></div>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var is_dup = 0;
+    // 중복 확인 버튼 클릭 시 처리
+    $('#checkDuplicateBtn').click(function(event) {
+      event.preventDefault(); // 폼 제출 방지
+
+      var id = $('#ID').val();
+        
+      $.ajax({
+        url: "{% url 'check_duplicate_id' %}",
+        type: 'GET',
+        data: {
+          'id': id
+        },
+        success: function(response) {
+          if (response['is_taken']) {
+            is_dup = 0;
+            $('#idValidationMessage-NO').text('이미 사용 중인 아이디입니다.');
+            $('#idValidationMessage-OK').text('');
+          } else {
+            is_dup = 1;
+            $('#idValidationMessage-OK').text('사용 가능한 아이디입니다.');
+            $('#idValidationMessage-NO').text('');
+          }
+        }
+      });
+    });
+    
+    // 회원가입 버튼 클릭 시 처리
+    $('#registerBtn').click(function(event) {
+      var id = $('#ID').val();
+      var password = $('#password').val();
+      var passwordCheck = $('#password_check').val();
+
+      // 비밀번호 확인
+      if (password !== passwordCheck) {
+        $('#passwordMatchMessage-NO').text('일치하지 않습니다.');
+        $('#passwordMatchMessage-OK').text('');
+        event.preventDefault(); // 폼 제출 방지
+        return;
+      } else{
+        $('#passwordMatchMessage-OK').text('일치 합니다.');
+        $('#passwordMatchMessage-NO').text('');
+      }
+
+      $.ajax({
+        url: "{% url 'check_duplicate_id' %}",
+        type: 'GET',
+        async: false, // 비동기 방식 비활성화
+        data: {
+          'id': id
+        },
+        success: function(response) {
+          if (response['is_taken']) {
+            is_dup = 0;
+            $('#idValidationMessage-NO').text('이미 사용 중인 아이디입니다.');
+            $('#idValidationMessage-OK').text('');
+          } else {
+            is_dup = 1;
+            $('#idValidationMessage-OK').text('사용 가능한 아이디입니다.');
+            $('#idValidationMessage-NO').text('');
+          }
+        }
+      });
+
+      if (is_dup === 0) {
+        alert('중복 확인을 해주세요.');
+        event.preventDefault(); // 폼 제출 방지
+      } else {
+        alert('회원가입이 완료되었습니다.');
+      }
+    });
+  });
+  </script>
+</body>
+</html>

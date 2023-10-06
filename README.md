@@ -3,6 +3,4 @@
 
 
 pip install
-- flask
-- mysql-connector-python
-- flask-session
+- mysqlclient

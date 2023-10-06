@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static '/css/notice_detail.css' %}">
+    <link rel="stylesheet" href="{% static '/css/basic.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>공지사항 상세보기</title>
+</head>
+
+<body>
+    {% include "menu_bar.html" %}
+
+    <div class="title1 text-center">
+        <p class="ls-5">NOTICE</p>
+        <h1>공지사항</h1>
+    </div>
+
+    <div class="notice-detail-container">
+        <div class="title-container">
+            <div class="notice-title1">제목</div>
+            <div class="notice-title2">{{ notice.title }}</div>
+        </div>
+        <div class="author-container">
+            <div class="notice-author1">작성자</div>
+            <div class="notice-author2">{{ notice.author.name }}</div>
+        </div>
+        <div class="file-container">
+            <div class="notice-file1">첨부된 파일</div>
+            <div class="notice-file2">{{ notice.file }}</div>
+        </div>
+        <div class="notice-content">{{ notice.content }}</div>
+        <div class="notice-date">{{ notice.created_at }}</div>
+            <div class="list-btn" onclick="location.href='/notice/notice'">목록으로</div>
+            {% if request.user.is_superuser %}
+                <!-- 경고 뜨지만 문제 없음 -->
+            <div class="button-container">
+                <div class="update-btn" onclick="confirmUpdate({{ notice.id }})">수정하기</div>
+                <div class="delete-btn" onclick="confirmDelete({{ notice.id }})">삭제하기</div>
+            </div>
+            {% endif %}
+    </div>
+
+    <script>
+        function confirmUpdate(noticeId) {
+            if (confirm("정말로 이 공지사항을 수정하시겠습니까?")) {
+                location.href = `/notice/notice_update/${noticeId}/`;
+            }
+        }
+
+        function confirmDelete(noticeId) {
+            if (confirm("정말로 이 공지사항을 삭제하시겠습니까?")) {
+                location.href = `/notice/notice_delete/${noticeId}/`;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

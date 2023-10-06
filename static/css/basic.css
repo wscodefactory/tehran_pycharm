@@ -408,10 +408,10 @@ span {
 
 /* 페이지네이션 */
 .pagination {
-    width: 480px;
+    width: auto;
     margin-top: 3%;
     margin-bottom: 5%;
-    margin-left:50%;
+    margin-left:60%;
     transform: translateX(-50%);
     color: black;
     font-size: 15px;
@@ -433,6 +433,11 @@ span {
 
 .pagination a:active {
     color: orange;
+}
+
+.current {
+    font-weight: bold; /* 현재 페이지 번호에 굵은 텍스트 적용 */
+    color: #FF0000; /* 현재 페이지 번호에 빨간색 적용 */
 }
 
 /* Scroll Animation (sa, 스크롤 애니메이션) */

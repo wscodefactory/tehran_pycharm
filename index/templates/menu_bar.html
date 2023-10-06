@@ -86,11 +86,11 @@
     <span></span>
 
     <ul id="menu">
-      <a href="#"><li>회사 소개</li></a>
-      <a href="#"><li>사업 영역</li></a>
-      <a href="#"><li>제품 소개</li></a>
-      <a href="#"><li>게시판</li></a>
-      <a href="#"><li>고객 지원</li></a>
+      <a href="/company/company"><li>회사 소개</li></a>
+      <a href="/buisness/buisness"><li>사업 영역</li></a>
+      <a href="/product/product"><li>제품 소개</li></a>
+      <a href="/notice/notice"><li>게시판</li></a>
+      <a href="/customer/customer"><li>고객 지원</li></a>
     </ul>
   </div>
 </div>
@@ -99,8 +99,15 @@
 
 
       <div class="d-flex flex-row mb-3">
-          <div class="signIn" class="p-2" alt="login" onclick="location.href='/login'"></div>
-          <div class="mobile-signIn" class="p-2" alt="login" onclick="location.href='#'"></div>
+        {% if request.user.is_authenticated %}
+          <div class="username">
+            {{ request.session.username }}님 반갑습니다.
+            <a href="{% url 'logout' %}" class="signOut">로그아웃</a>
+          </div>
+        {% else %}
+          <div class="signIn" class="p-2" alt="login" onclick="location.href='/login_page'"></div>
+          <div class="mobile-signIn" class="p-2" alt="login" onclick="location.href='/login_page'"></div>
+        {% endif %}
           <div class="langicon" class="p-2" alt="langicon"> </div>
           <div class="language p-2" style="width:100px;">한국어
             <div class="language-menu p-2">

@@ -60,6 +60,10 @@
     display: inline;
 }
 
+.FQ-search {
+    display:flex;
+}
+
 .FQ-search select {
     width: 10%;
     height: 27px;
@@ -67,17 +71,22 @@
     border-radius: 5px;
 }
 
-.FQ-search input {
-    width: 88.5%;
+#search-input {
+    position:relative;
+    margin-left:5px;
+    width: 87%;
     height: 27px;
     font-size: 15px;
     float: right;
     border-radius: 5px;
     border: 0.5px solid rgb(0, 0, 0.3);
-    background-image: url("/static/images/customer_app_img/magnifying-glass-solid.svg");
+}
+
+#search-icon{
+    position:relative;
+    margin-left:5px;
+    width: 20px;
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 20px;
 }
 
 .FAQ-list i {

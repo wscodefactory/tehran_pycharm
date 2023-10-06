@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os.path
 from pathlib import Path
 
+import pymysql  
+pymysql.install_as_MySQLdb()
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,8 +29,8 @@ SECRET_KEY = 'django-insecure-134!88i7!^fqlv1*h%6p^+yt)gzitbtbu8(do88v2w@-3g7!yi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
-
+ALLOWED_HOSTS = ['138.2.112.204', 'localhost']
+ALLOWED_HOSTS = ['*'] # 모든 호스트 허용
 
 # Application definition
 
@@ -85,8 +89,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '127.0.0.1',
+        'USER': 'root',
+        'PASSWORD': 'vndtjs00*',
+        'NAME': 'mydb',
+        'PORT': '3306'
     }
 }
 
@@ -135,3 +143,31 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+
+AUTH_USER_MODEL = 'index.User'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+# 세션 만료 시간을 10분으로 설정
+SESSION_COOKIE_AGE = 600
+
+# 모든 요청마다 세션 만료 시간을 갱신하도록 설정
+SESSION_SAVE_EVERY_REQUEST = True
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# 업로드된 파일이 저장될 디렉토리 경로
+MEDIA_ROOT = os.path.join(BASE_DIR, '/notice_files/')
+
+# 미디어 파일을 서빙할 URL
+MEDIA_URL = '/notice_files/'
+
+# 프록시 서버를 통해 HTTPS 요청을 전달받을 때 사용하는 헤더 설정
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
