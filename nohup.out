@@ -11,3 +11,94 @@ Performing system checks...
 
 System check identified no issues (0 silenced).
 Error: You don't have permission to access that port.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 06, 2023 - 11:00:44
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 06, 2023 - 11:01:24
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[06/Oct/2023 11:01:36] "GET / HTTP/1.1" 200 15246
+[06/Oct/2023 11:01:38] "GET /login_page/ HTTP/1.1" 200 5890
+[06/Oct/2023 11:01:38] "GET /static/css/login.css HTTP/1.1" 200 1078
+[06/Oct/2023 11:01:42] "GET /buisness/buisness HTTP/1.1" 301 0
+[06/Oct/2023 11:01:42] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 11:01:42] "GET /static/css/buisness_app.css HTTP/1.1" 200 5755
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/Vector%2028.jpg HTTP/1.1" 200 660
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/Rectangle%202.jpg HTTP/1.1" 200 16558
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/Rectangle%201.jpg HTTP/1.1" 200 16454
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%206.png HTTP/1.1" 200 8248
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%203.jpg HTTP/1.1" 200 133748
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%207.png HTTP/1.1" 200 4680
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%202.jpg HTTP/1.1" 200 735376
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%208.png HTTP/1.1" 200 14261
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%201.jpg HTTP/1.1" 200 920873
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%209.png HTTP/1.1" 200 20626
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%2010.png HTTP/1.1" 200 13330
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%204.jpg HTTP/1.1" 200 1044287
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%2011.png HTTP/1.1" 200 9585
+[06/Oct/2023 11:01:42] "GET /static/images/buisness_app_img/buisness_app%205.jpg HTTP/1.1" 200 392401
+[06/Oct/2023 11:01:44] "GET /product/product HTTP/1.1" 301 0
+[06/Oct/2023 11:01:44] "GET /product/product/ HTTP/1.1" 200 14899
+[06/Oct/2023 11:01:44] "GET /static/css/product.css HTTP/1.1" 200 24216
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/product_con1.png HTTP/1.1" 200 3393
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%86%8C%EA%B0%9C%20containel.png HTTP/1.1" 200 3101
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%9E%A5%EC%A0%90%20ADVANTAGES.png HTTP/1.1" 200 4129
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%83%9D%EC%82%B0%20PRODUCTION.png HTTP/1.1" 200 3905
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%A2%85%EB%A5%98%20PRODUCTION.png HTTP/1.1" 200 3762
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EC%A3%BC%EA%B1%B0%EB%B3%B5%ED%95%A9%ED%98%95.png HTTP/1.1" 200 11151
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%ED%83%80%EC%9E%85.png HTTP/1.1" 200 4753
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EC%9A%B4%EC%98%81.png HTTP/1.1" 200 18818
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EC%BB%A8%EC%84%A4%ED%8C%85.png HTTP/1.1" 200 12641
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/image23.png HTTP/1.1" 200 640154
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EC%8B%9C%EC%8A%A4%ED%85%9C2.png HTTP/1.1" 200 19216
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/Vector44.png HTTP/1.1" 200 1214
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EA%B0%80%EA%B3%B5%EC%8B%9D%ED%92%882.png HTTP/1.1" 200 16407
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/%EA%B2%80%ED%86%A01.png HTTP/1.1" 200 8880
+[06/Oct/2023 11:01:44] "GET /static/images/product_app_img/image25.png HTTP/1.1" 200 227006
+[06/Oct/2023 11:01:45] "GET /static/images/product_app_img/image24.png HTTP/1.1" 200 1080657
+[06/Oct/2023 11:01:45] "GET /static/images/product_app_img/image26.png HTTP/1.1" 200 220191
+[06/Oct/2023 11:01:45] "GET /static/images/product_app_img/image21.png HTTP/1.1" 200 1030432
+[06/Oct/2023 11:01:45] "GET /static/images/product_app_img/image27.png HTTP/1.1" 200 230522
+[06/Oct/2023 11:01:45] "GET /static/images/product_app_img/image28.png HTTP/1.1" 200 253881
+[06/Oct/2023 11:01:45] "GET /static/images/product_app_img/image29.png HTTP/1.1" 200 195433
+[06/Oct/2023 11:01:45] "GET /static/images/product_app_img/image30.png HTTP/1.1" 200 238071
+[06/Oct/2023 11:01:51] "GET /notice/notice HTTP/1.1" 301 0
+[06/Oct/2023 11:01:51] "GET /notice/notice/ HTTP/1.1" 200 11469
+[06/Oct/2023 11:01:51] "GET /static/css/notice_app.css HTTP/1.1" 200 2662
+[06/Oct/2023 11:01:51] "GET /static/js/FAQ%20Toggle.js HTTP/1.1" 200 391
+[06/Oct/2023 11:01:51] "GET /static/images/customer_app_img/magnifying-glass-solid.svg HTTP/1.1" 200 480
+[06/Oct/2023 11:01:51] "GET /notice/notice/ HTTP/1.1" 200 11469
+[06/Oct/2023 11:02:01] "GET /customer/customer HTTP/1.1" 301 0
+[06/Oct/2023 11:02:01] "GET /customer/customer/ HTTP/1.1" 200 21216
+[06/Oct/2023 11:02:01] "GET /static/css/customer_app.css HTTP/1.1" 200 4165
+[06/Oct/2023 11:02:01] "GET /static/images/customer_app_img/FAQ-list_check.jpg HTTP/1.1" 200 1005
+[06/Oct/2023 11:02:01] "GET /customer/customer/ HTTP/1.1" 200 21216
+[06/Oct/2023 11:02:03] "GET /company/company HTTP/1.1" 301 0
+[06/Oct/2023 11:02:03] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 11:02:03] "GET /static/css/company.css HTTP/1.1" 200 20306
+[06/Oct/2023 11:02:03] "GET /static/images/company_app_img/company_con2.png HTTP/1.1" 200 3586
+[06/Oct/2023 11:02:03] "GET /static/images/company_app_img/image13.png HTTP/1.1" 200 220667
+[06/Oct/2023 11:02:03] "GET /static/images/company_app_img/company_con5.png HTTP/1.1" 200 4079
+[06/Oct/2023 11:02:03] "GET /static/images/company_app_img/DREAMPLAN.png HTTP/1.1" 200 4695
+[06/Oct/2023 11:02:03] "GET /static/images/company_app_img/value.png HTTP/1.1" 200 11811
+[06/Oct/2023 11:02:03] "GET /static/images/company_app_img/mission.png HTTP/1.1" 200 6443
+[06/Oct/2023 11:02:03] "GET /static/images/company_app_img/vision.png HTTP/1.1" 200 8728
+[06/Oct/2023 11:02:03] "GET /static/images/company_app_img/company_con7.png HTTP/1.1" 200 2039
+[06/Oct/2023 11:02:03] "GET /static/images/company_app_img/company_con8.png HTTP/1.1" 200 2400
+[06/Oct/2023 11:02:04] "GET /static/images/company_app_img/image12.png HTTP/1.1" 200 1556869
+[06/Oct/2023 11:02:04] "GET /static/images/company_app_img/image14.png HTTP/1.1" 200 2226231
+[06/Oct/2023 11:02:08] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 11:14:37] code 400, message Bad request version ('À\x14À')
+[06/Oct/2023 11:14:37] You're accessing the development server over HTTPS, but it only supports HTTP.
