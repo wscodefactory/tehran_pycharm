@@ -41,43 +41,46 @@
 
         <hr class="qna-hr1">
 
-        <div class="answer-container">
-            <div class="qna-answer1">답변</div>
-            {% if request.user.is_superuser %}
-                <!-- 관리자 -->
-                {% if question.is_answered %}
-                    <!-- 답변이 작성된 경우 수정 폼 표시 -->
-                    <form id="update-answer-form" action="/customer/answer_update/{{ question.id }}/" method="post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        <textarea class="qna-answer2" name="content" placeholder="답변 내용">{{ answer.content }}</textarea>
-                        <div class="button-container">
-                            <input class="update-btn" type="submit" value="수정하기" onclick="updateFormSubmit()">
-                            <div class="delete-btn" onclick="confirmDelete({{ question.id }})">삭제하기</div>
-                        </div>
-                    </form>
-                {% else %}
-                    <!-- 답변이 작성되지 않은 경우 답변 폼 표시 -->
-                    <form id="answer-form" action="/customer/answer_add/{{ question.id }}/" method="post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        <textarea class="qna-answer2" name="content" placeholder="답변 내용"></textarea>
-                        <div class="button-container">
-                            <input class="update-btn" type="submit" value="답변하기" onclick="answerFormSubmit()">
-                            <div class="delete-btn" onclick="confirmDelete({{ question.id }})">삭제하기</div>
-                        </div>
-                    </form>
-                {% endif %}
-                <div class="answered-date">{{ answer.created_at }}</div>
-            {% else %}
-                <!-- 일반 유저 -->
-                {% if question.is_answered %}
-                    <div class="qna-answer2">{{ answer.content }}</div>
-                {% else %}
-                    <div class="qna-answer3">답변 대기중</div>
-                {% endif %}
-                <div class="answered-date">{{ answer.created_at }}</div>
-            {% endif %}
-        </div>
-    </div>
+       <div class="answer-container">
+    <div class="qna-answer1">답변</div>
+    {% if request.user.is_superuser %}
+        <!-- 관리자 -->
+        {% if question.is_answered %}
+            <!-- 답변이 작성된 경우 수정 폼 표시 -->
+            <form id="update-answer-form" action="/customer/answer_update/{{ question.id }}/" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label for="answer-content">답변 내용:</label>
+                <textarea class="qna-answer2" id="answer-content" name="content" placeholder="답변 내용">{{ answer.content }}</textarea>
+                <div class="button-container">
+                    <input class="update-btn" type="submit" value="수정하기" onclick="updateFormSubmit()">
+                    <div class="delete-btn" onclick="confirmDelete({{ question.id }})">삭제하기</div>
+                </div>
+            </form>
+        {% else %}
+            <!-- 답변이 작성되지 않은 경우 답변 폼 표시 -->
+            <form id="answer-form" action="/customer/answer_add/{{ question.id }}/" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label for="answer-content">답변 내용:</label>
+                <textarea class="qna-answer2" id="answer-content" name="content" placeholder="답변 내용"></textarea>
+                <div class="button-container">
+                    <input class="update-btn" type="submit" value="답변하기" onclick="answerFormSubmit()">
+                    <div class="delete-btn" onclick="confirmDelete({{ question.id }})">삭제하기</div>
+                </div>
+            </form>
+        {% endif %}
+        <div class="answered-date">{{ answer.created_at }}</div>
+    {% else %}
+        <!-- 일반 유저 -->
+        {% if question.is_answered %}
+            <label for="answered-content">답변 내용:</label>
+            <div class="qna-answer2" id="answered-content">{{ answer.content }}</div>
+        {% else %}
+            <div class="qna-answer3">답변 대기중</div>
+        {% endif %}
+        <div class="answered-date">{{ answer.created_at }}</div>
+    {% endif %}
+</div>
+
 
     <script>
         function confirmDelete(qnaId) {

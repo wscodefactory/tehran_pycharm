@@ -102,3 +102,335 @@ Quit the server with CONTROL-C.
 [06/Oct/2023 11:02:08] "GET /company/company/ HTTP/1.1" 200 15059
 [06/Oct/2023 11:14:37] code 400, message Bad request version ('À\x14À')
 [06/Oct/2023 11:14:37] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Oct/2023 11:48:14] "GET / HTTP/1.1" 200 15246
+[06/Oct/2023 11:48:17] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 11:48:45] "GET / HTTP/1.1" 200 15246
+[06/Oct/2023 11:48:45] "GET /static/css/basic.css HTTP/1.1" 200 5800
+[06/Oct/2023 11:48:45] "GET /static/css/main.css HTTP/1.1" 200 26187
+[06/Oct/2023 11:48:45] "GET /static/css/menu_bar.css HTTP/1.1" 200 8965
+[06/Oct/2023 11:48:45] "GET /static/css/footer.css HTTP/1.1" 200 2674
+[06/Oct/2023 11:48:45] "GET /static/js/Scroll%20Fade%20in%20Animation.js HTTP/1.1" 200 533
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/Polygon1.png HTTP/1.1" 200 191
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/logo.png HTTP/1.1" 200 1390
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/Group2.png HTTP/1.1" 200 379
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/langicon.png HTTP/1.1" 200 734
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/login1.png HTTP/1.1" 200 524
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/background1.jpg HTTP/1.1" 200 103322
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/image4.png HTTP/1.1" 200 777280
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/image2.png HTTP/1.1" 200 283073
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/image5.png HTTP/1.1" 200 288838
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/c2.png HTTP/1.1" 200 1141
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/c1.png HTTP/1.1" 200 4877
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/c3.png HTTP/1.1" 200 3587
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/c4.png HTTP/1.1" 200 1588
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/image10.png HTTP/1.1" 200 183892
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/naver_icon.png HTTP/1.1" 200 1832
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/facebook_icon.png HTTP/1.1" 200 1191
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/instagram_icon.png HTTP/1.1" 200 2869
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/kakao_icon.png HTTP/1.1" 200 1743
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/image8.png HTTP/1.1" 200 2005175
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/Rectangle8.png HTTP/1.1" 200 1272859
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/kakao_icon2.png HTTP/1.1" 200 2711
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/KakaoChannelQRcode.png HTTP/1.1" 200 9367
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/qr2.png HTTP/1.1" 200 2095
+[06/Oct/2023 11:48:45] "GET /static/images/main_img/direction1.png HTTP/1.1" 200 563
+Not Found: /favicon.ico
+[06/Oct/2023 11:48:46] "GET /favicon.ico HTTP/1.1" 404 3783
+[06/Oct/2023 11:49:17] "GET /notice/notice/ HTTP/1.1" 200 11469
+[06/Oct/2023 11:49:34] "GET / HTTP/1.1" 200 15246
+Not Found: /favicon.ico
+[06/Oct/2023 11:49:35] "GET /favicon.ico HTTP/1.1" 404 3783
+[06/Oct/2023 11:49:37] "GET /notice/notice HTTP/1.1" 301 0
+[06/Oct/2023 11:49:37] "GET /notice/notice/ HTTP/1.1" 200 11469
+[06/Oct/2023 11:49:37] "GET /static/css/notice_app.css HTTP/1.1" 200 2662
+[06/Oct/2023 11:49:37] "GET /static/js/FAQ%20Toggle.js HTTP/1.1" 200 391
+[06/Oct/2023 11:49:37] "GET /static/images/customer_app_img/magnifying-glass-solid.svg HTTP/1.1" 200 480
+[06/Oct/2023 11:49:46] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 11:49:57] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 11:49:59] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 11:50:44] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 11:50:47] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 11:50:53] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 11:51:37] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 11:51:39] "GET /product/product HTTP/1.1" 301 0
+[06/Oct/2023 11:51:39] "GET /product/product/ HTTP/1.1" 200 14899
+[06/Oct/2023 11:51:39] "GET /static/css/product.css HTTP/1.1" 200 24216
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/product_con1.png HTTP/1.1" 200 3393
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%86%8C%EA%B0%9C%20containel.png HTTP/1.1" 200 3101
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%A2%85%EB%A5%98%20PRODUCTION.png HTTP/1.1" 200 3762
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%83%9D%EC%82%B0%20PRODUCTION.png HTTP/1.1" 200 3905
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%9E%A5%EC%A0%90%20ADVANTAGES.png HTTP/1.1" 200 4129
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%ED%83%80%EC%9E%85.png HTTP/1.1" 200 4753
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EC%A3%BC%EA%B1%B0%EB%B3%B5%ED%95%A9%ED%98%95.png HTTP/1.1" 200 11151
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EC%9A%B4%EC%98%81.png HTTP/1.1" 200 18818
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EC%BB%A8%EC%84%A4%ED%8C%85.png HTTP/1.1" 200 12641
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EC%8B%9C%EC%8A%A4%ED%85%9C2.png HTTP/1.1" 200 19216
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/Vector44.png HTTP/1.1" 200 1214
+[06/Oct/2023 11:51:39] "GET /static/images/product_app_img/%EA%B0%80%EA%B3%B5%EC%8B%9D%ED%92%882.png HTTP/1.1" 200 16407
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/image23.png HTTP/1.1" 200 640154
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/%EA%B2%80%ED%86%A01.png HTTP/1.1" 200 8880
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/image27.png HTTP/1.1" 200 230522
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/image26.png HTTP/1.1" 200 220191
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/image25.png HTTP/1.1" 200 227006
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/image29.png HTTP/1.1" 200 195433
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/image30.png HTTP/1.1" 200 238071
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/image28.png HTTP/1.1" 200 253881
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/image24.png HTTP/1.1" 200 1080657
+[06/Oct/2023 11:51:40] "GET /static/images/product_app_img/image21.png HTTP/1.1" 200 1030432
+[06/Oct/2023 11:51:43] "GET /product/product/ HTTP/1.1" 200 14899
+[06/Oct/2023 11:51:48] "GET /product/product/ HTTP/1.1" 200 14899
+[06/Oct/2023 11:52:27] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 11:52:27] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 11:53:40] "GET /customer/customer/ HTTP/1.1" 200 21216
+[06/Oct/2023 11:53:42,837] - Broken pipe from ('118.235.25.75', 56074)
+[06/Oct/2023 11:53:42,845] - Broken pipe from ('118.235.25.75', 56054)
+[06/Oct/2023 11:53:42,845] - Broken pipe from ('118.235.25.75', 56068)
+[06/Oct/2023 11:53:42,845] - Broken pipe from ('118.235.25.75', 57312)
+[06/Oct/2023 11:53:42,846] - Broken pipe from ('118.235.25.75', 56088)
+[06/Oct/2023 11:53:42,846] - Broken pipe from ('118.235.25.75', 17839)
+[06/Oct/2023 11:53:54] code 400, message Bad request version ("ß\x91Ú\x8a¾\x00v\x13\x02\x13\x03\x13\x01À/À+À0À,\x00\x9eÀ'\x00gÀ(\x00k\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀS\x00¢À®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$\x00jÀ#\x00@À")
+[06/Oct/2023 11:53:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Oct/2023 11:57:21] "GET /customer/customer/ HTTP/1.1" 200 21216
+[06/Oct/2023 11:59:21] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 12:00:19] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 12:01:02] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 12:02:05] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 12:02:31] "GET /static/images/main_img/Polygon1.png HTTP/1.1" 200 191
+[06/Oct/2023 12:02:48] "GET /static/images/main_img/Polygon1.png HTTP/1.1" 200 191
+[06/Oct/2023 12:03:15] "GET / HTTP/1.1" 200 15246
+[06/Oct/2023 12:03:21] code 400, message Bad request version ('HTTP')
+[06/Oct/2023 12:03:21] "GET ../../proc/ HTTP" 400 -
+[06/Oct/2023 12:24:01] code 400, message Bad request version ('À\x13À')
+[06/Oct/2023 12:24:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Oct/2023 12:24:02] code 400, message Bad request version ('À(À$À\x14À')
+[06/Oct/2023 12:24:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /boaform/admin/formLogin
+[06/Oct/2023 12:38:07] "POST /boaform/admin/formLogin HTTP/1.1" 404 3820
+[06/Oct/2023 12:46:15] code 400, message Bad request version ('À\x14À')
+[06/Oct/2023 12:46:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /boaform/admin/formLogin
+[06/Oct/2023 13:00:24] "POST /boaform/admin/formLogin HTTP/1.1" 404 3820
+[06/Oct/2023 13:05:07] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 13:05:11] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 13:05:17] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 13:05:18] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 13:05:25] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 13:15:04] "GET / HTTP/1.1" 200 15246
+[06/Oct/2023 13:15:06] "GET /company/company HTTP/1.1" 301 0
+[06/Oct/2023 13:15:06] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 13:15:06] "GET /static/css/company.css HTTP/1.1" 200 20306
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/company_con2.png HTTP/1.1" 200 3586
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/value.png HTTP/1.1" 200 11811
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/DREAMPLAN.png HTTP/1.1" 200 4695
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/company_con5.png HTTP/1.1" 200 4079
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/mission.png HTTP/1.1" 200 6443
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/image13.png HTTP/1.1" 200 220667
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/vision.png HTTP/1.1" 200 8728
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/company_con7.png HTTP/1.1" 200 2039
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/company_con8.png HTTP/1.1" 200 2400
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/image14.png HTTP/1.1" 200 2226231
+[06/Oct/2023 13:15:07] "GET /static/images/company_app_img/image12.png HTTP/1.1" 200 1556869
+[06/Oct/2023 13:15:40] "GET / HTTP/1.1" 200 15246
+[06/Oct/2023 13:15:49] "GET /customer/customer HTTP/1.1" 301 0
+[06/Oct/2023 13:15:49] "GET /customer/customer/ HTTP/1.1" 200 21216
+[06/Oct/2023 13:15:49] "GET /static/css/customer_app.css HTTP/1.1" 200 4165
+[06/Oct/2023 13:15:49] "GET /static/js/FAQ%20Toggle.js HTTP/1.1" 200 391
+[06/Oct/2023 13:15:49] "GET /static/images/customer_app_img/magnifying-glass-solid.svg HTTP/1.1" 200 480
+[06/Oct/2023 13:15:49] "GET /static/images/buisness_app_img/Rectangle%202.jpg HTTP/1.1" 200 16558
+[06/Oct/2023 13:15:49] "GET /static/images/buisness_app_img/Rectangle%201.jpg HTTP/1.1" 200 16454
+[06/Oct/2023 13:15:49] "GET /static/images/customer_app_img/FAQ-list_check.jpg HTTP/1.1" 200 1005
+[06/Oct/2023 13:15:58] "GET /buisness/buisness HTTP/1.1" 301 0
+[06/Oct/2023 13:15:58] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 13:15:58] "GET /static/css/buisness_app.css HTTP/1.1" 200 5755
+[06/Oct/2023 13:15:58] "GET /static/images/buisness_app_img/Vector%2028.jpg HTTP/1.1" 200 660
+[06/Oct/2023 13:15:58] "GET /static/images/buisness_app_img/buisness_app%206.png HTTP/1.1" 200 8248
+[06/Oct/2023 13:15:58] "GET /static/images/buisness_app_img/buisness_app%203.jpg HTTP/1.1" 200 133748
+[06/Oct/2023 13:15:58] "GET /static/images/buisness_app_img/buisness_app%202.jpg HTTP/1.1" 200 735376
+[06/Oct/2023 13:15:58] "GET /static/images/buisness_app_img/buisness_app%207.png HTTP/1.1" 200 4680
+[06/Oct/2023 13:15:59] "GET /static/images/buisness_app_img/buisness_app%201.jpg HTTP/1.1" 200 920873
+[06/Oct/2023 13:15:59] "GET /static/images/buisness_app_img/buisness_app%204.jpg HTTP/1.1" 200 1044287
+[06/Oct/2023 13:15:59] "GET /static/images/buisness_app_img/buisness_app%208.png HTTP/1.1" 200 14261
+[06/Oct/2023 13:15:59] "GET /static/images/buisness_app_img/buisness_app%209.png HTTP/1.1" 200 20626
+[06/Oct/2023 13:15:59] "GET /static/images/buisness_app_img/buisness_app%2010.png HTTP/1.1" 200 13330
+[06/Oct/2023 13:15:59] "GET /static/images/buisness_app_img/buisness_app%2011.png HTTP/1.1" 200 9585
+[06/Oct/2023 13:15:59] "GET /static/images/buisness_app_img/buisness_app%205.jpg HTTP/1.1" 200 392401
+[06/Oct/2023 13:16:08] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 13:16:11] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 13:23:58] code 400, message Bad request syntax ('`\x00\xadCC\x81±í±é¸"äÂ½¹')
+[06/Oct/2023 13:23:58] "` ­CC±í±é¸"äÂ½¹" 400 -
+[06/Oct/2023 13:24:05] "GET / HTTP/1.1" 200 15246
+[06/Oct/2023 13:24:10] code 400, message Bad request version ('HTTP')
+[06/Oct/2023 13:24:10] "GET ../../proc/ HTTP" 400 -
+[06/Oct/2023 13:35:34] "GET / HTTP/1.1" 200 15246
+[06/Oct/2023 13:35:42] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 13:36:49] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 13:36:53] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 13:38:35] "GET /notice/notice HTTP/1.1" 301 0
+[06/Oct/2023 13:38:35] "GET /notice/notice/ HTTP/1.1" 200 11469
+[06/Oct/2023 13:38:35] "GET /static/css/notice_app.css HTTP/1.1" 200 2662
+[06/Oct/2023 13:38:58] "GET /customer/customer/ HTTP/1.1" 200 21216
+[06/Oct/2023 13:39:03] "GET /notice/notice/ HTTP/1.1" 200 11469
+[06/Oct/2023 13:39:07] "GET /notice/notice/?category=&query=%ED%98%9C%EC%A7%80 HTTP/1.1" 200 11475
+[06/Oct/2023 13:41:26] "GET /company/company/ HTTP/1.1" 200 15059
+[06/Oct/2023 13:41:27] "GET /buisness/buisness/ HTTP/1.1" 200 14947
+[06/Oct/2023 13:41:30] "GET /customer/customer/ HTTP/1.1" 200 21216
+[06/Oct/2023 13:41:35] "GET /customer/create_qna_page HTTP/1.1" 301 0
+[06/Oct/2023 13:41:35] "GET /customer/create_qna_page/ HTTP/1.1" 200 6262
+[06/Oct/2023 13:41:35] "GET /static/css/create_qna.css HTTP/1.1" 200 1574
+[06/Oct/2023 13:41:45] "GET /customer/create_qna_page/ HTTP/1.1" 200 6262
+[06/Oct/2023 13:41:46] "GET /login_page/ HTTP/1.1" 200 5890
+[06/Oct/2023 13:41:46] "GET /static/css/login.css HTTP/1.1" 200 1078
+[06/Oct/2023 13:41:48] "GET /register HTTP/1.1" 301 0
+[06/Oct/2023 13:41:48] "GET /register/ HTTP/1.1" 200 9613
+[06/Oct/2023 13:41:48] "GET /static/css/register.css HTTP/1.1" 200 4059
+[06/Oct/2023 13:41:51] "GET /check_duplicate_id/?id=mikael8047 HTTP/1.1" 200 19
+[06/Oct/2023 13:42:10] "GET /check_duplicate_id/?id=mikael8047 HTTP/1.1" 200 19
+[06/Oct/2023 13:42:12] "POST /regist/ HTTP/1.1" 302 0
+[06/Oct/2023 13:42:12] "GET /login/ HTTP/1.1" 200 5890
+[06/Oct/2023 13:42:17] "POST /login/ HTTP/1.1" 302 0
+[06/Oct/2023 13:42:17] "GET / HTTP/1.1" 200 15197
+[06/Oct/2023 13:42:27] "GET /notice/notice/ HTTP/1.1" 200 11469
+[06/Oct/2023 13:42:29] "GET /customer/customer/ HTTP/1.1" 200 21216
+[06/Oct/2023 13:45:24] "GET /product/product HTTP/1.1" 301 0
+[06/Oct/2023 13:45:24] "GET /product/product/ HTTP/1.1" 200 14899
+[06/Oct/2023 13:45:24] "GET /static/css/product.css HTTP/1.1" 200 24216
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%86%8C%EA%B0%9C%20containel.png HTTP/1.1" 200 3101
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/product_con1.png HTTP/1.1" 200 3393
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%83%9D%EC%82%B0%20PRODUCTION.png HTTP/1.1" 200 3905
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%9E%A5%EC%A0%90%20ADVANTAGES.png HTTP/1.1" 200 4129
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EC%A0%9C%ED%92%88%20%EC%A2%85%EB%A5%98%20PRODUCTION.png HTTP/1.1" 200 3762
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%ED%83%80%EC%9E%85.png HTTP/1.1" 200 4753
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EC%BB%A8%EC%84%A4%ED%8C%85.png HTTP/1.1" 200 12641
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EC%9A%B4%EC%98%81.png HTTP/1.1" 200 18818
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EC%A3%BC%EA%B1%B0%EB%B3%B5%ED%95%A9%ED%98%95.png HTTP/1.1" 200 11151
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/image21.png HTTP/1.1" 200 1030432
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/image23.png HTTP/1.1" 200 640154
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EC%8B%9C%EC%8A%A4%ED%85%9C2.png HTTP/1.1" 200 19216
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/Vector44.png HTTP/1.1" 200 1214
+[06/Oct/2023 13:45:24] "GET /static/images/product_app_img/%EA%B0%80%EA%B3%B5%EC%8B%9D%ED%92%882.png HTTP/1.1" 200 16407
+[06/Oct/2023 13:45:25] "GET /static/images/product_app_img/%EA%B2%80%ED%86%A01.png HTTP/1.1" 200 8880
+[06/Oct/2023 13:45:25] "GET /static/images/product_app_img/image25.png HTTP/1.1" 200 227006
+[06/Oct/2023 13:45:25] "GET /static/images/product_app_img/image24.png HTTP/1.1" 200 1080657
+[06/Oct/2023 13:45:25] "GET /static/images/product_app_img/image26.png HTTP/1.1" 200 220191
+[06/Oct/2023 13:45:25] "GET /static/images/product_app_img/image28.png HTTP/1.1" 200 253881
+[06/Oct/2023 13:45:25] "GET /static/images/product_app_img/image30.png HTTP/1.1" 200 238071
+[06/Oct/2023 13:45:25] "GET /static/images/product_app_img/image27.png HTTP/1.1" 200 230522
+[06/Oct/2023 13:45:25] "GET /static/images/product_app_img/image29.png HTTP/1.1" 200 195433
+[06/Oct/2023 13:48:42] "GET /notice/notice/ HTTP/1.1" 200 11420
+/home/ubuntu/Tehran/notice_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 06, 2023 - 13:53:57
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[06/Oct/2023 13:54:32] "GET /notice/notice/ HTTP/1.1" 200 11420
+/home/ubuntu/Tehran/notice_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 06, 2023 - 13:55:50
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[06/Oct/2023 14:06:20] "GET / HTTP/1.1" 200 15246
+[06/Oct/2023 14:13:30] "GET /notice/notice/ HTTP/1.1" 200 11469
+[06/Oct/2023 14:13:34] "GET /product/product/ HTTP/1.1" 200 14899
+[06/Oct/2023 14:16:31] "GET /static/images/main_img/Polygon1.png HTTP/1.1" 200 191
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 10, 2023 - 15:54:13
+Django version 4.2.5, using settings 'config.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[10/Oct/2023 15:54:39] "GET / HTTP/1.1" 200 15434
+[10/Oct/2023 15:54:43] "GET /static/images/main_img/Group2.png HTTP/1.1" 200 379
+[10/Oct/2023 15:54:43] "GET /static/images/main_img/image2.png HTTP/1.1" 200 283073
+[10/Oct/2023 15:54:43] "GET /static/images/main_img/image5.png HTTP/1.1" 200 288838
+[10/Oct/2023 15:54:43] "GET /static/images/main_img/c1.png HTTP/1.1" 200 4877
+[10/Oct/2023 15:54:43] "GET /static/images/main_img/c2.png HTTP/1.1" 200 1141
+[10/Oct/2023 15:54:43] "GET /static/images/main_img/c3.png HTTP/1.1" 200 3587
+[10/Oct/2023 15:54:43] "GET /static/images/main_img/c4.png HTTP/1.1" 200 1588
+[10/Oct/2023 15:54:44] "GET /static/images/main_img/background1.jpg HTTP/1.1" 200 103322
+[10/Oct/2023 15:54:44] "GET /static/images/main_img/naver_icon.png HTTP/1.1" 200 1832
+[10/Oct/2023 15:54:44] "GET /static/images/main_img/instagram_icon.png HTTP/1.1" 200 2869
+[10/Oct/2023 15:54:44] "GET /static/images/main_img/facebook_icon.png HTTP/1.1" 200 1191
+[10/Oct/2023 15:54:44] "GET /static/images/main_img/image10.png HTTP/1.1" 200 183892
+[10/Oct/2023 15:54:44] "GET /static/images/main_img/kakao_icon.png HTTP/1.1" 200 1743
+[10/Oct/2023 15:54:44] "GET /static/images/main_img/KakaoChannelQRcode.png HTTP/1.1" 200 9367
+[10/Oct/2023 15:54:44] "GET /static/images/main_img/kakao_icon2.png HTTP/1.1" 200 2711
+[10/Oct/2023 15:54:44] "GET /static/images/main_img/qr2.png HTTP/1.1" 200 2095
+[10/Oct/2023 15:54:46] "GET /static/images/main_img/Rectangle8.png HTTP/1.1" 200 1272859
+[10/Oct/2023 15:54:49] "GET /static/images/main_img/image8.png HTTP/1.1" 200 2005175
+[10/Oct/2023 15:54:51] "GET /static/images/main_img/image6.png HTTP/1.1" 200 390571
+[10/Oct/2023 15:54:52] "GET /static/images/main_img/image4.png HTTP/1.1" 200 777280
+[10/Oct/2023 15:54:52] "GET /company/company HTTP/1.1" 301 0
+[10/Oct/2023 15:54:52] "GET /company/company/ HTTP/1.1" 200 15247
+[10/Oct/2023 15:54:52] "GET /static/css/company.css HTTP/1.1" 200 20306
+[10/Oct/2023 15:54:52] "GET /static/images/company_app_img/DREAMPLAN.png HTTP/1.1" 200 4695
+[10/Oct/2023 15:54:52] "GET /static/images/company_app_img/company_con5.png HTTP/1.1" 200 4079
+[10/Oct/2023 15:54:52] "GET /static/images/company_app_img/company_con2.png HTTP/1.1" 200 3586
+[10/Oct/2023 15:54:52] "GET /static/images/company_app_img/value.png HTTP/1.1" 200 11811
+[10/Oct/2023 15:54:52] "GET /static/images/company_app_img/mission.png HTTP/1.1" 200 6443
+[10/Oct/2023 15:54:52] "GET /static/images/company_app_img/vision.png HTTP/1.1" 200 8728
+[10/Oct/2023 15:54:53] "GET /static/images/company_app_img/company_con8.png HTTP/1.1" 200 2400
+[10/Oct/2023 15:54:53] "GET /static/images/company_app_img/company_con7.png HTTP/1.1" 200 2039
+[10/Oct/2023 15:54:53] "GET /static/images/company_app_img/image13.png HTTP/1.1" 200 220667
+[10/Oct/2023 15:54:54] "GET /static/images/company_app_img/image12.png HTTP/1.1" 200 1556869
+[10/Oct/2023 15:54:56] "GET /static/images/company_app_img/image14.png HTTP/1.1" 200 2226231
+[10/Oct/2023 15:54:56] "GET /customer/customer/ HTTP/1.1" 200 21973
+[10/Oct/2023 16:05:31] "GET / HTTP/1.1" 200 15434
+[10/Oct/2023 16:05:32] "GET /static/css/main.css HTTP/1.1" 200 26187
+[10/Oct/2023 16:05:32] "GET /static/css/basic.css HTTP/1.1" 200 5800
+[10/Oct/2023 16:05:32] "GET /static/css/menu_bar.css HTTP/1.1" 200 9369
+[10/Oct/2023 16:05:32] "GET /static/images/main_img/Polygon1.png HTTP/1.1" 200 191
+[10/Oct/2023 16:05:32] "GET /static/css/footer.css HTTP/1.1" 200 2674
+[10/Oct/2023 16:05:32] "GET /static/js/Scroll%20Fade%20in%20Animation.js HTTP/1.1" 200 533
+[10/Oct/2023 16:05:33] "GET /static/images/main_img/logo.png HTTP/1.1" 200 1390
+[10/Oct/2023 16:05:33] "GET /static/images/main_img/langicon.png HTTP/1.1" 200 734
+[10/Oct/2023 16:05:33] "GET /static/images/main_img/login1.png HTTP/1.1" 200 524
+[10/Oct/2023 16:05:33] "GET /static/images/main_img/background1.jpg HTTP/1.1" 200 103322
+[10/Oct/2023 16:05:33] "GET /static/images/main_img/Group2.png HTTP/1.1" 200 379
+[10/Oct/2023 16:05:33] "GET /static/images/main_img/image2.png HTTP/1.1" 200 283073
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/c1.png HTTP/1.1" 200 4877
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/c2.png HTTP/1.1" 200 1141
+[10/Oct/2023 16:05:34] "GET / HTTP/1.1" 200 15434
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/c3.png HTTP/1.1" 200 3587
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/c4.png HTTP/1.1" 200 1588
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/image5.png HTTP/1.1" 200 288838
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/naver_icon.png HTTP/1.1" 200 1832
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/image10.png HTTP/1.1" 200 183892
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/instagram_icon.png HTTP/1.1" 200 2869
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/facebook_icon.png HTTP/1.1" 200 1191
+[10/Oct/2023 16:05:34] "GET /static/images/main_img/kakao_icon.png HTTP/1.1" 200 1743
+[10/Oct/2023 16:05:35] "GET /static/images/main_img/KakaoChannelQRcode.png HTTP/1.1" 200 9367
+[10/Oct/2023 16:05:35] "GET /static/images/main_img/kakao_icon2.png HTTP/1.1" 200 2711
+[10/Oct/2023 16:05:35] "GET /static/images/main_img/direction1.png HTTP/1.1" 200 563
+[10/Oct/2023 16:05:35] "GET /static/images/main_img/qr2.png HTTP/1.1" 200 2095
+[10/Oct/2023 16:05:36] "GET /static/images/main_img/image4.png HTTP/1.1" 200 777280
+[10/Oct/2023 16:05:36] "GET /static/images/main_img/Rectangle8.png HTTP/1.1" 200 1272859
+[10/Oct/2023 16:05:37] "GET /static/images/main_img/image8.png HTTP/1.1" 200 2005175
+[10/Oct/2023 16:05:43] "GET / HTTP/1.1" 200 15434
+Not Found: /favicon.ico
+[10/Oct/2023 16:06:04] "GET /favicon.ico HTTP/1.1" 404 3783
+[10/Oct/2023 16:06:10] "GET / HTTP/1.1" 200 15434
+[10/Oct/2023 16:06:11] "GET / HTTP/1.1" 200 15434
+[10/Oct/2023 16:06:16] "GET /company/company HTTP/1.1" 301 0
+[10/Oct/2023 16:06:16] "GET /company/company/ HTTP/1.1" 200 15247
+[10/Oct/2023 16:06:17] "GET /static/images/company_app_img/company_con5.png HTTP/1.1" 200 4079
+[10/Oct/2023 16:06:17] "GET /static/images/company_app_img/DREAMPLAN.png HTTP/1.1" 200 4695
+[10/Oct/2023 16:06:17] "GET /static/css/company.css HTTP/1.1" 200 20306
+[10/Oct/2023 16:06:17] "GET /static/images/company_app_img/company_con2.png HTTP/1.1" 200 3586
+[10/Oct/2023 16:06:17] "GET /static/images/company_app_img/value.png HTTP/1.1" 200 11811
+[10/Oct/2023 16:06:17] "GET /static/images/company_app_img/mission.png HTTP/1.1" 200 6443
+[10/Oct/2023 16:06:17] "GET /static/images/company_app_img/vision.png HTTP/1.1" 200 8728
+[10/Oct/2023 16:06:17] "GET /static/images/company_app_img/company_con7.png HTTP/1.1" 200 2039
+[10/Oct/2023 16:06:17] "GET /static/images/company_app_img/company_con8.png HTTP/1.1" 200 2400
