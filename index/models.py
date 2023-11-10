@@ -13,7 +13,7 @@ class CustomUserManager(BaseUserManager):
 
         return self.model.objects.create(id=id, **extra_fields)
 
-    def create_superuser(self, id, password, **extra_fields):
+    def create_superuser(self, id, password=None, **extra_fields):
         extra_fields.setdefault('is_active', True)
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
@@ -22,8 +22,8 @@ class CustomUserManager(BaseUserManager):
             raise ValueError('Superuser must have is_staff=True.')
         if extra_fields.get('is_superuser') is not True:
             raise ValueError('Superuser must have is_superuser=True.')
-        
-        # 비밀번호를 해싱하여 저장
+
+        # 비밀번호를 안전하게 해싱
         extra_fields['password'] = make_password(password)
 
         return self.create_user(id=id, **extra_fields)
@@ -40,3 +40,5 @@ class User(AbstractUser):
 
     USERNAME_FIELD = 'id'
     REQUIRED_FIELDS = ['password', 'email', 'name']
+
+
