@@ -16,6 +16,18 @@
     left: 19.375%;
     top: 24px;
 }
+
+.social-icons {
+
+    justify-content: flex-end;
+    margin-right: 20%; /* 조절 가능한 여백 값 */
+    margin-top: 10%;
+}
+
+.social-icons img {
+        margin-right: 10px; /* Adjust the spacing between icons if needed */
+    }
+
 .footer-content1 {
     position: absolute;
     width: auto;

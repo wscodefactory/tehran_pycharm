@@ -125,6 +125,7 @@ body{
 	top: 663px;
 	text-align: left;
 }
+
 @media screen and (max-width: 800px) {
 	.flex-container{
 		width:100%;
