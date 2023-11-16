@@ -33,7 +33,7 @@
         </div>
         <div class="file-container">
             <div class="qna-file1">첨부된 파일</div>
-            <div class="qna-file2">{{ question.file }}</div>
+            <a href="{% static '파일이 저장된 경로/' %}{{ question.file }}" download="{{ question.file }}">다운로드</a>
         </div>
         <div class="qna-content">{{ question.content }}</div>
         <div class="qna-date">{{ question.created_at }}</div>
