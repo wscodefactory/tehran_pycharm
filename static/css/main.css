@@ -72,7 +72,7 @@ body{
 	/* identical to box height */
 
 	color: rgba(255, 255, 255, 0.05);
- 
+
 }
 .TEH,
 .RAN{
@@ -81,7 +81,7 @@ body{
 @media screen and (max-width: 800px) {
 	.TEHRAN {
 		display: none;
-	 
+
 	}
 	.TEH{
 		display:inline;
@@ -465,7 +465,7 @@ body{
 	height: 524px;
 	left: 0px;
 	margin-top: 1241px;
-  
+
 	background: #2C2C2C;
 }
 
@@ -490,7 +490,7 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 50px;
 	line-height: 53px;
 	color: #FFFFFF;
 }
@@ -527,8 +527,8 @@ body{
 
 	font-family: 'Pretendard';
 	font-style: normal;
-	font-weight: 400;
-	font-size: 24px;
+	font-weight: 500;
+	font-size: 35px;
 	line-height: 163.84%;
 
 	color: #FFFFFF;
@@ -604,7 +604,7 @@ body{
 		left: 0px;
 		top: 150px;
 	}
-	
+
 	.banner3-button1{
 		top:600px;
 		left: 22.8%;
@@ -617,6 +617,7 @@ body{
 }
 .banner4{
 	position: absolute;
+	justify-content: space-evenly;
 	width: 100%;
 	height: 1080px;
 	left: 0px;
@@ -651,7 +652,7 @@ body{
 	height: 0;
 	left: 19.7%;
 	top: 519px;
-	
+
 	border: 1.5px solid #ffffff;
 }
 
@@ -671,7 +672,7 @@ body{
 	height: 0;
 	right: 19.7%;
 	top: 519px;
-	
+
 	border: 1.5px solid #FFFFFF;
 }
 
@@ -711,7 +712,7 @@ body{
 	height: 59px;
 	left: 42.9%;
 	top: 700px;
-	
+
 	background: url(/static/images/main_img/c2.png) no-repeat;
 	background-size: cover;
 }
@@ -721,8 +722,8 @@ body{
 	width: 107px;
 	height: 60px;
 	left: 52.6%;
-	top: 700px;	
-	
+	top: 700px;
+
 	background: url(/static/images/main_img/c3.png) no-repeat;
 	background-size: cover;
 }
@@ -732,8 +733,8 @@ body{
 	width: 106px;
 	height: 60px;
 	left: 62.39%;
-	top: 700px;	
-	
+	top: 700px;
+
 	background: url(/static/images/main_img/c4.png) no-repeat;
 	background-size: cover;
 }
@@ -763,17 +764,17 @@ body{
 	height: 52px;
 	left: 33.5%;
 	top: 780px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 163.84%;
 	/* or 52px */
-	
+
 	text-align: center;
-	
-	color: #FFFFFF;	
+
+	color: #FFFFFF;
 }
 
 .banner4-image2-content1{
@@ -782,18 +783,18 @@ body{
 	height: 26px;
 	left: 41.1%;
 	top: 760px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 163.84%;
 	/* or 26px */
-	
+
 	text-align: center;
-	
+
 	color: #FFFFFF;
-	
+
 }
 
 .banner4-image2-content2{
@@ -802,16 +803,16 @@ body{
 	height: 52px;
 	left: 42.5%;
 	top: 780px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 163.84%;
 	/* or 52px */
-	
+
 	text-align: center;
-	
+
 	color: #FFFFFF;
 }
 
@@ -821,16 +822,16 @@ body{
 	height: 26px;
 	left: 52.1%;
 	top: 760px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 163.84%;
 	/* or 26px */
-	
+
 	text-align: center;
-	
+
 	color: #FFFFFF;
 }
 
@@ -840,16 +841,16 @@ body{
 	height: 52px;
 	left: 52.8%;
 	top: 780px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 163.84%;
 	/* or 52px */
-	
+
 	text-align: center;
-	
+
 	color: #FFFFFF;
 }
 
@@ -859,16 +860,16 @@ body{
 	height: 26px;
 	left: 62.3%;
 	top: 760px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 163.84%;
 	/* or 26px */
-	
+
 	text-align: center;
-	
+
 	color: #FFFFFF;
 }
 
@@ -878,16 +879,16 @@ body{
 	height: 52px;
 	left: 62.5%;
 	top: 780px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 163.84%;
 	/* or 52px */
-	
+
 	text-align: center;
-	
+
 	color: #FFFFFF;
 }
 @media screen and (max-width: 1400px) {
@@ -1013,7 +1014,7 @@ body{
 	height: 100%;
 	left: 0px;
 	top: 0px;
-	
+
 	background: linear-gradient(90deg, #FFFFFF 38.44%, rgba(255, 255, 255, 0) 94.87%);
 }
 
@@ -1041,15 +1042,15 @@ body{
 	height: 92px;
 	left: 13.02%;
 	top: 411px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 28px;
 	line-height: 163.84%;
 	/* or 46px */
-	
-	
+
+
 	color: #434343;
 }
 
@@ -1065,7 +1066,7 @@ body{
 	height: 54px;
 	left: 33.17%;
 	top: 596px;
-	
+
 	background-color: transparent;
 	border: 2px solid #484848;
 }
@@ -1076,15 +1077,15 @@ body{
 	height: 39px;
 	left: 41px;
 	top: 5px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 163.84%;
 	/* or 39px */
-	
-	
+
+
 	color: #434343;
 }
 
@@ -1108,7 +1109,7 @@ body{
 	top:5px;
 	width: 158px;
 	height: 0px;
-	
+
 	border: 2px solid rgba(255, 255, 255, 0.39);
 }
 
@@ -1147,16 +1148,16 @@ body{
 	top: 30px;
 	border-width: 0;
 	background-color: transparent;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 163.84%;
 	/* identical to box height, or 25px */
-	
+
 	text-align: right;
-	
+
 	color: #FFFFFF;
 }
 
@@ -1224,7 +1225,7 @@ body{
 		position: absolute;
 		height: 92px;
 		left: 13.02%;
-		
+
 		font-family: 'Pretendard';
 		font-style: normal;
 		font-weight: 400;
@@ -1233,8 +1234,8 @@ body{
 		font-size:3.84vw;
 		top: 119px;
 		width:auto;
-		
-		
+
+
 		color: #434343;
 	}
 
@@ -1261,7 +1262,7 @@ body{
 	height: 25px;
 	left: 49.42%;
 	top: 5450px;
-	
+
 	background: url(/static/images/main_img/Group2.png) no-repeat;
 	background-size: cover;
 }
@@ -1291,16 +1292,16 @@ body{
 	height: 39px;
 	left: 36%;
 	top: 5610px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 163.84%;
 	/* or 39px */
-	
+
 	text-align: center;
-	
+
 	color: rgba(0, 0, 0, 0.7);
 }
 
@@ -1310,14 +1311,14 @@ body{
 	width: auto;
 	height: 39px;
 	left: 36%;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
 	line-height: 163.84%;
-	
+
 	text-align: center;
-	
+
 	color: rgba(0, 0, 0, 0.7);
 }
 
@@ -1337,7 +1338,7 @@ body{
 	height: 495px;
 	left: 0px;
 	top: 0px;
-	
+
 	background: url(/static/images/main_img/image10.png) no-repeat;
 	background-size: cover;
 }
@@ -1366,15 +1367,15 @@ body{
 	height: 32px;
 	left: 33%;
 	top: 192px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.25vw;
 	line-height: 133.84%;
 	/* or 32px */
-	
-	
+
+
 	color: rgba(0, 0, 0, 0.7);
 }
 
@@ -1385,7 +1386,7 @@ body{
 	height: 54px;
 	left: 36%;
 	top: 192px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 500;
@@ -1403,7 +1404,7 @@ body{
 	left: 30%;
 	top: 374px;
 	border-width:0;
-	
+
 	background: url(/static/images/main_img/naver_icon.png) no-repeat;
 	background-size: cover;
 }
@@ -1415,7 +1416,7 @@ body{
 	left: 37%;
 	top: 374px;
 	border-width:0;
-	
+
 	background: url(/static/images/main_img/instagram_icon.png)no-repeat;
 	background-size: cover;
 }
@@ -1427,7 +1428,7 @@ body{
 	left: 44%;
 	top: 374px;
 	border-width:0;
-	
+
 	background: url(/static/images/main_img/facebook_icon.png)no-repeat;
 	background-size: cover;
 }
@@ -1439,7 +1440,7 @@ body{
 	left: 51%;
 	top: 374px;
 	border-width:0;
-	
+
 	background: url(/static/images/main_img/kakao_icon.png)no-repeat;
 	background-size: cover;
 }
@@ -1480,11 +1481,11 @@ body{
 		height: 70px;
 		left: 8.2%;
 		top: 58px;
-	
+
 		text-align: center;
 		font-weight: 700;
 		font-size: 6.66vw;
-	
+
 		color: #FFF;
 	}
 
@@ -1502,21 +1503,21 @@ body{
 		left: 20%;
 		top: -82px;
 	}
-	
+
 	.banner6-icon2{
 		width: 60px;
 		height: 49px;
 		left: 35%;
 		top: -82px;
 	}
-	
+
 	.banner6-icon3{
 		width: 60px;
 		height: 49px;
 		left: 50%;
 		top: -82px;
 	}
-	
+
 	.banner6-icon4{
 		width: 60px;
 		height: 49px;
@@ -1547,7 +1548,7 @@ body{
 	height: 167px;
 	left: 27%;
 	top: 57px;
-	
+
 	border: 6px solid #FFEB3B;
 	background: url(/static/images/main_img/KakaoChannelQRcode.png)no-repeat;
 	background-size: cover;
@@ -1559,7 +1560,7 @@ body{
 	height: 50px;
 	left: calc(27% + 167px);
 	top: 42px;
-	
+
 	background: url(/static/images/main_img/kakao_icon2.png)no-repeat;
 	background-size: cover;
 }
@@ -1570,7 +1571,7 @@ body{
 	height: 95px;
 	left: 41.4%;
 	top: 73px;
-	
+
 	background: url(/static/images/main_img/qr2.png)no-repeat;
 	background-size: cover;
 }
@@ -1599,15 +1600,15 @@ body{
 	height: 62px;
 	left: 46%;
 	top: 130px;
-	
+
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.04vw;
 	line-height: 155.84%;
 	/* or 31px */
-	
-	
+
+
 	color: rgba(0, 0, 0, 0.75);
 }
 
@@ -1615,7 +1616,7 @@ body{
 	.banner7-qrFrame{
 		left: 20%;
 	}
-	
+
 	.banner7-icon1{
 		left: calc(20% + 167px);
 	}
@@ -1695,7 +1696,7 @@ body{
 }
 
 @media screen and (max-width: 800px) {
-	
+
 	.footer-container{
 		top: 540px;
 	}
@@ -1703,50 +1704,47 @@ body{
 
 
 .banner8{
-		margin-top: 204px;
-    	height: 923px;
-		display: flex;
+	display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column; /* 가로로 정렬 */
 	}
 .banner8 .inner{
     height: 923px;
     width: 100%;
 
 }
-.banner8 .company_con1 {
-    position: absolute;
-    top: 0px;
-}
-.banner8 .company_con1 img{
-        max-width: 100%;
-        max-height: 100%;
-        margin: auto;
-}
+
 .banner8 .rectangle {
     position: absolute;
 	flex: 1;
 	margin: 10px;
     width: 322px;
-    height: 48px;
+    height: 55px;
     text-align: center;
 	background: #4E6234;
     border-radius: 10px;
 }
 .banner8.rectangle.rec1 {
-    top: 90px;
+	order: 1;
+    top: 250px;
     left: 50%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec2 {
-    top: 399px;
+	order: 2;
+    top: 250px;
     left: 50%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec3 {
+	order: 3;
     top: 708px;
     left: 50%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec4 {
+	order: 4;
     top: 508px;
     left: 50%;
     transform: translateX(-50%);
@@ -1833,4 +1831,13 @@ body{
     height: 205px;
     left: 50%;
     transform: translateX(-50%);
+}
+.element1,
+.element2,
+.element3,
+.element4{
+	display: inline-block;
+	justify-content: space-evenly;
+	position: absolute; /* 요소의 위치 지정 */
+	flex: 1;
 }
