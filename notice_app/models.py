@@ -9,6 +9,7 @@ class Notice(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     file = models.FileField(upload_to='notice_files/', blank=True, null=True)
     viewcnt = models.IntegerField(default=0)
+    mainphoto = models.ImageField(blank=True, null=True)
 
     def __str__(self):
         return self.title
