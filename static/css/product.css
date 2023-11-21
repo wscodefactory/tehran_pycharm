@@ -131,7 +131,7 @@ body{
     height: 66px;
     right: 50%;
     top: 1490px;
-    background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(270deg, rgba(76, 175, 80, 0.62)  50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .rectangle21 {
@@ -140,7 +140,7 @@ body{
     height: 66px;
     left: 50%;
     top: 1490px;
-    background: linear-gradient(270deg, rgba(78, 98, 52, 0.62) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(270deg, rgba(76, 175, 80, 0.62)  50%, rgba(255, 255, 255, 0) 100%);
     transform: rotate(-180deg);
 }
 .vector11 {
@@ -866,7 +866,7 @@ body{
     line-height: 29px;
     text-align: center;
 
-    color: #4E6234;
+    color: #4CAF50;
 }
 .product_cont15 .item1 {
     position: absolute;
@@ -1036,7 +1036,7 @@ top: 5310px;
   font-size: 20px;
   line-height: 147.84%;
   text-align: center;
-  color: #4E6234;
+  color: #4CAF50;
 }
 
 @media screen and (max-width: 1500px){

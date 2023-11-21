@@ -14,7 +14,7 @@
     left: 0px;
     top: 0px;
 
-    background: #4E6234;
+    background: #4CAF50;
 	z-index: 1;
 }
     
@@ -171,7 +171,7 @@
 	left: -20%;
 	margin-top:0px;
 	display: none;
-	background-color: #4E6234;
+	background-color: #4CAF50;
 	padding: 2px;
 	text-align: center;
 	font-size: 15px;
@@ -231,7 +231,7 @@
 	left: 0;
 	width: 70px;
 	display: none;
-	background-color: #4E6234;
+	background-color: #4CAF50;
 	padding: 2px;
 	text-align: center;
 	font-size: 15px;
@@ -337,7 +337,7 @@
 		height: 37px;
 		left: 0px;
 		top: 0px;
-		background: #4E6234;
+		background: #4CAF50;
 		z-index: 1;
 	}
 
@@ -348,7 +348,7 @@
 		left: 0px;
 		top: 0px;
 
-		background: #4E6234;
+		background: #4CAF50;
 	}
 
 	.mobile-logo{
