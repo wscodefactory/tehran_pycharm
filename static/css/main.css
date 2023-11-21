@@ -1702,11 +1702,8 @@ body{
 	}
 }
 
-
 .banner8{
 	display: flex;
-    align-items: center;
-    position: relative;
     flex-direction: column; /* 가로로 정렬 */
 	}
 .banner8 .inner{
@@ -1726,27 +1723,23 @@ body{
     border-radius: 10px;
 }
 .banner8.rectangle.rec1 {
-	order: 1;
     top: 250px;
-    left: 50%;
+    left: 100%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec2 {
-	order: 2;
     top: 250px;
-    left: 50%;
+    left: 300%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec3 {
-	order: 3;
-    top: 708px;
-    left: 50%;
+    top: 250px;
+    left: 450%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec4 {
-	order: 4;
-    top: 508px;
-    left: 50%;
+    top: 250px;
+    left: 600%;
     transform: translateX(-50%);
 }
 
@@ -1831,13 +1824,4 @@ body{
     height: 205px;
     left: 50%;
     transform: translateX(-50%);
-}
-.element1,
-.element2,
-.element3,
-.element4{
-	display: inline-block;
-	justify-content: space-evenly;
-	position: absolute; /* 요소의 위치 지정 */
-	flex: 1;
 }
