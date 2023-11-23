@@ -1028,7 +1028,7 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 48px;
+	font-size: 65px;
 	line-height: 163.84%;
 	/* identical to box height, or 79px */
 
@@ -1709,6 +1709,8 @@ body{
 .banner8 .inner{
     height: 923px;
     width: 100%;
+	display: flex;
+	flex-direction: row;
 
 }
 
@@ -1718,13 +1720,14 @@ body{
 	margin: 10px;
     width: 322px;
     height: 55px;
-    text-align: center;
+	flex-direction: row;
+
 	background: #4E6234;
     border-radius: 10px;
 }
 .banner8.rectangle.rec1 {
     top: 250px;
-    left: 100%;
+    left: 0%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec2 {
