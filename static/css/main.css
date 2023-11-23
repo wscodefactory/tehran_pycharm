@@ -1329,7 +1329,7 @@ body{
 	left: 19%;
 	top: 5800px;
 
-	background: #F4F4F4;
+
 }
 
 .banner6-image1{
@@ -1452,7 +1452,7 @@ body{
 
 	.contact{
 		top:4500px;
-		font-size: 8.2vw;
+		font-size: 9vw;
 		left: 30.25%;
 	}
 	.contact2{
@@ -1498,8 +1498,8 @@ body{
 	}
 
 	.banner6-icon1{
-		width: 60px;
-		height: 49px;
+		width: 100px;
+		height: 50px;
 		left: 20%;
 		top: -82px;
 	}
