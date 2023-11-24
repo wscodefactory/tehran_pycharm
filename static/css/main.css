@@ -1722,29 +1722,30 @@ body{
     height: 55px;
 	flex-direction: row;
 
-	background: #4E6234;
+	background: transparent;
     border-radius: 10px;
 }
-.banner8.rectangle.rec1 {
-    top: 250px;
-    left: 0%;
+.banner8 .rectangle.rec1 {
+    top: 400px;
+    left: 22%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec2 {
-    top: 250px;
-    left: 300%;
+    top: 0px;
+    left: 200%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec3 {
-    top: 250px;
-    left: 450%;
+    top: 0px;
+    left: 350%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec4 {
-    top: 250px;
-    left: 600%;
+    top: 0px;
+    left: 500%;
     transform: translateX(-50%);
 }
+
 
 .banner8 .rectangle .text1 {
     position: absolute;
@@ -1756,7 +1757,7 @@ body{
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 35px;
     line-height: 29px;
     text-align: center;
 
@@ -1772,7 +1773,7 @@ body{
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 33px;
     line-height: 29px;
     text-align: center;
 
@@ -1788,7 +1789,7 @@ body{
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 23px;
     line-height: 29px;
     text-align: center;
 
@@ -1796,35 +1797,39 @@ body{
 }
 
 .banner8 .rectangle .bg1 {
-    background: rgba(117, 250, 141, 0.1);
+  background: rgba(44, 168, 55, 0.1); /* 배경을 완전 투명하게 설정 */
+    border: 3px solid white; /* 실제 색상을 가진 테두리 추가 */
 	border-radius: 10px;
     width: 322px;
-    height: 290px;
+    height: 350px;
     left: 50%;
 	text-align: center;
     transform: translateX(-50%);
 }
 .banner8 .rectangle .bg2 {
-    background: rgba(44, 168, 55, 0.1);
+    background: rgba(44, 168, 55, 0.1); /* 배경을 완전 투명하게 설정 */
+    border: 3px solid white; /* 실제 색상을 가진 테두리 추가 */
     border-radius: 10px;
     width: 322px;
-    height: 290px;
+    height: 350px;
     left: 50%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle .bg3 {
-    background: rgba(33, 168, 39, 0.1);
+   background: rgba(44, 168, 55, 0.1); /* 배경을 완전 투명하게 설정 */
+    border: 3px solid white; /* 실제 색상을 가진 테두리 추가 */
     border-radius: 10px;
     width: 322px;
-    height: 205px;
+    height: 350px;
     left: 50%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle .bg4 {
-    background: rgba(33, 168, 39, 0.1);
+  background: rgba(44, 168, 55, 0.1); /* 배경을 완전 투명하게 설정 */
+    border: 3px solid white; /* 실제 색상을 가진 테두리 추가 */
     border-radius: 10px;
     width: 322px;
-    height: 205px;
+    height: 350px;
     left: 50%;
     transform: translateX(-50%);
 }
