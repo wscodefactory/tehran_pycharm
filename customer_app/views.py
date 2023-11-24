@@ -91,42 +91,56 @@ def answer_add(request, id):
     return render(request, 'qna_detail.html', {'form': form, 'question': question, 'answer': answer})
 
 def answer_update(request, id):
-    answer = get_object_or_404(Answer, question=id)
+    # 해당 질문에 대한 모든 답변을 가져옵니다.
+    question = get_object_or_404(Question, pk=id)
+    answers = Answer.objects.filter(question=question)
+
+    # 해당 질문에 대한 답변 중 첫 번째 답변을 가져옵니다.
+    answer = answers.first() if answers.exists() else None
 
     if request.method == 'POST':
         form = AnswerForm(request.POST, request.FILES, instance=answer)
         if form.is_valid():
-            form.save(commit=False)
+            # 폼에서 전달된 데이터를 저장합니다.
+            answer = form.save(commit=False)
             answer.created_at = timezone.now()
-            form.save()
-            return redirect('qna_detail', id=answer.question.id)
+            answer.save()
+            return redirect('qna_detail', id=question.id)
     else:
         form = AnswerForm(instance=answer)
 
-    return render(request, 'answer_update.html', {'form': form, 'answer': answer})
+    return render(request, 'qna_detail.html', {'form': form, 'answer': answer})
+
+
+from django.contrib import messages
+from django.contrib import messages
 
 def answer_delete(request, id):
-    # 답변을 가져올 때, question=id로 가져오는데, 답변은 하나의 질문에만 속합니다.
-    # 그러므로 get_object_or_404(Answer, question=id) 대신 get_object_or_404(Answer, id=id)을 사용해야 합니다.
     answer = get_object_or_404(Answer, id=id)
 
-    if request.user.is_authenticated:
-        # 관리자는 언제나 삭제 권한을 가집니다.
-        if request.user.is_superuser:
-            answer.delete()
-            # 해당 질문의 is_answered 값을 0으로 업데이트
-            question = answer.question
-            question.is_answered = 0
-            question.save()
-            return redirect('qna_detail', id=question.id)
+    # 권한 확인 - 로그인한 사용자와 답변을 작성한 사용자가 동일한지 확인합니다.
+    if request.user.is_authenticated and (request.user.is_superuser or request.user == answer.author):
+        question = answer.question  # 해당 답변이 속한 질문 가져오기
+        answer.delete()  # 답변 삭제
 
-        # 작성자인 경우에만 삭제 권한을 가집니다.
-        elif request.user == answer.user:
-            answer.delete()
-            # 해당 질문의 is_answered 값을 0으로 업데이트
-            question = answer.question
-            question.is_answered = 0
-            question.save()
-            return redirect('qna_detail', id=question.id)
+        # 해당 질문의 is_answered 값을 False로 변경하여 "답변 대기중" 상태로 변경합니다.
+        question.is_answered = False
+        question.save()
 
+        messages.success(request, '답변이 삭제되었습니다.')
+        return redirect('qna_detail', id=question.id)
+
+    # 권한이 없는 경우 에러 메시지를 표시합니다.
+    messages.error(request, '삭제 권한이 없습니다.')
+    return redirect('error_page')  # 권한 없음 페이지로 리다이렉트하거나 다른 처리 방식을 선택할 수 있습니다..
+
+def qna_delete(request, id):
+    qna = get_object_or_404(Question, id=id)
+
+    if request.user.is_superuser:
+        # 삭제 동작 처리
+        qna.delete()
+        return redirect('/customer/customer')
+
+    # 권한이 없는 경우, 혹은 POST 요청이 아닌 경우, 에러 처리
     return render(request, 'error.html', {'error_message': '삭제 권한이 없습니다.'})

@@ -104,7 +104,7 @@
       <div class="d-flex flex-row mb-3">
         {% if request.user.is_authenticated %}
           <div class="username">
-            {{ request.session.username }}님 반갑습니다.
+             {{ request.session.username }}님 반갑습니다.
             <a href="{% url 'logout' %}" class="signOut">로그아웃</a>
           </div>
         {% else %}

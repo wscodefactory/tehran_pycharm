@@ -100,7 +100,7 @@
 
 .content1{
     position:absolute;
-    top: 800px;
+    top: 900px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

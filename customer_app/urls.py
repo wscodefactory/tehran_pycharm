@@ -12,4 +12,5 @@ urlpatterns = [
     path('answer_add/<int:id>/', views.answer_add, name='answer_add'),
     path('answer_update/<int:id>/', views.answer_update, name='answer_update'),
     path('answer_delete/<int:id>/', views.answer_delete, name='answer_delete'),
+    path('qna_delete/<int:id>/', views.qna_delete, name='qna_delete'),
 ]
