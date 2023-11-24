@@ -1020,7 +1020,7 @@ body{
 
 .banner5-content1{
 	position: absolute;
-	width: 370px;
+	width: 400px;
 	height: 79px;
 	left: 13.02%;
 	top: 302px;
@@ -1028,12 +1028,12 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 65px;
+	font-size: 63px;
 	line-height: 163.84%;
 	/* identical to box height, or 79px */
 
 
-	color: #839171;
+	color: #889171;
 }
 
 .banner5-content2{
@@ -1046,7 +1046,7 @@ body{
 	font-family: 'Pretendard';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
+	font-size: 33px;
 	line-height: 163.84%;
 	/* or 46px */
 
