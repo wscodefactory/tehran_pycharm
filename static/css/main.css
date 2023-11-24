@@ -1714,31 +1714,32 @@ body{
 
 .banner8 .rectangle {
     position: absolute;
+	flex: 1;
 	margin: 10px;
     width: 322px;
     height: 55px;
     text-align: center;
 	background: #4CAF50;
-
+    border-radius: 10px;
 }
-.banner8.rectangle.rec {
-    top: 300px;
-    left: 15%;
+.banner8.rectangle.rec1 {
+    top: 250px;
+    left: 150%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec2 {
     top: 250px;
-    left: 30%;
+    left: 300%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec3 {
     top: 250px;
-    left: 45%;
+    left: 450%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec4 {
     top: 250px;
-    left: 60%;
+    left: 600%;
     transform: translateX(-50%);
 }
 
