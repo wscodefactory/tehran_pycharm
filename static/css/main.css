@@ -1724,7 +1724,7 @@ body{
 }
 .banner8.rectangle.rec1 {
     top: 250px;
-    left: 150%;
+    left: 100%;
     transform: translateX(-50%);
 }
 .banner8 .rectangle.rec2 {
@@ -1745,19 +1745,19 @@ body{
 
 .banner8 .rectangle .text1 {
     position: absolute;
-    width: 309px;
+    width: 270px;
     height: 172px;
-    left: 4px;
-    top: 15px;
+    left: 23px;
+    top: 9px;
 
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 29px;
     text-align: center;
 
-    color: white;
+    color: #FFFFFF;
 }
 .banner8 .rectangle .text2 {
     position: absolute;
